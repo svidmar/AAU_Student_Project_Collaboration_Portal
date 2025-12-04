@@ -33,16 +33,14 @@ jobs:
           PURE_API_BASE_URL: https://vbn.aau.dk/ws/api/524
         run: npm run sync:data
 
-      - name: Check for changes
-        id: git-check
-        run: |
-          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
-
       - name: Commit and push if changes
-        if: steps.git-check.outputs.changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "Update Pure API data $(date '+%Y-%m-%d %H:%M UTC')"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Pure API data $(date '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
