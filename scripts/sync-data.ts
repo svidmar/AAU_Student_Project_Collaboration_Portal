@@ -192,10 +192,20 @@ function generateMetadata(projects: ProcessedProject[]): any {
 function generateOrganizations(projects: ProcessedProject[]): any[] {
   const orgsMap = new Map<string, any>();
 
+  // Helper function to generate a unique ID from organization name
+  const generateOrgId = (name: string): string => {
+    return name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+      || 'unknown';
+  };
+
   projects.forEach(project => {
     project.collaborations.forEach(collab => {
       if (!orgsMap.has(collab.organization)) {
         orgsMap.set(collab.organization, {
+          id: generateOrgId(collab.organization),
           name: collab.organization,
           type: collab.type,
           country: collab.country,
