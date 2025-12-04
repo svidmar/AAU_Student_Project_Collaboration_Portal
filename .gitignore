@@ -190,7 +190,7 @@ pnpm-debug.log*
 .pnpm-store/
 .npm/
 .yarn/
-package-lock.json
+# Keep package-lock.json for reproducible builds
 yarn.lock
 
 # TypeScript
