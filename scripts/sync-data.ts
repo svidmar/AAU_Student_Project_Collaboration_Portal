@@ -192,20 +192,10 @@ function generateMetadata(projects: ProcessedProject[]): any {
 function generateOrganizations(projects: ProcessedProject[]): any[] {
   const orgsMap = new Map<string, any>();
 
-  // Helper function to generate a unique ID from organization name
-  const generateOrgId = (name: string): string => {
-    return name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '')
-      || 'unknown';
-  };
-
   projects.forEach(project => {
     project.collaborations.forEach(collab => {
       if (!orgsMap.has(collab.organization)) {
         orgsMap.set(collab.organization, {
-          id: generateOrgId(collab.organization),
           name: collab.organization,
           type: collab.type,
           country: collab.country,
@@ -217,7 +207,31 @@ function generateOrganizations(projects: ProcessedProject[]): any[] {
     });
   });
 
-  return Array.from(orgsMap.values()).sort((a, b) => b.projectCount - a.projectCount);
+  // Convert to array and assign unique IDs
+  const orgsArray = Array.from(orgsMap.values()).sort((a, b) => b.projectCount - a.projectCount);
+  const usedIds = new Set<string>();
+
+  const generateOrgId = (name: string, counter: number = 0): string => {
+    const baseId = name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+      || 'unknown';
+
+    const id = counter === 0 ? baseId : `${baseId}-${counter}`;
+
+    if (usedIds.has(id)) {
+      return generateOrgId(name, counter + 1);
+    }
+
+    usedIds.add(id);
+    return id;
+  };
+
+  return orgsArray.map(org => ({
+    id: generateOrgId(org.name),
+    ...org
+  }));
 }
 
 function generateSearchIndex(projects: ProcessedProject[]): any {
