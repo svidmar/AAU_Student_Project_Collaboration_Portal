@@ -44,7 +44,7 @@ interface ProcessedProject {
   type: string;
   year: number;
   collaborations: Array<{
-    organization: string;
+    name: string;
     type: string;
     country?: string;
   }>;
@@ -116,10 +116,10 @@ function processProject(project: PureProject): ProcessedProject | null {
 
   // Extract collaborations from externalCollaborators
   const collaborations = externalCollaborators.map(collaborator => ({
-    organization: extractText(collaborator.externalOrganisation.name?.text),
+    name: extractText(collaborator.externalOrganisation.name?.text),
     type: extractText(collaborator.externalOrganisation.type?.term?.text) || 'Unknown',
     country: extractText(collaborator.externalOrganisation.address?.country?.term?.text)
-  })).filter(c => c.organization);
+  })).filter(c => c.name);
 
   if (collaborations.length === 0) {
     return null;
@@ -154,7 +154,7 @@ function generateMetadata(projects: ProcessedProject[]): any {
       if (collab.country) {
         countries.set(collab.country, (countries.get(collab.country) || 0) + 1);
       }
-      organizations.set(collab.organization, (organizations.get(collab.organization) || 0) + 1);
+      organizations.set(collab.name, (organizations.get(collab.name) || 0) + 1);
     });
   });
 
@@ -194,15 +194,15 @@ function generateOrganizations(projects: ProcessedProject[]): any[] {
 
   projects.forEach(project => {
     project.collaborations.forEach(collab => {
-      if (!orgsMap.has(collab.organization)) {
-        orgsMap.set(collab.organization, {
-          name: collab.organization,
+      if (!orgsMap.has(collab.name)) {
+        orgsMap.set(collab.name, {
+          name: collab.name,
           type: collab.type,
           country: collab.country,
           projectCount: 0
         });
       }
-      const org = orgsMap.get(collab.organization)!;
+      const org = orgsMap.get(collab.name)!;
       org.projectCount++;
     });
   });
