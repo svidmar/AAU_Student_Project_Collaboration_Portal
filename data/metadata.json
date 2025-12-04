@@ -1,0 +1,455 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-04T09:39:12.000Z",
+  "filters": {
+    "years": {
+      "min": 2001,
+      "max": 2025,
+      "available": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2006,
+        2007,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    "collaborationTypes": [
+      {
+        "type": "Kandidatspeciale og HD afgangsprojekt",
+        "count": 2314
+      },
+      {
+        "type": "Professionsbachelor",
+        "count": 70
+      },
+      {
+        "type": "Master afgangsprojekt",
+        "count": 56
+      }
+    ],
+    "countries": [],
+    "partners": [
+      {
+        "name": "Ukendt",
+        "count": 74
+      },
+      {
+        "name": "Aalborg Kommune",
+        "count": 54
+      },
+      {
+        "name": "Ramboll Foundation",
+        "count": 34
+      },
+      {
+        "name": "Aalborg Universitetshospital",
+        "count": 28
+      },
+      {
+        "name": "Hjørring Kommune",
+        "count": 26
+      },
+      {
+        "name": "NIRAS A/S",
+        "count": 24
+      },
+      {
+        "name": "COWI A/S",
+        "count": 23
+      },
+      {
+        "name": "Grundfos DK AS",
+        "count": 23
+      },
+      {
+        "name": "Aarhus Kommune",
+        "count": 21
+      },
+      {
+        "name": "Region Nordjylland",
+        "count": 20
+      },
+      {
+        "name": "Københavns Kommune",
+        "count": 18
+      },
+      {
+        "name": "Anonym",
+        "count": 12
+      },
+      {
+        "name": "University College of Northern Denmark",
+        "count": 12
+      },
+      {
+        "name": "Oticon Danmark AS",
+        "count": 12
+      },
+      {
+        "name": "Siemens",
+        "count": 12
+      },
+      {
+        "name": "Vejdirektoratet",
+        "count": 11
+      },
+      {
+        "name": "Energinet SOV",
+        "count": 11
+      },
+      {
+        "name": "Nordjyllands Politi",
+        "count": 11
+      },
+      {
+        "name": "Kriminalforsorgen",
+        "count": 11
+      },
+      {
+        "name": "RTX A/S",
+        "count": 11
+      },
+      {
+        "name": "Aalborg Forsyning A/S",
+        "count": 10
+      },
+      {
+        "name": "Aarhus University Hospital ",
+        "count": 10
+      },
+      {
+        "name": "Aarhus University",
+        "count": 10
+      },
+      {
+        "name": "University of Copenhagen",
+        "count": 10
+      },
+      {
+        "name": "Novo Nordisk A/S",
+        "count": 10
+      },
+      {
+        "name": "Bang & Olufsen A/S",
+        "count": 9
+      },
+      {
+        "name": "Vestas Wind Systems AS",
+        "count": 9
+      },
+      {
+        "name": "Danish Cancer Society",
+        "count": 9
+      },
+      {
+        "name": "Randers Kommune",
+        "count": 8
+      },
+      {
+        "name": "Spar Nord",
+        "count": 8
+      },
+      {
+        "name": "LEGO Systems AS",
+        "count": 8
+      },
+      {
+        "name": "Steno Diabetes Centers",
+        "count": 8
+      },
+      {
+        "name": "Frederikshavn Kommune",
+        "count": 7
+      },
+      {
+        "name": "VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd",
+        "count": 7
+      },
+      {
+        "name": "Folkesundhed Aarhus",
+        "count": 7
+      },
+      {
+        "name": "Viborg Kommune",
+        "count": 7
+      },
+      {
+        "name": "HjulmandKaptain",
+        "count": 7
+      },
+      {
+        "name": "Novo Nordisk Foundation",
+        "count": 7
+      },
+      {
+        "name": "CERN",
+        "count": 7
+      },
+      {
+        "name": "Region Midtjylland",
+        "count": 7
+      },
+      {
+        "name": "Aalborg Boldspilklub A/S",
+        "count": 7
+      },
+      {
+        "name": "Envidan A/S",
+        "count": 6
+      },
+      {
+        "name": "Røde Kors",
+        "count": 6
+      },
+      {
+        "name": "Danfoss AS",
+        "count": 6
+      },
+      {
+        "name": "KK Wind Solutions A/S",
+        "count": 6
+      },
+      {
+        "name": "MOE A/S",
+        "count": 6
+      },
+      {
+        "name": "MT Højgaard",
+        "count": 6
+      },
+      {
+        "name": "Technical University of Denmark",
+        "count": 6
+      },
+      {
+        "name": "DHI Water - Environment - Health",
+        "count": 6
+      },
+      {
+        "name": "Dansk Boldspil-Union",
+        "count": 6
+      },
+      {
+        "name": "C.F. Møller",
+        "count": 5
+      },
+      {
+        "name": "Telenor",
+        "count": 5
+      },
+      {
+        "name": "Aarhus Vand A/S",
+        "count": 5
+      },
+      {
+        "name": "Enversion A/S",
+        "count": 5
+      },
+      {
+        "name": "University of International Relations",
+        "count": 5
+      },
+      {
+        "name": "Aalborg Zoo",
+        "count": 5
+      },
+      {
+        "name": " Semco Maritime A/S",
+        "count": 5
+      },
+      {
+        "name": "Østjyllands Politi",
+        "count": 5
+      },
+      {
+        "name": "Port of Aalborg A/S",
+        "count": 5
+      },
+      {
+        "name": "Vejle Kommune",
+        "count": 5
+      },
+      {
+        "name": "Esbjerg Kommune",
+        "count": 5
+      },
+      {
+        "name": "Midt- og Vestjyllands Politi",
+        "count": 5
+      },
+      {
+        "name": "Orbicon",
+        "count": 5
+      },
+      {
+        "name": "Sweco AB",
+        "count": 5
+      },
+      {
+        "name": "HOFOR",
+        "count": 5
+      },
+      {
+        "name": "Eurowind Energy A/S",
+        "count": 5
+      },
+      {
+        "name": "Nokia Siemens Networks",
+        "count": 4
+      },
+      {
+        "name": "Hasseris Gymnasium",
+        "count": 4
+      },
+      {
+        "name": "Arla Foods",
+        "count": 4
+      },
+      {
+        "name": "Det Nordjyske Mediehus A/S",
+        "count": 4
+      },
+      {
+        "name": "Brønderslev Neurorehabiliteringscenter",
+        "count": 4
+      },
+      {
+        "name": "National Research Centre for the Working Environment",
+        "count": 4
+      },
+      {
+        "name": "Vattenfall",
+        "count": 4
+      },
+      {
+        "name": "Neogrid Technologies ApS",
+        "count": 4
+      },
+      {
+        "name": "DIGNITY - Danish Institute Against Torture",
+        "count": 4
+      },
+      {
+        "name": "Sundhedscenter Aalborg",
+        "count": 4
+      },
+      {
+        "name": "Aalborg University",
+        "count": 4
+      },
+      {
+        "name": "Erhvervsstyrelsen",
+        "count": 4
+      },
+      {
+        "name": "Nørresundby Gymnasium & HF",
+        "count": 4
+      },
+      {
+        "name": "Moesgaard Museum",
+        "count": 4
+      },
+      {
+        "name": "Duke University",
+        "count": 4
+      },
+      {
+        "name": "Terma AS",
+        "count": 4
+      },
+      {
+        "name": "Krüger A/S",
+        "count": 4
+      },
+      {
+        "name": "LIFA A/S",
+        "count": 4
+      },
+      {
+        "name": "Senfølgerforeningen",
+        "count": 4
+      },
+      {
+        "name": "Høje-Taastrup Kommune",
+        "count": 4
+      },
+      {
+        "name": "Rigshospitalet, Copenhagen University Hospital",
+        "count": 4
+      },
+      {
+        "name": "Create it REAL A/S",
+        "count": 4
+      },
+      {
+        "name": "Keysight Technologies",
+        "count": 4
+      },
+      {
+        "name": "Kompasset - En sikret institution",
+        "count": 4
+      },
+      {
+        "name": "Volvo Car Corporation",
+        "count": 4
+      },
+      {
+        "name": "Aalborg Stadsarkiv",
+        "count": 4
+      },
+      {
+        "name": "LE34",
+        "count": 4
+      },
+      {
+        "name": "MAN Energy Solutions",
+        "count": 4
+      },
+      {
+        "name": "KMD A/S",
+        "count": 4
+      },
+      {
+        "name": "European Space Agency - ESA",
+        "count": 4
+      },
+      {
+        "name": "REMA 1000",
+        "count": 4
+      },
+      {
+        "name": "Behandlingsrådet",
+        "count": 4
+      },
+      {
+        "name": "Hjulmand og Kaptajn",
+        "count": 3
+      },
+      {
+        "name": "Holstebro Kommune",
+        "count": 3
+      }
+    ]
+  },
+  "statistics": {
+    "totalProjects": 2440,
+    "totalCollaborations": 2773,
+    "uniquePartners": 1740,
+    "uniqueCountries": 0
+  }
+}
