@@ -78,11 +78,27 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 async function fetchAllProjects(): Promise<PureProject[]> {
   console.log('Fetching all student projects from Pure API...');
 
-  const data = await fetchFromPure('student-projects');
-  const projects = data.items || [];
+  const allProjects: PureProject[] = [];
+  let offset = 0;
+  const pageSize = 100; // API page size
 
-  console.log(`Fetched ${projects.length} total projects`);
-  return projects;
+  while (true) {
+    const data = await fetchFromPure(`student-projects?size=${pageSize}&offset=${offset}`);
+    const projects = data.items || [];
+
+    allProjects.push(...projects);
+    console.log(`Fetched ${allProjects.length}/${data.count || '?'} projects`);
+
+    // Check if we've fetched all projects
+    if (projects.length < pageSize || allProjects.length >= (data.count || Infinity)) {
+      break;
+    }
+
+    offset += pageSize;
+  }
+
+  console.log(`✓ Fetched ${allProjects.length} total projects`);
+  return allProjects;
 }
 
 function extractText(textArray: Array<{ value?: string }> | undefined): string {
