@@ -17,27 +17,23 @@ if (!PURE_API_KEY) {
 
 interface PureProject {
   uuid: string;
-  title?: { value?: string };
+  title?: { text?: Array<{ value?: string }> };
   type?: { term?: { text?: Array<{ value?: string }> } };
-  managingOrganizationalUnit?: {
-    externalOrganizations?: Array<{
-      name?: { text?: Array<{ value?: string }> };
-      type?: { uri?: string };
-      addresses?: Array<{
-        country?: { term?: { text?: Array<{ value?: string }> } };
-      }>;
-    }>;
+  publicationDate?: {
+    year: number;
   };
-  period?: {
-    startDate?: string;
-    endDate?: string;
-  };
-  persons?: Array<{
-    name?: { firstName?: string; lastName?: string };
-    role?: { term?: { text?: Array<{ value?: string }> } };
+  externalCollaboration?: boolean;
+  externalCollaborators?: Array<{
+    externalOrganisation: {
+      name: { text: Array<{ value: string }> };
+      type?: { term?: { text?: Array<{ value: string }> } };
+      address?: {
+        country?: { term?: { text?: Array<{ value: string }> } };
+      };
+    };
   }>;
-  relatedProjects?: Array<{
-    type?: { term?: { text?: Array<{ value?: string }> } };
+  authors?: Array<{
+    name?: { firstName?: string; lastName?: string };
   }>;
 }
 
@@ -107,35 +103,38 @@ function extractText(textArray: Array<{ value?: string }> | undefined): string {
 }
 
 function processProject(project: PureProject): ProcessedProject | null {
-  const externalOrgs = project.managingOrganizationalUnit?.externalOrganizations || [];
-
-  if (externalOrgs.length === 0) {
-    return null; // No collaborations
+  // Check if project has external collaboration flag
+  if (!project.externalCollaboration) {
+    return null;
   }
 
-  const collaborations = externalOrgs.map(org => ({
-    organization: extractText(org.name?.text),
-    type: org.type?.uri?.split('/').pop() || 'unknown',
-    country: extractText(org.addresses?.[0]?.country?.term?.text)
+  const externalCollaborators = project.externalCollaborators || [];
+  if (externalCollaborators.length === 0) {
+    return null;
+  }
+
+  // Extract collaborations from externalCollaborators
+  const collaborations = externalCollaborators.map(collaborator => ({
+    organization: extractText(collaborator.externalOrganisation.name?.text),
+    type: extractText(collaborator.externalOrganisation.type?.term?.text) || 'Unknown',
+    country: extractText(collaborator.externalOrganisation.address?.country?.term?.text)
   })).filter(c => c.organization);
 
   if (collaborations.length === 0) {
     return null;
   }
 
-  const year = project.period?.endDate
-    ? new Date(project.period.endDate).getFullYear()
-    : new Date().getFullYear();
+  const year = project.publicationDate?.year || new Date().getFullYear();
 
   return {
     id: project.uuid,
-    title: extractText(project.title?.value ? [{ value: project.title.value }] : []),
+    title: extractText(project.title?.text) || 'Untitled',
     type: extractText(project.type?.term?.text) || 'Unknown',
     year,
     collaborations,
-    persons: project.persons?.map(p => ({
+    persons: project.authors?.map(p => ({
       name: `${p.name?.firstName || ''} ${p.name?.lastName || ''}`.trim(),
-      role: extractText(p.role?.term?.text)
+      role: 'Author'
     }))
   };
 }
