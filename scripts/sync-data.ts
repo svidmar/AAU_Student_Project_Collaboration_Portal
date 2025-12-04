@@ -41,16 +41,28 @@ interface PureProject {
 interface ProcessedProject {
   id: string;
   title: string;
+  abstract?: string;
   type: string;
   year: number;
+  campus?: string;
+  educationProgram: {
+    name: string;
+    code: string;
+  };
+  authors: Array<{
+    name: string;
+  }>;
+  supervisors: Array<{
+    name: string;
+    vbnUrl: string;
+    isActive?: boolean;
+  }>;
+  projectUrl: string;
+  hasCollaboration: boolean;
   collaborations: Array<{
     name: string;
     type: string;
     country?: string;
-  }>;
-  persons?: Array<{
-    name: string;
-    role: string;
   }>;
 }
 
@@ -130,13 +142,21 @@ function processProject(project: PureProject): ProcessedProject | null {
   return {
     id: project.uuid,
     title: extractText(project.title?.text) || 'Untitled',
+    abstract: '',
     type: extractText(project.type?.term?.text) || 'Unknown',
     year,
-    collaborations,
-    persons: project.authors?.map(p => ({
-      name: `${p.name?.firstName || ''} ${p.name?.lastName || ''}`.trim(),
-      role: 'Author'
-    }))
+    campus: '',
+    educationProgram: {
+      name: extractText(project.type?.term?.text) || 'Unknown',
+      code: extractText(project.type?.uri)?.split('/').pop() || 'unknown'
+    },
+    authors: project.authors?.map(p => ({
+      name: `${p.name?.firstName || ''} ${p.name?.lastName || ''}`.trim()
+    })) || [],
+    supervisors: [],
+    projectUrl: `https://vbn.aau.dk/da/publications/${project.uuid}`,
+    hasCollaboration: true,
+    collaborations
   };
 }
 
