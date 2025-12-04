@@ -9,7 +9,7 @@ import * as path from 'path';
 const PURE_API_BASE_URL = process.env.PURE_API_BASE_URL || 'https://vbn.aau.dk/ws/api/524';
 const PURE_API_KEY = process.env.PURE_API_KEY;
 // Write to root /data directory (not scripts/data)
-const DATA_DIR = path.join(__dirname, '..', '..', 'data');
+const DATA_DIR = path.join(__dirname, '..', 'data');
 
 if (!PURE_API_KEY) {
   console.error('Error: PURE_API_KEY environment variable is required');
@@ -18,51 +18,43 @@ if (!PURE_API_KEY) {
 
 interface PureProject {
   uuid: string;
-  title?: { text?: Array<{ value?: string }> };
+  title?: { value?: string };
   type?: { term?: { text?: Array<{ value?: string }> } };
-  publicationDate?: {
-    year: number;
+  managingOrganizationalUnit?: {
+    externalOrganizations?: Array<{
+      name?: { text?: Array<{ value?: string }> };
+      type?: { uri?: string };
+      addresses?: Array<{
+        country?: { term?: { text?: Array<{ value?: string }> } };
+      }>;
+    }>;
   };
-  externalCollaboration?: boolean;
-  externalCollaborators?: Array<{
-    externalOrganisation: {
-      name: { text: Array<{ value: string }> };
-      type?: { term?: { text?: Array<{ value: string }> } };
-      address?: {
-        country?: { term?: { text?: Array<{ value: string }> } };
-      };
-    };
-  }>;
-  authors?: Array<{
+  period?: {
+    startDate?: string;
+    endDate?: string;
+  };
+  persons?: Array<{
     name?: { firstName?: string; lastName?: string };
+    role?: { term?: { text?: Array<{ value?: string }> } };
+  }>;
+  relatedProjects?: Array<{
+    type?: { term?: { text?: Array<{ value?: string }> } };
   }>;
 }
 
 interface ProcessedProject {
   id: string;
   title: string;
-  abstract?: string;
   type: string;
   year: number;
-  campus?: string;
-  educationProgram: {
-    name: string;
-    code: string;
-  };
-  authors: Array<{
-    name: string;
-  }>;
-  supervisors: Array<{
-    name: string;
-    vbnUrl: string;
-    isActive?: boolean;
-  }>;
-  projectUrl: string;
-  hasCollaboration: boolean;
   collaborations: Array<{
-    name: string;
+    organization: string;
     type: string;
     country?: string;
+  }>;
+  persons?: Array<{
+    name: string;
+    role: string;
   }>;
 }
 
@@ -87,27 +79,11 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 async function fetchAllProjects(): Promise<PureProject[]> {
   console.log('Fetching all student projects from Pure API...');
 
-  const allProjects: PureProject[] = [];
-  let offset = 0;
-  const pageSize = 100; // API page size
+  const data = await fetchFromPure('student-theses');
+  const projects = data.items || [];
 
-  while (true) {
-    const data = await fetchFromPure(`student-projects?size=${pageSize}&offset=${offset}`);
-    const projects = data.items || [];
-
-    allProjects.push(...projects);
-    console.log(`Fetched ${allProjects.length}/${data.count || '?'} projects`);
-
-    // Check if we've fetched all projects
-    if (projects.length < pageSize || allProjects.length >= (data.count || Infinity)) {
-      break;
-    }
-
-    offset += pageSize;
-  }
-
-  console.log(`✓ Fetched ${allProjects.length} total projects`);
-  return allProjects;
+  console.log(`Fetched ${projects.length} total projects`);
+  return projects;
 }
 
 function extractText(textArray: Array<{ value?: string }> | undefined): string {
@@ -116,47 +92,36 @@ function extractText(textArray: Array<{ value?: string }> | undefined): string {
 }
 
 function processProject(project: PureProject): ProcessedProject | null {
-  // Check if project has external collaboration flag
-  if (!project.externalCollaboration) {
-    return null;
+  const externalOrgs = project.managingOrganizationalUnit?.externalOrganizations || [];
+
+  if (externalOrgs.length === 0) {
+    return null; // No collaborations
   }
 
-  const externalCollaborators = project.externalCollaborators || [];
-  if (externalCollaborators.length === 0) {
-    return null;
-  }
-
-  // Extract collaborations from externalCollaborators
-  const collaborations = externalCollaborators.map(collaborator => ({
-    name: extractText(collaborator.externalOrganisation.name?.text),
-    type: extractText(collaborator.externalOrganisation.type?.term?.text) || 'Unknown',
-    country: extractText(collaborator.externalOrganisation.address?.country?.term?.text)
-  })).filter(c => c.name);
+  const collaborations = externalOrgs.map(org => ({
+    organization: extractText(org.name?.text),
+    type: org.type?.uri?.split('/').pop() || 'unknown',
+    country: extractText(org.addresses?.[0]?.country?.term?.text)
+  })).filter(c => c.organization);
 
   if (collaborations.length === 0) {
     return null;
   }
 
-  const year = project.publicationDate?.year || new Date().getFullYear();
+  const year = project.period?.endDate
+    ? new Date(project.period.endDate).getFullYear()
+    : new Date().getFullYear();
 
   return {
     id: project.uuid,
-    title: extractText(project.title?.text) || 'Untitled',
-    abstract: '',
+    title: extractText(project.title?.value ? [{ value: project.title.value }] : []),
     type: extractText(project.type?.term?.text) || 'Unknown',
     year,
-    campus: '',
-    educationProgram: {
-      name: extractText(project.type?.term?.text) || 'Unknown',
-      code: extractText(project.type?.uri)?.split('/').pop() || 'unknown'
-    },
-    authors: project.authors?.map(p => ({
-      name: `${p.name?.firstName || ''} ${p.name?.lastName || ''}`.trim()
-    })) || [],
-    supervisors: [],
-    projectUrl: `https://vbn.aau.dk/da/publications/${project.uuid}`,
-    hasCollaboration: true,
-    collaborations
+    collaborations,
+    persons: project.persons?.map(p => ({
+      name: `${p.name?.firstName || ''} ${p.name?.lastName || ''}`.trim(),
+      role: extractText(p.role?.term?.text)
+    }))
   };
 }
 
@@ -174,7 +139,7 @@ function generateMetadata(projects: ProcessedProject[]): any {
       if (collab.country) {
         countries.set(collab.country, (countries.get(collab.country) || 0) + 1);
       }
-      organizations.set(collab.name, (organizations.get(collab.name) || 0) + 1);
+      organizations.set(collab.organization, (organizations.get(collab.organization) || 0) + 1);
     });
   });
 
@@ -214,44 +179,20 @@ function generateOrganizations(projects: ProcessedProject[]): any[] {
 
   projects.forEach(project => {
     project.collaborations.forEach(collab => {
-      if (!orgsMap.has(collab.name)) {
-        orgsMap.set(collab.name, {
-          name: collab.name,
+      if (!orgsMap.has(collab.organization)) {
+        orgsMap.set(collab.organization, {
+          name: collab.organization,
           type: collab.type,
           country: collab.country,
           projectCount: 0
         });
       }
-      const org = orgsMap.get(collab.name)!;
+      const org = orgsMap.get(collab.organization)!;
       org.projectCount++;
     });
   });
 
-  // Convert to array and assign unique IDs
-  const orgsArray = Array.from(orgsMap.values()).sort((a, b) => b.projectCount - a.projectCount);
-  const usedIds = new Set<string>();
-
-  const generateOrgId = (name: string, counter: number = 0): string => {
-    const baseId = name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '')
-      || 'unknown';
-
-    const id = counter === 0 ? baseId : `${baseId}-${counter}`;
-
-    if (usedIds.has(id)) {
-      return generateOrgId(name, counter + 1);
-    }
-
-    usedIds.add(id);
-    return id;
-  };
-
-  return orgsArray.map(org => ({
-    id: generateOrgId(org.name),
-    ...org
-  }));
+  return Array.from(orgsMap.values()).sort((a, b) => b.projectCount - a.projectCount);
 }
 
 function generateSearchIndex(projects: ProcessedProject[]): any {
@@ -291,25 +232,9 @@ async function main() {
 
     // Write files
     const files = [
-      {
-        name: 'projects.json',
-        data: {
-          version: '1.0.0',
-          lastUpdated: new Date().toISOString(),
-          totalCount: processedProjects.length,
-          projects: processedProjects
-        }
-      },
+      { name: 'projects.json', data: processedProjects },
       { name: 'metadata.json', data: metadata },
-      {
-        name: 'organizations.json',
-        data: {
-          version: '1.0.0',
-          lastUpdated: new Date().toISOString(),
-          totalCount: organizations.length,
-          organizations: organizations
-        }
-      },
+      { name: 'organizations.json', data: organizations },
       { name: 'search-index.json', data: searchIndex }
     ];
 
