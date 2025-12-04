@@ -1,0 +1,48 @@
+name: Sync Pure API Data
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run data sync
+        env:
+          PURE_API_KEY: ${{ secrets.PURE_API_KEY }}
+          PURE_API_BASE_URL: https://vbn.aau.dk/ws/api/524
+        run: npm run sync:data
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update Pure API data $(date '+%Y-%m-%d %H:%M UTC')"
+          git push

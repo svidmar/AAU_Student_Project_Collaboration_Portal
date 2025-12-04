@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+
+  body {
+    @apply h-full font-sans text-gray-900 bg-gray-50;
+  }
+}
+
+/* Leaflet Map Styles */
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet.markercluster/dist/MarkerCluster.css';
+@import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+
+/* Override Leaflet cluster colors with AAU brand */
+.marker-cluster-small {
+  background-color: rgba(33, 26, 82, 0.6);
+}
+
+.marker-cluster-small div {
+  background-color: rgba(33, 26, 82, 0.8);
+}
+
+.marker-cluster-medium {
+  background-color: rgba(89, 79, 191, 0.6);
+}
+
+.marker-cluster-medium div {
+  background-color: rgba(89, 79, 191, 0.8);
+}
+
+.marker-cluster-large {
+  background-color: rgba(84, 97, 110, 0.6);
+}
+
+.marker-cluster-large div {
+  background-color: rgba(84, 97, 110, 0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid rgba(33, 26, 82, 0.1);
+  border-top: 3px solid #211a52;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

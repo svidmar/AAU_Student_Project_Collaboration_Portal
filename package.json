@@ -1,0 +1,36 @@
+{
+  "name": "aau-student-project-collaboration-portal",
+  "version": "1.0.0",
+  "description": "AAU Student Thesis Collaboration Portal - showcasing research collaborations",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:webapp": "npm run dev --workspace=@aau-thesis-portal/webapp",
+    "build:shared": "npm run build --workspace=@aau-thesis-portal/shared",
+    "build:webapp": "npm run build --workspace=@aau-thesis-portal/webapp",
+    "build:all": "npm run build --workspaces --if-present",
+    "build:sync": "cd scripts && tsc",
+    "sync:data": "npm run build:sync && node scripts/dist/sync-data.js",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present && rm -rf node_modules scripts/dist"
+  },
+  "keywords": [
+    "aau",
+    "aalborg-university",
+    "thesis",
+    "collaboration",
+    "research"
+  ],
+  "author": "Aalborg University",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@aau-thesis-portal/shared",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types and constants for AAU Thesis Portal",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["types", "shared", "aau"],
+  "author": "Aalborg University",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
