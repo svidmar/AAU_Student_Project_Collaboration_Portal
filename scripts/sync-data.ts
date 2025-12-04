@@ -247,9 +247,25 @@ async function main() {
 
     // Write files
     const files = [
-      { name: 'projects.json', data: processedProjects },
+      {
+        name: 'projects.json',
+        data: {
+          version: '1.0.0',
+          lastUpdated: new Date().toISOString(),
+          totalCount: processedProjects.length,
+          projects: processedProjects
+        }
+      },
       { name: 'metadata.json', data: metadata },
-      { name: 'organizations.json', data: organizations },
+      {
+        name: 'organizations.json',
+        data: {
+          version: '1.0.0',
+          lastUpdated: new Date().toISOString(),
+          totalCount: organizations.length,
+          organizations: organizations
+        }
+      },
       { name: 'search-index.json', data: searchIndex }
     ];
 
