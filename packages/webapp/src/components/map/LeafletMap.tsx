@@ -126,7 +126,7 @@ export default function LeafletMap({ projects }: LeafletMapProps) {
                    onclick="window.selectProject('${project.id}')">
                 ${stripHtml(project.title)}
               </div>
-              <div class="text-xs text-gray-600">${project.year} • ${project.educationProgram.name}</div>
+              <div class="text-xs text-gray-600">${project.year}${project.educationProgram?.name ? ' • ' + project.educationProgram.name : ''}</div>
             </div>
           `).join('')}
           ${projectsAtLocation.length > 3 ? `
