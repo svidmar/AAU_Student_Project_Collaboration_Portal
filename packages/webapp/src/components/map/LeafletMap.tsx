@@ -73,6 +73,8 @@ export default function LeafletMap({ projects }: LeafletMapProps) {
     const locationMap = new Map<string, EnrichedProject[]>();
 
     projects.forEach((project) => {
+      if (!project.collaborations) return; // Skip projects without collaborations
+
       project.collaborations.forEach((collab) => {
         if (collab.location?.coordinates) {
           const key = `${collab.location.coordinates.lat},${collab.location.coordinates.lng}`;
@@ -105,14 +107,14 @@ export default function LeafletMap({ projects }: LeafletMapProps) {
 
       // Create popup content
       const uniquePartners = new Set(
-        projectsAtLocation.flatMap((p) => p.collaborations.map((c) => c.name))
+        projectsAtLocation.flatMap((p) => (p.collaborations || []).map((c) => c.name))
       );
 
       const popupContent = `
         <div class="p-2">
           <div class="font-semibold text-aau-blue mb-2">
-            ${projectsAtLocation[0].collaborations.find((c) => c.location?.coordinates?.lat === lat)?.location?.city || ''},
-            ${projectsAtLocation[0].collaborations.find((c) => c.location?.coordinates?.lat === lat)?.location?.country}
+            ${(projectsAtLocation[0].collaborations || []).find((c) => c.location?.coordinates?.lat === lat)?.location?.city || ''},
+            ${(projectsAtLocation[0].collaborations || []).find((c) => c.location?.coordinates?.lat === lat)?.location?.country}
           </div>
           <div class="text-sm mb-2">
             <strong>${projectsAtLocation.length}</strong> project${projectsAtLocation.length > 1 ? 's' : ''}
