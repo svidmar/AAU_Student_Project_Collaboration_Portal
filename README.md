@@ -116,7 +116,7 @@ GitHub Actions generates these files in `/data`:
 
 These files are publicly accessible at:
 ```
-https://raw.githubusercontent.com/svidmar/AAU_Student_Project_Collaboration_Explorer/main/data/projects.json
+https://raw.githubusercontent.com/svidmar/AAU_Student_Project_Collaboration_Portal/main/data/projects.json
 ```
 
 ## License
