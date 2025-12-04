@@ -8,7 +8,8 @@ import * as path from 'path';
 
 const PURE_API_BASE_URL = process.env.PURE_API_BASE_URL || 'https://vbn.aau.dk/ws/api/524';
 const PURE_API_KEY = process.env.PURE_API_KEY;
-const DATA_DIR = path.join(__dirname, '..', 'data');
+// Write to root /data directory (not scripts/data)
+const DATA_DIR = path.join(__dirname, '..', '..', 'data');
 
 if (!PURE_API_KEY) {
   console.error('Error: PURE_API_KEY environment variable is required');
