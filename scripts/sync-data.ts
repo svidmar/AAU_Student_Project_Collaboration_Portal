@@ -268,14 +268,13 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
 
 function generateMetadata(projects: EnrichedProject[]): any {
   const years = new Set<number>();
-  const types = new Map<string, number>();
+  const collaborationTypes = new Map<string, number>();
   const countries = new Map<string, number>();
   const organizations = new Map<string, number>();
   const educationPrograms = new Map<string, { name: string; code: string; count: number }>();
 
   projects.forEach(project => {
     years.add(project.year);
-    types.set(project.type, (types.get(project.type) || 0) + 1);
 
     const progKey = project.educationProgram.code;
     if (!educationPrograms.has(progKey)) {
@@ -288,6 +287,9 @@ function generateMetadata(projects: EnrichedProject[]): any {
     educationPrograms.get(progKey)!.count++;
 
     project.collaborations.forEach(collab => {
+      // Count collaboration types (external org types)
+      collaborationTypes.set(collab.type, (collaborationTypes.get(collab.type) || 0) + 1);
+
       if (collab.location?.country) {
         countries.set(collab.location.country, (countries.get(collab.location.country) || 0) + 1);
       }
@@ -306,10 +308,10 @@ function generateMetadata(projects: EnrichedProject[]): any {
       },
       educationPrograms: Array.from(educationPrograms.values())
         .sort((a, b) => b.count - a.count),
-      collaborationTypes: Array.from(types.entries()).map(([type, count]) => ({
+      collaborationTypes: Array.from(collaborationTypes.entries()).map(([type, count]) => ({
         type,
         count
-      })),
+      })).sort((a, b) => b.count - a.count),
       countries: Array.from(countries.entries()).map(([name, count]) => ({
         name,
         count
