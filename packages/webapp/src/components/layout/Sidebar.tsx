@@ -7,6 +7,7 @@ import YearFilter from '../filters/YearFilter';
 import EducationFilter from '../filters/EducationFilter';
 import TypeFilter from '../filters/TypeFilter';
 import CollaborationTypeFilter from '../filters/CollaborationTypeFilter';
+import CampusFilter from '../filters/CampusFilter';
 import CountryFilter from '../filters/CountryFilter';
 import PartnerFilter from '../filters/PartnerFilter';
 
@@ -67,6 +68,7 @@ export default function Sidebar() {
         <EducationFilter />
         <TypeFilter />
         <CollaborationTypeFilter />
+        <CampusFilter />
         <CountryFilter />
         <PartnerFilter />
       </div>

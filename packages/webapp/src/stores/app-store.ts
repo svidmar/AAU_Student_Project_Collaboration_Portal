@@ -50,6 +50,7 @@ const DEFAULT_FILTERS: FilterState = {
   years: [],
   educationPrograms: [],
   collaborationTypes: [],
+  campuses: [],
   countries: [],
   partners: [],
   projectTypes: [],
@@ -118,6 +119,13 @@ export const useAppStore = create<AppState>((set, get) => ({
             projectTypes.includes(type)
           )
         ) {
+          return false;
+        }
+      }
+
+      // Campus filter
+      if (filters.campuses.length > 0) {
+        if (!project.campus || !filters.campuses.includes(project.campus)) {
           return false;
         }
       }

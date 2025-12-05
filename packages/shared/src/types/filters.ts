@@ -8,6 +8,7 @@ export interface FilterState {
   years: number[];
   educationPrograms: string[]; // program codes
   collaborationTypes: string[];
+  campuses: string[];
   countries: string[];
   partners: string[]; // organization names
   projectTypes: string[]; // project types (Master Thesis, etc.)
@@ -29,6 +30,11 @@ export interface CollaborationTypeOption {
   count: number;
 }
 
+export interface CampusOption {
+  name: string;
+  count: number;
+}
+
 export interface CountryOption {
   name: string;
   count: number;
@@ -44,6 +50,7 @@ export interface FilterOptions {
   years: YearRange;
   educationPrograms: EducationProgramOption[];
   collaborationTypes: CollaborationTypeOption[];
+  campuses: CampusOption[];
   countries: CountryOption[];
   partners: PartnerOption[];
 }
