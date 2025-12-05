@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T12:53:16.677Z",
+  "lastUpdated": "2025-12-05T13:18:35.571Z",
   "filters": {
     "years": {
       "min": 2001,
@@ -30,347 +30,347 @@
     },
     "educationPrograms": [
       {
-        "name": "Socialt Arbejde, Kandidat",
+        "name": "Social Work, Master",
         "code": "4fc0992d",
         "count": 114
       },
       {
-        "name": "Læring og Forandringsprocesser, Kandidat",
+        "name": "Learning and Innovative Change, Master",
         "code": "6a7e3659",
         "count": 108
       },
       {
-        "name": "By-, Energi- og Miljøplanlægning, Kandidat",
+        "name": "Urban, Energy and Environmental Planning, Master",
         "code": "f997d454",
         "count": 80
       },
       {
-        "name": "Energiteknik, Kandidat",
+        "name": "Energy Engineering, Master",
         "code": "731a3e07",
         "count": 78
       },
       {
-        "name": "Sociologi (cand.scient.soc), Kandidat",
+        "name": "Sociology, Master",
         "code": "1166172c",
         "count": 73
       },
       {
-        "name": "Teknoantropologi, Kandidat",
+        "name": "Techno-Anthropology, Master",
         "code": "469f3e80",
         "count": 68
       },
       {
-        "name": "Folkesundhedsvidenskab, Kandidat",
+        "name": "Public Health, Master",
         "code": "8bc8de9b",
         "count": 65
       },
       {
-        "name": "Service Systems Design (cand.scient.), Kandidat",
+        "name": "Service Systems Design, Master",
         "code": "8b41949e",
         "count": 56
       },
       {
-        "name": "Bæredygtigt design, Kandidat",
+        "name": "Sustainable Design (M.SC)",
         "code": "677b3cf4",
         "count": 56
       },
       {
-        "name": "Kriminologi, Kandidat",
+        "name": "Master of Social Science (MSc) in Criminology",
         "code": "e465fcbe",
         "count": 56
       },
       {
-        "name": "It, læring og organisatorisk omstilling (cand.it), Kandidat",
+        "name": " IT, learning and organizational change (cand.it)",
         "code": "cda1cb3f",
         "count": 54
       },
       {
-        "name": "Idræt, Kandidat",
+        "name": "Sports Science, Master",
         "code": "a868e2fe",
         "count": 52
       },
       {
-        "name": "Kommunikation, Kandidat",
+        "name": "Communication, Master",
         "code": "f1f33e26",
         "count": 51
       },
       {
-        "name": "Medialogi, Kandidat",
+        "name": "Medialogy, Master",
         "code": "6f65551f",
         "count": 51
       },
       {
-        "name": "Medicin med Industriel Specialisering (cand.scient.med.), Kandidat",
+        "name": "Medicine with Industrial Specialisation, Master",
         "code": "da27f4ec",
         "count": 49
       },
       {
-        "name": "Klinisk Videnskab og Teknologi, Kandidat (KVT)",
+        "name": "Clinical Science and Technology, Master",
         "code": "7b3464de",
         "count": 48
       },
       {
-        "name": "Vand og Miljø (cand.polyt.), Kandidat",
+        "name": "Water and Environmental Engineering , Master",
         "code": "b4b33a9d",
         "count": 47
       },
       {
-        "name": "Politik og Administration, Kandidat",
+        "name": "Public Administration and Social Science",
         "code": "7a787db9",
         "count": 43
       },
       {
-        "name": "Industrielt Design, Kandidat",
+        "name": "Industrial Design, Master",
         "code": "2551c7d0",
         "count": 40
       },
       {
-        "name": "Kultur, kommunikation og globalisering, kandidat",
+        "name": "Culture, Communication and Globalization, Master",
         "code": "40f56212",
         "count": 36
       },
       {
-        "name": "Interaktive Digitale Medier, Kandidat",
+        "name": "Interactive Digital Media, Master",
         "code": "abd31bbb",
         "count": 34
       },
       {
-        "name": "Oplevelsesdesign (cand.it.), Kandidat",
+        "name": "Experience Design, Master",
         "code": "92536494",
         "count": 33
       },
       {
-        "name": "Turisme, Kandidat",
+        "name": "Tourism, Master",
         "code": "7c0c3b15",
         "count": 32
       },
       {
-        "name": "Landinspektørvidenskab (cand.geom.), Kandidat",
+        "name": "Surveying, Planning and Land Management (cand.geom.), Master",
         "code": "93b636ab",
         "count": 30
       },
       {
-        "name": "Software, Kandidat",
+        "name": "Software, Master",
         "code": "e3457d5d",
         "count": 28
       },
       {
-        "name": "Produkt- og Designpsykologi, Kandidat",
+        "name": "Engineering Psychology, Master",
         "code": "eec7f6ee",
         "count": 26
       },
       {
-        "name": "Regulering og Automation (cand.polyt.), Kandidat",
+        "name": "Control and Automation, Master",
         "code": "4d9ed736",
         "count": 25
       },
       {
-        "name": "Bæredygtig Byudvikling, Kandidat",
+        "name": "Sustaianable Cities, Master",
         "code": "b661d427",
         "count": 25
       },
       {
-        "name": "Veje og Trafik, Kandidat",
+        "name": "Transport Engineering, Master",
         "code": "d5f6679e",
         "count": 25
       },
       {
-        "name": "Byggeri og anlæg, Diplomingeniør",
+        "name": "Civil Engineering",
         "code": "dcba0078",
         "count": 24
       },
       {
-        "name": "Vision, Grafik og Interaktive Systemer, Kandidat",
+        "name": "Vision, Graphics and Interactive Systems, Master",
         "code": "35a53769",
         "count": 23
       },
       {
-        "name": "Jura, Kandidat",
+        "name": "Laws, Master",
         "code": "4699ea74",
         "count": 22
       },
       {
-        "name": "Psykologi, Kandidat",
+        "name": "Psychology, Master",
         "code": "918dc12e",
         "count": 22
       },
       {
-        "name": "Udviklingsstudier, Kandidat",
+        "name": "Development and International Relations, Master",
         "code": "de78223c",
         "count": 22
       },
       {
-        "name": "Informationsvidenskab (cand.it.), Kandidat",
+        "name": "Information Studies (Human Centered Informatics), Master",
         "code": "2bdda2c7",
         "count": 21
       },
       {
-        "name": "Urbant Design (cand.polyt)., Kandidat",
+        "name": "Urban Design, Master",
         "code": "6a5f29b8",
         "count": 21
       },
       {
-        "name": "Bæredygtig Energiteknik, Kandidat",
+        "name": "Sustainable Energy Engineering, Master",
         "code": "0a391d12",
         "count": 20
       },
       {
-        "name": "Sundhedsteknologi (cand.polyt.), Kandidat",
+        "name": "Biomedical Engineering and Informatics, Master",
         "code": "adc3ecc0",
         "count": 19
       },
       {
-        "name": "Byggeledelse (cand.polyt.), Kandidat",
+        "name": "Management in the Building Industry, Master",
         "code": "4c077c06",
         "count": 17
       },
       {
-        "name": "Design af Mekaniske Systemer, Kandidat",
+        "name": "Design of Mechanical Systems, Master",
         "code": "af8b257d",
         "count": 17
       },
       {
-        "name": "Sikkerhed og Risikostyring (cand.tech.), Kandidat",
+        "name": "Risk and Safety Management, Candidate",
         "code": "dbefd6e3",
         "count": 17
       },
       {
-        "name": "Lyd og Musikteknologi (cand.polyt.), Kandidat",
+        "name": "Sound and Music Computing",
         "code": "ebdb1681",
         "count": 17
       },
       {
-        "name": "Bygningers Energidesign, Kandidat",
+        "name": "Building Energy Design",
         "code": "2caeb5cd",
         "count": 17
       },
       {
-        "name": "Bygge- og anlægskonstruktion, Kandidat",
+        "name": "Structural and Civil Engineering, Master",
         "code": "de1daae1",
         "count": 16
       },
       {
-        "name": "Historie, Kandidat",
+        "name": "History, Master",
         "code": "6fb3eb7b",
         "count": 15
       },
       {
-        "name": "Idrætsteknologi (cand.tech.), Kandidat",
+        "name": "Sports Technology (cand.tech.), Master",
         "code": "25493374",
         "count": 15
       },
       {
-        "name": "Integrerede Fødevarestudier (cand.tech.), Kandidat",
+        "name": "Integrated Food Studies (cand.tech.), Master",
         "code": "c7a0d655",
         "count": 15
       },
       {
-        "name": "Erhvervsøkonomi (International Virksomhedsøkonomi) (cand.merc.), Kandidat ",
+        "name": "Economics and Business Administration (International Business Economics), Master",
         "code": "10a60b17",
         "count": 15
       },
       {
-        "name": "Nanobioteknologi (cand.polyt.), Kandidat",
+        "name": "Nanotechnology, Master",
         "code": "b4317640",
         "count": 14
       },
       {
-        "name": "Lysdesign",
+        "name": "Lighting Design",
         "code": "b127ea09",
         "count": 14
       },
       {
-        "name": "Matematik-teknologi (cand.polyt.), Kandidat",
+        "name": "Mathematical Engineering, Master",
         "code": "8b15458d",
         "count": 14
       },
       {
-        "name": "Arkitektur (cand.polyt.), Kandidat",
+        "name": "Architecture, Master",
         "code": "b5b9b707",
         "count": 13
       },
       {
-        "name": "Signalbehandling og Beregning (cand.polyt.), Kandidat",
+        "name": "Signal Processing and Computing, Master",
         "code": "62c89b5a",
         "count": 13
       },
       {
-        "name": "Socialrådgiveruddannelsen, Professionsbachelor",
+        "name": "Social Work, Bachelor",
         "code": "8e20c6bd",
         "count": 12
       },
       {
-        "name": "Landinspektørvidenskab (cand.tech.), Kandidat",
+        "name": "Surveying, Planning and Land Management (cand.tech.), Master",
         "code": "26d6bfa8",
         "count": 12
       },
       {
-        "name": "Bæredygtig energiteknik, Diplomingeniør",
+        "name": "Sustainable Energy Engineering, Bachelor ",
         "code": "3939196d",
         "count": 11
       },
       {
-        "name": "HD 2. del (Regnskab og Økonomistyring)",
+        "name": "Graduate Diploma in Business Administration (Financial and Management Accounting)",
         "code": "c46107cf",
         "count": 11
       },
       {
-        "name": "Matematik, Kandidat",
+        "name": "Mathematics, Master",
         "code": "917319ae",
         "count": 11
       },
       {
-        "name": "Virksomhedsteknologi, Kandidat",
+        "name": "Manufacturing Technology, Master",
         "code": "d38771d0",
         "count": 11
       },
       {
-        "name": "Datalogi, Kandidat",
+        "name": "Computer Science, Master",
         "code": "7c6eb48d",
         "count": 11
       },
       {
-        "name": "International Virksomhedskommunikation (Engelsk), Kandidat",
+        "name": "International Business Communication (English), Master",
         "code": "c1f90cc3",
         "count": 11
       },
       {
-        "name": "Bygningsinformatik (cand.tech.), Kandidat",
+        "name": "Building Informatics (cand.tech.), Master",
         "code": "9beea6dd",
         "count": 10
       },
       {
-        "name": "Informationsarkitektur, Kandidat",
+        "name": "Information Architecture, Master",
         "code": "5370763a",
         "count": 10
       },
       {
-        "name": "Erhvervsøkonomi (Organisation, Strategi og Ledelse) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Organisation and strategy), Master",
         "code": "fb6f7c65",
         "count": 10
       },
       {
-        "name": "Indeklima og Energi, Kandidat",
+        "name": "Indoor Environmental and Energy Engineering, Master",
         "code": "e6fe40ad",
         "count": 10
       },
       {
-        "name": "Global Refugee Studies, Kandidat",
+        "name": "Global Refugee Studies, Master",
         "code": "c0337383",
         "count": 10
       },
       {
-        "name": "It-ledelse (cand.it.), Kandidat",
+        "name": "Information Technology, Master",
         "code": "d4ae754d",
         "count": 10
       },
       {
-        "name": "Elektroniske systemer, Kandidat",
+        "name": "Electronic Systems, Master",
         "code": "8f8a0964",
         "count": 10
       },
       {
-        "name": "Innovativ kommunikationsteknik og entrepreneurskab, Kandidat",
+        "name": "Innovative Communication Technologies and Entrepreneurship, Master",
         "code": "46635663",
         "count": 9
       },
@@ -380,332 +380,332 @@
         "count": 9
       },
       {
-        "name": "Erhvervsøkonomi-jura, Kandidat",
+        "name": "Business Administration and Commercial Law, Master",
         "code": "9e58374f",
         "count": 9
       },
       {
-        "name": "It, Læring og Organisatorisk Omstilling, Kandidat",
+        "name": "Information Technology, Specializing in ICT, Learning and Organizational Change, Master",
         "code": "1c9b9a2c",
         "count": 9
       },
       {
-        "name": "Robotteknologi (cand.polyt.), Kandidat",
+        "name": "Robotics, M.Sc.",
         "code": "8a729bd5",
         "count": 9
       },
       {
-        "name": "HD 2. del (Organisation og Ledelse)",
+        "name": "Graduate Diploma in Business Administration (Organization and Management)",
         "code": "a6e661fa",
         "count": 8
       },
       {
-        "name": "Ledelse og Informatik i Byggeriet (cand.tech.), Kandidat",
+        "name": "Construction Management and Informatics (cand.tech.), Master",
         "code": "d766642a",
         "count": 8
       },
       {
-        "name": "Bæredygtig Bioteknologi, Kandidat",
+        "name": "Sustainable Biotechnology, Master",
         "code": "2a82518b",
         "count": 8
       },
       {
-        "name": "Samfundsfag (cand.soc.), Kandidat",
+        "name": "Social Sciences, Master",
         "code": "17515d10",
         "count": 8
       },
       {
-        "name": "Erhvervsøkonomi (Økonomistyring) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Management Accounting and Control), Master",
         "code": "09609c01",
         "count": 8
       },
       {
-        "name": "Erhvervsøkonomi (International Marketing) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (International Marketing), Master",
         "code": "2131a62d",
         "count": 7
       },
       {
-        "name": "Økonomi (cand.oecon), Kandidat",
+        "name": "Economics, Master",
         "code": "6a578661",
         "count": 7
       },
       {
-        "name": "Netværk og Distribuerede Systemer (cand.polyt.), Kandidat",
+        "name": "Networks and Distributed Systems, Master",
         "code": "597fd5bc",
         "count": 7
       },
       {
-        "name": "Anvendt Filosofi, Kandidat",
+        "name": "Applied Philosophy, Master",
         "code": "ca080c26",
         "count": 7
       },
       {
-        "name": "Forretningsinnovation, Kandidat",
+        "name": "Entrepreneurial Engineering, Master",
         "code": "43db8838",
         "count": 7
       },
       {
-        "name": "Ledelse af Digital Kommunikation (cand.it.), kandidat",
+        "name": "Digital Communication Leadership (Erasmus+)",
         "code": "c64ad746",
         "count": 7
       },
       {
-        "name": "Interaktionsdesign, kandidat",
+        "name": "Interaction Design, Master of Science (MSc)",
         "code": "c56a269a",
         "count": 7
       },
       {
-        "name": "Byggeri og industri, Diplomingeniør",
+        "name": "Mechanical Design",
         "code": "c5c37d9f",
         "count": 6
       },
       {
-        "name": "Akustik og Audioteknologi, Kandidat",
+        "name": "Acoustics and Audio Technology, Master",
         "code": "1272cad2",
         "count": 6
       },
       {
-        "name": "Urbant Design (cand.tech.), Kandidat",
+        "name": "Urban Design (cand.tech.), Master",
         "code": "5a807632",
         "count": 6
       },
       {
-        "name": "Elektromekanisk Systemdesign, Kandidat",
+        "name": "Electro-Mechanical System Design, Master",
         "code": "99125aee",
         "count": 6
       },
       {
-        "name": "Revision (cand.merc.aud.), Kandidat",
+        "name": "Business Economics and Auditing, Master",
         "code": "589c2d37",
         "count": 6
       },
       {
-        "name": "Værdikæder og Innovationsledelse (cand.polyt.), Kandidat",
+        "name": "Operations and Innovation Management, Master of Science (MSc)",
         "code": "66d35909",
         "count": 6
       },
       {
-        "name": "Kemiteknik, Kandidat",
+        "name": "Chemical Engineering, Master",
         "code": "23466509",
         "count": 6
       },
       {
-        "name": "Digitalisering og applikationsudvikling, kandidat",
+        "name": "Digitalisation and Application Development, MSc",
         "code": "9d749f57",
         "count": 6
       },
       {
-        "name": "Cybersikkerhed, Kandidat",
+        "name": "Cyber Security, Master",
         "code": "302436a8",
         "count": 6
       },
       {
-        "name": "Trådløse Kommunikationssystemer, Kandidat",
+        "name": "Wireless Communication Systems, Master",
         "code": "92cb16bc",
         "count": 5
       },
       {
-        "name": "Master i Læreprocesser (MLP) (Efter- og videreuddannelse)",
+        "name": "Master of Learning Processes (Continuing education)",
         "code": "b9c6f76b",
         "count": 5
       },
       {
-        "name": "Master i IKT og Læring (MIL) (Efter- og videreuddannelse)",
+        "name": "Master of ICT and Learning (MIL) (Continuing education)",
         "code": "2e06b9e5",
         "count": 5
       },
       {
-        "name": "Olie- og Gasteknologi (cand.polyt.), Kandidat",
+        "name": "Oil and Gas Technology, Master",
         "code": "a96099a4",
         "count": 5
       },
       {
-        "name": "Maskinteknik, Diplomingeniør",
+        "name": "Mechanical Engineering, Bachelor of Engineering",
         "code": "ba9a2a00",
         "count": 5
       },
       {
-        "name": "Matematik-Økonomi (cand.scient.oecon.), Kandidat",
+        "name": "Mathematics-Economics, Master",
         "code": "e210e141",
         "count": 5
       },
       {
-        "name": "Erhvervsøkonomi (International Business) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (International Business), Master",
         "code": "746faba5",
         "count": 5
       },
       {
-        "name": "Datalogi (it), Kandidat",
+        "name": "Computer Science (IT), Master",
         "code": "74075dae",
         "count": 4
       },
       {
-        "name": "Engelsk, Kandidat",
+        "name": "English, Master",
         "code": "16916eb1",
         "count": 4
       },
       {
-        "name": "Byggeledelse (cand.tech.), Kandidat",
+        "name": "Management in the Building Industry (cand.tech.), Master",
         "code": "7be7379e",
         "count": 4
       },
       {
-        "name": "Virksomhedssystemer, Kandidat",
+        "name": "Operations and Supply Chain Management, Master",
         "code": "045c2eff",
         "count": 4
       },
       {
-        "name": "Værdikæder og Innovationsledelse (cand.tech.), Kandidat",
+        "name": "Operations and Innovation Management (cand.tech.), Master",
         "code": "202f7a72",
         "count": 4
       },
       {
-        "name": "Geografi, Kandidat",
+        "name": "Geography, Master",
         "code": "6b4d733b",
         "count": 4
       },
       {
-        "name": "Byggeledelse og bygningsinformatik, kandidat",
+        "name": "Construction Management and Building Informatics, MSc.",
         "code": "d6c2330d",
         "count": 4
       },
       {
-        "name": "Muskuloskeletal Fysioterapi (cand.san.), kandidat",
+        "name": " Master of Science (MSc) in Health (Musculoskeletal Physiotherapy)",
         "code": "9b024698",
         "count": 4
       },
       {
-        "name": "Kommunikationsteknologi",
+        "name": "Communication Technology",
         "code": "bd876627",
         "count": 4
       },
       {
-        "name": "Kunstig intelligens, vision og lyd (cand.polyt.), kandidat",
+        "name": "Artificial Intelligence, Vision and Sound, MSc.",
         "code": "88de11f3",
         "count": 4
       },
       {
-        "name": "Industri og Produktion, Diplomingeniør",
+        "name": "Mechanical Engineering and Industry",
         "code": "4291ebb9",
         "count": 3
       },
       {
-        "name": "Kemi og Bioteknologi, Diplomingeniør",
+        "name": "Chemical Engineering and Biotechnology",
         "code": "ce9df305",
         "count": 3
       },
       {
-        "name": "Master i Humanistisk Palliation (Efter- og videreuddannelse)",
+        "name": "Master of Humanistic Palliative Care (Continuing Education)",
         "code": "cbe3143a",
         "count": 3
       },
       {
-        "name": "Værdikæder og teknisk ledelse (cand.polyt.), Kandidat",
+        "name": "Operations and Management Engineering, Master of Science (MSc) (cand.polyt.)",
         "code": "f70113b9",
         "count": 3
       },
       {
-        "name": "Arkitektur (cand.tech.), Kandidat",
+        "name": "Architecture (cand.tech.), Master",
         "code": "bb798c77",
         "count": 3
       },
       {
-        "name": "Master i Organisatorisk Coaching og Læring (MOC)",
+        "name": "Master of Organizational Coaching and Learning (MOC)",
         "code": "28940548",
         "count": 3
       },
       {
-        "name": "Naturgeografi (cand.tech.), Kandidat",
+        "name": "Physical Geography, Master",
         "code": "2b364f72",
         "count": 3
       },
       {
-        "name": "Medicin, Kandidat",
+        "name": "Medicine, Master",
         "code": "226848b0",
         "count": 3
       },
       {
-        "name": "Globalt Systemdesign (cand.tech.), Kandidat",
+        "name": "Global Systems Design (cand.tech.), Master",
         "code": "1049b9ea",
         "count": 3
       },
       {
-        "name": "Erhvervsøkonomi (Innovation and Entrepreneurship) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Innovation and Entrepreneurship), Master",
         "code": "3aca6a41",
         "count": 3
       },
       {
-        "name": "By, Bolig og Bosætning, kandidat",
+        "name": "City, Housing and Settlement Patterns. M.Sc.",
         "code": "72028035",
         "count": 3
       },
       {
-        "name": "Socialt Arbejde og Velfærd, Nordisk kandidat",
+        "name": "Nordic Master in Social Work and Welfare(Noswel)",
         "code": "937006b8",
         "count": 3
       },
       {
-        "name": "Dansk (cand.mag.), Kandidat",
+        "name": "Danish, Master",
         "code": "7722ae82",
         "count": 3
       },
       {
-        "name": "Erhvervsøkonomi (Marketing og Salg) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Marketing and Sales), Master",
         "code": "b9ca7b1c",
         "count": 3
       },
       {
-        "name": "Computerteknologi, Kandidat",
+        "name": "Computer Engineering, Master",
         "code": "652e553b",
         "count": 3
       },
       {
-        "name": "Wireless Communication (Elitestudie), Kandidat",
+        "name": "Elektronics and IT, Master (Elite Wireless Communication)",
         "code": "0fbc6b7c",
         "count": 2
       },
       {
-        "name": "Maskinkonstruktion, Kandidat",
+        "name": "Mechanical Design, Master",
         "code": "5ea661c1",
         "count": 2
       },
       {
-        "name": "Musik (cand.mag.), Kandidat",
+        "name": "Music, Master",
         "code": "6af0ddd7",
         "count": 2
       },
       {
-        "name": "Master i teknologimanagement med specialisering i geoinformatik og geoinformation-management (Efter- og videreuddannelse)",
+        "name": "Master of Technology Management (MTM) (Continuing education)",
         "code": "657e277c",
         "count": 2
       },
       {
-        "name": "Informatik, Kandidat",
+        "name": "Informatics, Master",
         "code": "34d40a30",
         "count": 2
       },
       {
-        "name": "Softwarekonstruktion, Kandidat",
+        "name": "Software Development, Master",
         "code": "5453b932",
         "count": 2
       },
       {
-        "name": "Materialeteknologi, Kandidat",
+        "name": "Materials Engineering, Master",
         "code": "0c78c13d",
         "count": 2
       },
       {
-        "name": "Avanceret udvikling i socialt arbejde, Kandidat",
+        "name": "Advanced Development in Social Work, Master of Science (MSc)",
         "code": "47bd729f",
         "count": 2
       },
       {
-        "name": "International Virksomhedskommunikation (Spansk), Kandidat",
+        "name": "International Business Communication (Spanish), Master",
         "code": "756a1287",
         "count": 2
       },
       {
-        "name": "Master i Bygningsfysik",
+        "name": "Master of Building Physics",
         "code": "6adce591",
         "count": 2
       },
@@ -715,62 +715,62 @@
         "count": 2
       },
       {
-        "name": "Intelligente pålidelige systemer, Civilingeniør, cand.polyt., kandidat",
+        "name": "MSc in Intelligent Reliable Systems (Esbjerg)",
         "code": "ec831c0c",
         "count": 2
       },
       {
-        "name": "Tysk (cand.mag.), Kandidat",
+        "name": "German, Master",
         "code": "6ea8745d",
         "count": 2
       },
       {
-        "name": "Kemi, Kandidat (cand.polyt.)",
+        "name": "Chemistry, Master (polyt)",
         "code": "c3bfe112",
         "count": 2
       },
       {
-        "name": "Bioprocesteknologi (cand.polyt.), kandidat",
+        "name": "Master of Science (MSc) in Engineering (Bioengineering)",
         "code": "ce89ac62",
         "count": 2
       },
       {
-        "name": "Internationale forhold (cand.soc.), kandidat",
+        "name": "International Relations, MSc.",
         "code": "3f302237",
         "count": 2
       },
       {
-        "name": "Erhvervsøkonomi (Business Data Science ) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Business Data Science), MSc.",
         "code": "8b957452",
         "count": 2
       },
       {
-        "name": "Datavidenskab og Machine Learning (cand.scient.), kandidat",
+        "name": "Data Science and Machine Learning, Msc.",
         "code": "4a4afbee",
         "count": 2
       },
       {
-        "name": "Master i Udsatte Børn og Unge, faglig ledelse (Efter- og videreuddannelse)",
+        "name": "Master of Vulnerable Children and Young People, Professional Management (Continuing Education)",
         "code": "c0c8acac",
         "count": 1
       },
       {
-        "name": "Biologi, Kandidat",
+        "name": "Biology, Master",
         "code": "648304c9",
         "count": 1
       },
       {
-        "name": "Master i Sundhedsinformatik (Efter- og videreuddannelse)",
+        "name": "Master of Health Informatics (Continuing education)",
         "code": "64743476",
         "count": 1
       },
       {
-        "name": "Master of Public Administration (MPA) (Efter- og videreuddannelse)",
+        "name": "Master of Public Administration (Continuing Education)",
         "code": "4c6ed83f",
         "count": 1
       },
       {
-        "name": "Embedded Software Systems, Kandidat",
+        "name": "Embedded Software Systems, Master",
         "code": "23bdd966",
         "count": 1
       },
@@ -780,163 +780,163 @@
         "count": 1
       },
       {
-        "name": "Elektronik og Datateknik, Diplomingeniør",
+        "name": "Electronic and Computer Engineering",
         "code": "1a97025a",
         "count": 1
       },
       {
-        "name": "Master i Sexologi (Efter- og videreuddannelse)",
+        "name": "Master of Sexology (Continuing education)",
         "code": "b023a9f8",
         "count": 1
       },
       {
-        "name": "Miljøteknologi (cand.polyt.), Kandidat",
+        "name": "Environmental Engineering, Master",
         "code": "b5f145ba",
         "count": 1
       },
       {
-        "name": "Eksportteknologi, Diplomingeniør",
+        "name": "Export Technology",
         "code": "9615c32a",
         "count": 1
       },
       {
-        "name": "Fysik, Kandidat",
+        "name": "Physics, Master",
         "code": "dade7319",
         "count": 1
       },
       {
-        "name": "International Virksomhedskommunikation (Tysk), Kandidat",
+        "name": "International Business Communication (German), Master",
         "code": "5e0f208f",
         "count": 1
       },
       {
-        "name": "Europæiske Studier, Kandidat",
+        "name": "European Studies, Master",
         "code": "2db31c39",
         "count": 1
       },
       {
-        "name": "Musikterapi, Kandidat",
+        "name": "Music Therapy, Master",
         "code": "33ffdff7",
         "count": 1
       },
       {
-        "name": "HD 2. del (Finansiel Rådgivning)",
+        "name": "Graduate Diploma in Business Administration (Financial Planning)",
         "code": "a6799edb",
         "count": 1
       },
       {
-        "name": "Master of Business Administration (MBA) (Efter- og videreuddannelse)",
+        "name": "Master of Business Administration (MBA) (Continuing Education)",
         "code": "629c96d7",
         "count": 1
       },
       {
-        "name": "Master i Smertevidenskab og Tværfaglig Smertebehandling (Efter- og videreuddannelse)",
+        "name": "Master of Pain Science and Multidisciplinary Pain  (Continuing Education)",
         "code": "149ecb0d",
         "count": 1
       },
       {
-        "name": "Elektronik og Elektroteknik, Diplomingeniør",
+        "name": "Electronic and Electrical Engineering",
         "code": "17461379",
         "count": 1
       },
       {
-        "name": "Samfundsøkonomi, Innovation og Videnøkonomi (cand.oecon), Kandidat",
+        "name": "Science in Economics (Innovation, Knowledge and Economic Dynamics), Master",
         "code": "fdeed061",
         "count": 1
       },
       {
-        "name": "Kemi, Kandidat (cand.scient.)",
+        "name": "Chemistry, Master (Scient)",
         "code": "3303d070",
         "count": 1
       },
       {
-        "name": "Avanceret effektelektronik (cand.polyt.), kandidat",
+        "name": "Advanced Power Electronics, MSc.",
         "code": "385afd58",
         "count": 1
       },
       {
-        "name": "Erhvervsøkonomi (Finansiering) (cand.merc.), Kandidat",
+        "name": "Economics and Business Administration (Finance), MSc.",
         "code": "834c69c0",
         "count": 1
       },
       {
-        "name": "Matematik og statistik (Sidefag)",
+        "name": "Mathematics and Statistics (Minor subject)",
         "code": "5261b1e9",
         "count": 1
       },
       {
-        "name": "Elektronik, diplomingeniør",
+        "name": "Electronics",
         "code": "6e1d2598",
         "count": 1
       },
       {
-        "name": "Miljøvidenskab, Kandidat - Cand.tech.",
+        "name": "Technology in Environmental Science, MSc.",
         "code": "3ee8aa03",
         "count": 1
       },
       {
-        "name": "Fysik og teknologi, Kandidat",
+        "name": "Physics and Technology, Master",
         "code": "29b8f903",
         "count": 1
       },
       {
-        "name": "Medicinsk Bioteknologi (cand.polyt.), Kandidat",
+        "name": "Medical Biotechnology, Master",
         "code": "0da11826",
         "count": 1
       },
       {
-        "name": "Bioteknologi, Kandidat",
+        "name": "Biotechnology, Master",
         "code": "363617e8",
         "count": 1
       },
       {
-        "name": "Miljøvidenskab, Bachelor",
+        "name": "Environmental Science, BSc",
         "code": "7d0a3756",
         "count": 1
       },
       {
-        "name": "Mekanik og Produktion, bachelor",
+        "name": "Mechanics and Production, BSc.",
         "code": "b9d18278",
         "count": 1
       }
     ],
     "projectTypes": [
       {
-        "type": "Kandidatspeciale og HD afgangsprojekt",
+        "type": "Master Thesis and HD Thesis",
         "count": 2314
       },
       {
-        "type": "Professionsbachelor",
+        "type": "Profession bachelor",
         "count": 70
       },
       {
-        "type": "Master afgangsprojekt",
+        "type": "Master programme thesis",
         "count": 56
       }
     ],
     "collaborationTypes": [
       {
-        "type": "Erhverv",
+        "type": "Corporate",
         "count": 1117
       },
       {
-        "type": "Kommunal",
+        "type": "Municipal",
         "count": 344
       },
       {
-        "type": "Anden ekstern organisation",
+        "type": "Other external organisation",
         "count": 334
       },
       {
-        "type": "Akademisk",
+        "type": "Academic",
         "count": 189
       },
       {
-        "type": "Offentlig",
+        "type": "Government",
         "count": 161
       },
       {
-        "type": "Ukendt",
+        "type": "Unknown",
         "count": 159
       },
       {
@@ -944,11 +944,11 @@
         "count": 121
       },
       {
-        "type": "Statslig",
+        "type": "Governmental",
         "count": 99
       },
       {
-        "type": "Medicinsk",
+        "type": "Medical",
         "count": 74
       },
       {
@@ -956,11 +956,11 @@
         "count": 63
       },
       {
-        "type": "Uddannelsesinstitution",
+        "type": "Educational institution",
         "count": 57
       },
       {
-        "type": "Forskningsinstitution",
+        "type": "Research institution",
         "count": 32
       },
       {
@@ -968,49 +968,63 @@
         "count": 12
       },
       {
-        "type": "Bevillingsgiver",
+        "type": "Funding provider",
         "count": 11
+      }
+    ],
+    "campuses": [
+      {
+        "name": "Aalborg",
+        "count": 1854
+      },
+      {
+        "name": "Copenhagen",
+        "count": 503
+      },
+      {
+        "name": "Esbjerg",
+        "count": 83
       }
     ],
     "countries": [
       {
-        "name": "Danmark",
+        "name": "Denmark",
         "count": 2382
       },
       {
-        "name": "Tyskland",
+        "name": "Germany",
         "count": 51
       },
       {
-        "name": "USA",
+        "name": "United States",
         "count": 34
       },
       {
-        "name": "Sverige",
+        "name": "Sweden",
         "count": 23
       },
       {
-        "name": "Norge",
+        "name": "Norway",
         "count": 18
       },
       {
-        "name": "Spanien",
+        "name": "Spain",
         "count": 17
       },
       {
-        "name": "Frankrig",
+        "name": "France",
         "count": 17
       },
       {
-        "name": "Grønland",
+        "name": "Greenland",
         "count": 16
       },
       {
-        "name": "Schweiz",
+        "name": "Switzerland",
         "count": 14
       },
       {
-        "name": "Holland",
+        "name": "Netherlands",
         "count": 13
       },
       {
@@ -1018,39 +1032,39 @@
         "count": 11
       },
       {
-        "name": "Storbritannien",
+        "name": "United Kingdom",
         "count": 11
       },
       {
-        "name": "Belgien",
+        "name": "Belgium",
         "count": 9
       },
       {
-        "name": "Australien",
+        "name": "Australia",
         "count": 9
       },
       {
-        "name": "Kina",
+        "name": "China",
         "count": 9
       },
       {
-        "name": "Østrig",
+        "name": "Austria",
         "count": 9
       },
       {
-        "name": "Litauen",
+        "name": "Lithuania",
         "count": 7
       },
       {
-        "name": "Færøerne",
+        "name": "Faroe Islands",
         "count": 7
       },
       {
-        "name": "Island",
+        "name": "Iceland",
         "count": 5
       },
       {
-        "name": "Italien",
+        "name": "Italy",
         "count": 5
       },
       {
@@ -1066,11 +1080,11 @@
         "count": 4
       },
       {
-        "name": "Tjekkiet",
+        "name": "Czech Republic",
         "count": 4
       },
       {
-        "name": "Slovakiet",
+        "name": "Slovakia",
         "count": 4
       },
       {
@@ -1078,7 +1092,7 @@
         "count": 3
       },
       {
-        "name": "Grækenland",
+        "name": "Greece",
         "count": 3
       },
       {
@@ -1086,27 +1100,27 @@
         "count": 3
       },
       {
-        "name": "Rusland",
+        "name": "Russian Federation",
         "count": 3
       },
       {
-        "name": "Letland",
+        "name": "Latvia",
         "count": 3
       },
       {
-        "name": "Indien",
+        "name": "India",
         "count": 3
       },
       {
-        "name": "Bulgarien",
+        "name": "Bulgaria",
         "count": 2
       },
       {
-        "name": "Irland",
+        "name": "Ireland",
         "count": 2
       },
       {
-        "name": "Libanon",
+        "name": "Lebanon",
         "count": 2
       },
       {
@@ -1118,7 +1132,7 @@
         "count": 2
       },
       {
-        "name": "Polen",
+        "name": "Poland",
         "count": 2
       },
       {
@@ -1126,23 +1140,23 @@
         "count": 2
       },
       {
-        "name": "Rumænien",
+        "name": "Romania",
         "count": 2
       },
       {
-        "name": "Brasilien",
+        "name": "Brazil",
         "count": 2
       },
       {
-        "name": "Filippinerne",
+        "name": "Philippines",
         "count": 1
       },
       {
-        "name": "Sydafrika",
+        "name": "South Africa",
         "count": 1
       },
       {
-        "name": "Vietnam",
+        "name": "Viet Nam",
         "count": 1
       },
       {
@@ -1158,7 +1172,7 @@
         "count": 1
       },
       {
-        "name": "Irak",
+        "name": "Iraq",
         "count": 1
       },
       {
@@ -1170,7 +1184,7 @@
         "count": 1
       },
       {
-        "name": "Indonesien",
+        "name": "Indonesia",
         "count": 1
       },
       {
@@ -1192,7 +1206,7 @@
         "count": 74
       },
       {
-        "name": "Aalborg Kommune",
+        "name": "Aalborg Municipality",
         "count": 54
       },
       {
@@ -1200,7 +1214,7 @@
         "count": 34
       },
       {
-        "name": "Aalborg Universitetshospital",
+        "name": "Aalborg University Hospital",
         "count": 28
       },
       {
@@ -1232,7 +1246,7 @@
         "count": 18
       },
       {
-        "name": "Anonym",
+        "name": "Anonymous",
         "count": 12
       },
       {
@@ -1272,7 +1286,7 @@
         "count": 10
       },
       {
-        "name": "Aarhus University Hospital ",
+        "name": "Aarhus University Hospital",
         "count": 10
       },
       {
@@ -1316,11 +1330,11 @@
         "count": 8
       },
       {
-        "name": "Frederikshavn Kommune",
+        "name": "Frederikshavn Municipality",
         "count": 7
       },
       {
-        "name": "VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd",
+        "name": "VIVE – The Danish Center for Social Science Research",
         "count": 7
       },
       {
@@ -1332,7 +1346,7 @@
         "count": 7
       },
       {
-        "name": "HjulmandKaptain",
+        "name": "HjulmandKaptain ",
         "count": 7
       },
       {
@@ -1356,7 +1370,7 @@
         "count": 6
       },
       {
-        "name": "Røde Kors",
+        "name": "Red Cross",
         "count": 6
       },
       {
@@ -1384,7 +1398,7 @@
         "count": 6
       },
       {
-        "name": "Dansk Boldspil-Union",
+        "name": "Danish Football Association",
         "count": 6
       },
       {
@@ -1412,7 +1426,7 @@
         "count": 5
       },
       {
-        "name": " Semco Maritime A/S",
+        "name": "Semco Maritime A/S",
         "count": 5
       },
       {
@@ -1484,7 +1498,7 @@
         "count": 4
       },
       {
-        "name": "DIGNITY - Danish Institute Against Torture",
+        "name": "DIGNITY - Danish Institute Against torture",
         "count": 4
       },
       {
@@ -1572,7 +1586,7 @@
         "count": 4
       },
       {
-        "name": "REMA 1000",
+        "name": "Rema 1000 Danalien",
         "count": 4
       },
       {
