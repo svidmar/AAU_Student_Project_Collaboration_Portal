@@ -268,6 +268,7 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
 
 function generateMetadata(projects: EnrichedProject[]): any {
   const years = new Set<number>();
+  const projectTypes = new Map<string, number>();
   const collaborationTypes = new Map<string, number>();
   const countries = new Map<string, number>();
   const organizations = new Map<string, number>();
@@ -275,6 +276,9 @@ function generateMetadata(projects: EnrichedProject[]): any {
 
   projects.forEach(project => {
     years.add(project.year);
+
+    // Count project types (thesis types)
+    projectTypes.set(project.type, (projectTypes.get(project.type) || 0) + 1);
 
     const progKey = project.educationProgram.code;
     if (!educationPrograms.has(progKey)) {
@@ -308,6 +312,10 @@ function generateMetadata(projects: EnrichedProject[]): any {
       },
       educationPrograms: Array.from(educationPrograms.values())
         .sort((a, b) => b.count - a.count),
+      projectTypes: Array.from(projectTypes.entries()).map(([type, count]) => ({
+        type,
+        count
+      })).sort((a, b) => b.count - a.count),
       collaborationTypes: Array.from(collaborationTypes.entries()).map(([type, count]) => ({
         type,
         count
