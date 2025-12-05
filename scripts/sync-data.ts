@@ -69,14 +69,14 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 }
 
 async function fetchAllProjects(): Promise<any[]> {
-  console.log('Fetching all student projects from Pure API...\n');
+  console.log('Fetching student projects with external collaborations from Pure API...\n');
 
-  // First request to get total count
-  const firstPage = await fetchFromPure('student-projects?size=100&offset=0');
+  // First request to get total count (filter for projects with external collaboration)
+  const firstPage = await fetchFromPure('student-projects?externalCollaboration=true&size=100&offset=0');
   const totalCount = firstPage.count || 0;
   const allProjects: any[] = [...(firstPage.items || [])];
 
-  console.log(`Total projects in Pure API: ${totalCount}`);
+  console.log(`Total projects with external collaboration: ${totalCount}`);
   console.log(`Fetched ${allProjects.length} projects (page 1 of ${Math.ceil(totalCount / 100)})`);
 
   // Fetch remaining pages
@@ -84,7 +84,7 @@ async function fetchAllProjects(): Promise<any[]> {
   let offset = pageSize;
 
   while (offset < totalCount) {
-    const data = await fetchFromPure(`student-projects?size=${pageSize}&offset=${offset}`);
+    const data = await fetchFromPure(`student-projects?externalCollaboration=true&size=${pageSize}&offset=${offset}`);
     const projects = data.items || [];
 
     allProjects.push(...projects);
@@ -100,7 +100,7 @@ async function fetchAllProjects(): Promise<any[]> {
     }
   }
 
-  console.log(`\nFetched ${allProjects.length} total projects`);
+  console.log(`\nFetched ${allProjects.length} total projects with external collaborations`);
   return allProjects;
 }
 
