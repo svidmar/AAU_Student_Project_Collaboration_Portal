@@ -79,7 +79,7 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 async function fetchAllProjects(): Promise<PureProject[]> {
   console.log('Fetching all student projects from Pure API...');
 
-  const data = await fetchFromPure('student-theses');
+  const data = await fetchFromPure('student-project');
   const projects = data.items || [];
 
   console.log(`Fetched ${projects.length} total projects`);

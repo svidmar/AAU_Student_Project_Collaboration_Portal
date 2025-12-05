@@ -75,9 +75,11 @@ export class DataLoader {
 
     // Try to fetch fresh data
     try {
+      // Add cache-busting parameter to bypass GitHub CDN cache
+      const cacheBuster = `_cache=${Date.now()}`;
       const url = USE_API
-        ? `${DATA_BASE_URL}?file=projects.json`
-        : `${DATA_BASE_URL}/projects.json`;
+        ? `${DATA_BASE_URL}?file=projects.json&${cacheBuster}`
+        : `${DATA_BASE_URL}/projects.json?${cacheBuster}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch projects');
 
@@ -128,9 +130,11 @@ export class DataLoader {
 
     // Try to fetch fresh data
     try {
+      // Add cache-busting parameter to bypass GitHub CDN cache
+      const cacheBuster = `_cache=${Date.now()}`;
       const url = USE_API
-        ? `${DATA_BASE_URL}?file=organizations.json`
-        : `${DATA_BASE_URL}/organizations.json`;
+        ? `${DATA_BASE_URL}?file=organizations.json&${cacheBuster}`
+        : `${DATA_BASE_URL}/organizations.json?${cacheBuster}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch organizations');
 
@@ -178,9 +182,11 @@ export class DataLoader {
 
     // Try to fetch fresh data
     try {
+      // Add cache-busting parameter to bypass GitHub CDN cache
+      const cacheBuster = `_cache=${Date.now()}`;
       const url = USE_API
-        ? `${DATA_BASE_URL}?file=metadata.json`
-        : `${DATA_BASE_URL}/metadata.json`;
+        ? `${DATA_BASE_URL}?file=metadata.json&${cacheBuster}`
+        : `${DATA_BASE_URL}/metadata.json?${cacheBuster}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error('Failed to fetch metadata');
 
