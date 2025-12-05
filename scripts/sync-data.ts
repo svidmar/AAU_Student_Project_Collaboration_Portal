@@ -9,7 +9,6 @@ import * as path from 'path';
 const PURE_API_BASE_URL = process.env.PURE_API_BASE_URL || 'https://vbn.aau.dk/ws/api/524';
 const PURE_API_KEY = process.env.PURE_API_KEY;
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const GEOCODING_API_URL = 'https://nominatim.openstreetmap.org/search';
 
 if (!PURE_API_KEY) {
   console.error('Error: PURE_API_KEY environment variable is required');
@@ -70,23 +69,29 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 async function fetchAllProjects(): Promise<any[]> {
   console.log('Fetching all student projects from Pure API with pagination...');
 
-  const allProjects: any[] = [];
-  let offset = 0;
-  const pageSize = 100;
-  let hasMore = true;
+  // First request to get total count
+  const firstPage = await fetchFromPure('student-projects?size=100&offset=0');
+  const totalCount = firstPage.count || 0;
+  const allProjects: any[] = [...(firstPage.items || [])];
 
-  while (hasMore) {
+  console.log(`Total projects in Pure API: ${totalCount}`);
+  console.log(`Fetched ${allProjects.length} projects (page 1)`);
+
+  // Fetch remaining pages if needed
+  const pageSize = 100;
+  let offset = pageSize;
+
+  while (offset < totalCount) {
     const data = await fetchFromPure(`student-projects?size=${pageSize}&offset=${offset}`);
     const projects = data.items || [];
 
     allProjects.push(...projects);
-    console.log(`Fetched ${projects.length} projects (offset: ${offset}, total so far: ${allProjects.length})`);
+    console.log(`Fetched ${projects.length} projects (offset: ${offset}, total so far: ${allProjects.length}/${totalCount})`);
 
-    hasMore = projects.length === pageSize;
     offset += pageSize;
 
     // Add small delay to avoid rate limiting
-    if (hasMore) {
+    if (offset < totalCount) {
       await new Promise(resolve => setTimeout(resolve, 500));
     }
   }
@@ -110,34 +115,7 @@ function extractText(data: any): string {
   return '';
 }
 
-async function geocode(organizationName: string, city?: string, country?: string): Promise<{ lat: number; lng: number } | null> {
-  try {
-    const query = city && country ? `${city}, ${country}` : country || organizationName;
-    const url = `${GEOCODING_API_URL}?q=${encodeURIComponent(query)}&format=json&limit=1`;
-
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'AAU-Student-Project-Portal/1.0'
-      }
-    });
-
-    if (!response.ok) return null;
-
-    const data = await response.json() as any[];
-    if (Array.isArray(data) && data.length > 0) {
-      return {
-        lat: parseFloat(data[0].lat),
-        lng: parseFloat(data[0].lon)
-      };
-    }
-  } catch (error) {
-    console.warn(`Geocoding failed for ${organizationName}:`, error);
-  }
-
-  return null;
-}
-
-async function enrichProject(project: any): Promise<EnrichedProject | null> {
+function enrichProject(project: any): EnrichedProject | null {
   // Extract external collaborations
   const externalOrgs = project.managingOrganizationalUnit?.externalOrganizations || [];
 
@@ -179,32 +157,38 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
     }
   });
 
-  // Enrich collaborations with location data
-  const collaborations = await Promise.all(
-    externalOrgs.map(async (org: any) => {
-      const name = extractText(org.name?.text);
-      const type = org.type?.uri?.split('/').pop() || 'unknown';
-      const country = extractText(org.addresses?.[0]?.country?.term?.text);
-      const city = extractText(org.addresses?.[0]?.city);
+  // Enrich collaborations with location data from Pure API
+  const collaborations = externalOrgs.map((org: any) => {
+    const name = extractText(org.name?.text);
+    const type = org.type?.uri?.split('/').pop() || 'unknown';
+    const country = extractText(org.addresses?.[0]?.country?.term?.text);
+    const city = extractText(org.addresses?.[0]?.city);
 
-      let coordinates = null;
-      if (city || country) {
-        coordinates = await geocode(name, city, country);
-        // Small delay between geocoding requests
-        await new Promise(resolve => setTimeout(resolve, 1000));
+    // Extract geolocation from Pure API if available
+    let coordinates = null;
+    const geoLocation = org.geoLocation;
+    if (geoLocation) {
+      const lat = geoLocation.latitude || geoLocation.lat;
+      const lng = geoLocation.longitude || geoLocation.lng || geoLocation.lon;
+
+      if (lat != null && lng != null) {
+        coordinates = {
+          lat: typeof lat === 'number' ? lat : parseFloat(lat),
+          lng: typeof lng === 'number' ? lng : parseFloat(lng)
+        };
       }
+    }
 
-      return {
-        name,
-        type,
-        location: (city || country || coordinates) ? {
-          country,
-          city,
-          coordinates
-        } : undefined
-      };
-    })
-  );
+    return {
+      name,
+      type,
+      location: (city || country || coordinates) ? {
+        country,
+        city,
+        coordinates
+      } : undefined
+    };
+  }).filter((c: any) => c.name);
 
   return {
     id: project.uuid,
@@ -217,7 +201,7 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
     supervisors,
     projectUrl: project.electronicVersions?.[0]?.link?.href || `https://vbn.aau.dk/en/publications/${project.uuid}`,
     hasCollaboration: true,
-    collaborations: collaborations.filter(c => c.name),
+    collaborations,
     campus: extractText(project.campus)
   };
 }
@@ -325,15 +309,19 @@ async function main() {
     // Fetch all projects with pagination
     const allProjects = await fetchAllProjects();
 
-    // Enrich projects with full data and geocoding
-    console.log('\nEnriching projects with full data and geocoding...');
+    // Enrich projects with full data from Pure API
+    console.log('\nEnriching projects with full data from Pure API...');
     const enrichedProjects: EnrichedProject[] = [];
 
     for (let i = 0; i < allProjects.length; i++) {
       const project = allProjects[i];
-      console.log(`Processing ${i + 1}/${allProjects.length}: ${extractText(project.title).substring(0, 60)}...`);
 
-      const enriched = await enrichProject(project);
+      // Log progress every 100 projects
+      if (i % 100 === 0 || i === allProjects.length - 1) {
+        console.log(`Processing ${i + 1}/${allProjects.length}...`);
+      }
+
+      const enriched = enrichProject(project);
       if (enriched) {
         enrichedProjects.push(enriched);
       }
