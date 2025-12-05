@@ -120,6 +120,14 @@ function extractText(data: any): string {
   if (typeof data === 'string') return data;
   if (data.value) return data.value;
   if (Array.isArray(data) && data.length > 0) {
+    // Check for locale-aware text (prefer en_GB, fallback to da_DK)
+    const enItem = data.find((item: any) => item.locale === 'en_GB');
+    if (enItem?.value) return enItem.value;
+
+    const dkItem = data.find((item: any) => item.locale === 'da_DK');
+    if (dkItem?.value) return dkItem.value;
+
+    // Fallback to first item
     const first = data[0];
     if (typeof first === 'string') return first;
     if (first.value) return first.value;
@@ -272,6 +280,7 @@ function generateMetadata(projects: EnrichedProject[]): any {
   const collaborationTypes = new Map<string, number>();
   const countries = new Map<string, number>();
   const organizations = new Map<string, number>();
+  const campuses = new Map<string, number>();
   const educationPrograms = new Map<string, { name: string; code: string; count: number }>();
 
   projects.forEach(project => {
@@ -279,6 +288,11 @@ function generateMetadata(projects: EnrichedProject[]): any {
 
     // Count project types (thesis types)
     projectTypes.set(project.type, (projectTypes.get(project.type) || 0) + 1);
+
+    // Count campuses
+    if (project.campus) {
+      campuses.set(project.campus, (campuses.get(project.campus) || 0) + 1);
+    }
 
     const progKey = project.educationProgram.code;
     if (!educationPrograms.has(progKey)) {
@@ -318,6 +332,10 @@ function generateMetadata(projects: EnrichedProject[]): any {
       })).sort((a, b) => b.count - a.count),
       collaborationTypes: Array.from(collaborationTypes.entries()).map(([type, count]) => ({
         type,
+        count
+      })).sort((a, b) => b.count - a.count),
+      campuses: Array.from(campuses.entries()).map(([name, count]) => ({
+        name,
         count
       })).sort((a, b) => b.count - a.count),
       countries: Array.from(countries.entries()).map(([name, count]) => ({
