@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T12:31:10.504Z",
+  "lastUpdated": "2025-12-05T12:53:16.677Z",
   "filters": {
     "years": {
       "min": 2001,
@@ -900,7 +900,7 @@
         "count": 1
       }
     ],
-    "collaborationTypes": [
+    "projectTypes": [
       {
         "type": "Kandidatspeciale og HD afgangsprojekt",
         "count": 2314
@@ -912,6 +912,64 @@
       {
         "type": "Master afgangsprojekt",
         "count": 56
+      }
+    ],
+    "collaborationTypes": [
+      {
+        "type": "Erhverv",
+        "count": 1117
+      },
+      {
+        "type": "Kommunal",
+        "count": 344
+      },
+      {
+        "type": "Anden ekstern organisation",
+        "count": 334
+      },
+      {
+        "type": "Akademisk",
+        "count": 189
+      },
+      {
+        "type": "Offentlig",
+        "count": 161
+      },
+      {
+        "type": "Ukendt",
+        "count": 159
+      },
+      {
+        "type": "NGO",
+        "count": 121
+      },
+      {
+        "type": "Statslig",
+        "count": 99
+      },
+      {
+        "type": "Medicinsk",
+        "count": 74
+      },
+      {
+        "type": "Region",
+        "count": 63
+      },
+      {
+        "type": "Uddannelsesinstitution",
+        "count": 57
+      },
+      {
+        "type": "Forskningsinstitution",
+        "count": 32
+      },
+      {
+        "type": "International organisation",
+        "count": 12
+      },
+      {
+        "type": "Bevillingsgiver",
+        "count": 11
       }
     ],
     "countries": [
