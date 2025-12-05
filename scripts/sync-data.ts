@@ -1,6 +1,6 @@
 /**
  * Complete Data Sync Script for AAU Thesis Portal
- * Fetches and enriches project data from Pure API with pagination and geocoding
+ * Fetches project data from Pure API with external collaborations
  */
 
 import * as fs from 'fs';
@@ -48,9 +48,11 @@ interface EnrichedProject {
   campus?: string;
 }
 
+// Cache for external organizations to avoid duplicate fetches
+const orgCache = new Map<string, any>();
+
 async function fetchFromPure(endpoint: string): Promise<any> {
   const url = `${PURE_API_BASE_URL}/${endpoint}`;
-  console.log(`Fetching: ${url}`);
 
   const response = await fetch(url, {
     headers: {
@@ -67,7 +69,7 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 }
 
 async function fetchAllProjects(): Promise<any[]> {
-  console.log('Fetching all student projects from Pure API with pagination...');
+  console.log('Fetching all student projects from Pure API...\n');
 
   // First request to get total count
   const firstPage = await fetchFromPure('student-projects?size=100&offset=0');
@@ -75,9 +77,9 @@ async function fetchAllProjects(): Promise<any[]> {
   const allProjects: any[] = [...(firstPage.items || [])];
 
   console.log(`Total projects in Pure API: ${totalCount}`);
-  console.log(`Fetched ${allProjects.length} projects (page 1)`);
+  console.log(`Fetched ${allProjects.length} projects (page 1 of ${Math.ceil(totalCount / 100)})`);
 
-  // Fetch remaining pages if needed
+  // Fetch remaining pages
   const pageSize = 100;
   let offset = pageSize;
 
@@ -86,17 +88,19 @@ async function fetchAllProjects(): Promise<any[]> {
     const projects = data.items || [];
 
     allProjects.push(...projects);
-    console.log(`Fetched ${projects.length} projects (offset: ${offset}, total so far: ${allProjects.length}/${totalCount})`);
+    const currentPage = Math.floor(offset / pageSize) + 1;
+    const totalPages = Math.ceil(totalCount / pageSize);
+    console.log(`Fetched ${projects.length} projects (page ${currentPage + 1} of ${totalPages}, total: ${allProjects.length}/${totalCount})`);
 
     offset += pageSize;
 
-    // Add small delay to avoid rate limiting
+    // Small delay to avoid rate limiting
     if (offset < totalCount) {
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise(resolve => setTimeout(resolve, 200));
     }
   }
 
-  console.log(`Fetched ${allProjects.length} total projects`);
+  console.log(`\nFetched ${allProjects.length} total projects`);
   return allProjects;
 }
 
@@ -112,74 +116,115 @@ function extractText(data: any): string {
   if (data.text && Array.isArray(data.text)) {
     return extractText(data.text);
   }
+  if (data.formatted === true && data.text) {
+    return extractText(data.text);
+  }
   return '';
 }
 
-function enrichProject(project: any): EnrichedProject | null {
-  // Extract external collaborations
-  const externalOrgs = project.managingOrganizationalUnit?.externalOrganizations || [];
+async function fetchExternalOrganization(uuid: string): Promise<any | null> {
+  // Check cache first
+  if (orgCache.has(uuid)) {
+    return orgCache.get(uuid);
+  }
 
-  if (externalOrgs.length === 0) {
-    return null; // Skip projects without collaborations
+  try {
+    const org = await fetchFromPure(`external-organisations/${uuid}`);
+    orgCache.set(uuid, org);
+
+    // Small delay to avoid rate limiting
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    return org;
+  } catch (error) {
+    console.warn(`Failed to fetch organization ${uuid}:`, error);
+    orgCache.set(uuid, null);
+    return null;
+  }
+}
+
+async function enrichProject(project: any): Promise<EnrichedProject | null> {
+  // Skip projects without external collaboration
+  if (!project.externalCollaboration || !project.externalCollaborators || project.externalCollaborators.length === 0) {
+    return null;
   }
 
   // Extract education program
+  const educationAssoc = project.educationAssociations?.[0];
   const educationProgram = {
-    name: extractText(project.managingOrganizationalUnit?.name) || 'Unknown',
-    code: project.managingOrganizationalUnit?.uuid?.substring(0, 8) || 'unknown'
+    name: extractText(educationAssoc?.education?.name) || 'Unknown',
+    code: educationAssoc?.education?.uuid?.substring(0, 8) || 'unknown'
   };
 
   // Extract year
-  const year = project.period?.endDate
-    ? new Date(project.period.endDate).getFullYear()
-    : new Date().getFullYear();
+  const pubDate = project.publicationDate;
+  const year = pubDate?.year || new Date().getFullYear();
 
-  // Extract authors and supervisors
-  const authors: Array<{ name: string }> = [];
-  const supervisors: Array<{ name: string; vbnUrl?: string; isActive?: boolean }> = [];
+  // Extract authors
+  const authors: Array<{ name: string }> = (project.authors || []).map((author: any) => ({
+    name: `${author.name?.firstName || ''} ${author.name?.lastName || ''}`.trim()
+  })).filter((a: any) => a.name);
 
-  (project.persons || []).forEach((person: any) => {
-    const role = extractText(person.role?.term?.text).toLowerCase();
-    const firstName = person.name?.firstName || '';
-    const lastName = person.name?.lastName || '';
-    const fullName = `${firstName} ${lastName}`.trim();
+  // Extract supervisors
+  const supervisors: Array<{ name: string; vbnUrl?: string; isActive?: boolean }> = (project.supervisors || []).map((sup: any) => {
+    const person = sup.person;
+    const name = extractText(person?.name);
 
-    if (!fullName) return;
+    return {
+      name,
+      vbnUrl: person?.uuid ? `https://vbn.aau.dk/da/persons/${person.uuid}` : undefined,
+      isActive: person?.externallyManaged !== false
+    };
+  }).filter((s: any) => s.name);
 
-    if (role.includes('author') || role.includes('student')) {
-      authors.push({ name: fullName });
-    } else if (role.includes('supervisor') || role.includes('advisor')) {
-      supervisors.push({
-        name: fullName,
-        vbnUrl: person.externalId ? `https://vbn.aau.dk/da/persons/${person.externalId}` : undefined,
-        isActive: person.isActive !== false
-      });
-    }
-  });
+  // Extract abstract
+  const abstract = extractText(project.abstract);
 
-  // Enrich collaborations with location data from Pure API
-  const collaborations = externalOrgs.map((org: any) => {
-    const name = extractText(org.name?.text);
-    const type = org.type?.uri?.split('/').pop() || 'unknown';
-    const country = extractText(org.addresses?.[0]?.country?.term?.text);
-    const city = extractText(org.addresses?.[0]?.city);
+  // Extract project URL from documents
+  const projectUrl = project.documents?.[0]?.url || `https://vbn.aau.dk/en/publications/${project.uuid}`;
 
-    // Extract geolocation from Pure API if available
-    let coordinates = null;
-    const geoLocation = org.geoLocation;
-    if (geoLocation) {
-      const lat = geoLocation.latitude || geoLocation.lat;
-      const lng = geoLocation.longitude || geoLocation.lng || geoLocation.lon;
+  // Extract campus
+  const campus = extractText(project.campus?.term);
 
-      if (lat != null && lng != null) {
+  // Fetch and enrich external collaborations
+  const collaborations: Array<{
+    name: string;
+    type: string;
+    location?: {
+      country?: string;
+      city?: string;
+      coordinates?: { lat: number; lng: number };
+    };
+  }> = [];
+
+  for (const collab of project.externalCollaborators) {
+    const orgUuid = collab.externalOrganisation?.uuid;
+    if (!orgUuid) continue;
+
+    const org = await fetchExternalOrganization(orgUuid);
+    if (!org) continue;
+
+    const name = extractText(org.name);
+    if (!name) continue;
+
+    const type = extractText(org.type?.term) || 'Unknown';
+    const city = org.address?.city;
+    const country = extractText(org.address?.country?.term);
+
+    // Parse geoLocation if available (format: "lat,lng")
+    let coordinates: { lat: number; lng: number } | undefined = undefined;
+    if (org.address?.geoLocation?.point) {
+      const point = org.address.geoLocation.point;
+      const [latStr, lngStr] = point.split(',');
+      if (latStr && lngStr) {
         coordinates = {
-          lat: typeof lat === 'number' ? lat : parseFloat(lat),
-          lng: typeof lng === 'number' ? lng : parseFloat(lng)
+          lat: parseFloat(latStr.trim()),
+          lng: parseFloat(lngStr.trim())
         };
       }
     }
 
-    return {
+    collaborations.push({
       name,
       type,
       location: (city || country || coordinates) ? {
@@ -187,22 +232,26 @@ function enrichProject(project: any): EnrichedProject | null {
         city,
         coordinates
       } : undefined
-    };
-  }).filter((c: any) => c.name);
+    });
+  }
+
+  if (collaborations.length === 0) {
+    return null;
+  }
 
   return {
     id: project.uuid,
     title: extractText(project.title),
-    abstract: extractText(project.abstract),
-    type: extractText(project.type?.term?.text) || 'Unknown',
+    abstract,
+    type: extractText(project.type?.term) || 'Unknown',
     year,
     educationProgram,
     authors,
     supervisors,
-    projectUrl: project.electronicVersions?.[0]?.link?.href || `https://vbn.aau.dk/en/publications/${project.uuid}`,
+    projectUrl,
     hasCollaboration: true,
     collaborations,
-    campus: extractText(project.campus)
+    campus
   };
 }
 
@@ -217,7 +266,6 @@ function generateMetadata(projects: EnrichedProject[]): any {
     years.add(project.year);
     types.set(project.type, (types.get(project.type) || 0) + 1);
 
-    // Track education programs
     const progKey = project.educationProgram.code;
     if (!educationPrograms.has(progKey)) {
       educationPrograms.set(progKey, {
@@ -304,13 +352,13 @@ function generateOrganizations(projects: EnrichedProject[]): any[] {
 
 async function main() {
   try {
-    console.log('Starting complete data sync with enrichment...\n');
+    console.log('Starting complete data sync from Pure API...\n');
 
     // Fetch all projects with pagination
     const allProjects = await fetchAllProjects();
 
-    // Enrich projects with full data from Pure API
-    console.log('\nEnriching projects with full data from Pure API...');
+    // Enrich projects with external collaborations
+    console.log('\nEnriching projects with external collaboration data...');
     const enrichedProjects: EnrichedProject[] = [];
 
     for (let i = 0; i < allProjects.length; i++) {
@@ -318,16 +366,17 @@ async function main() {
 
       // Log progress every 100 projects
       if (i % 100 === 0 || i === allProjects.length - 1) {
-        console.log(`Processing ${i + 1}/${allProjects.length}...`);
+        console.log(`Processing ${i + 1}/${allProjects.length} (${enrichedProjects.length} with collaborations so far, ${orgCache.size} orgs cached)`);
       }
 
-      const enriched = enrichProject(project);
+      const enriched = await enrichProject(project);
       if (enriched) {
         enrichedProjects.push(enriched);
       }
     }
 
-    console.log(`\nFound ${enrichedProjects.length} projects with collaborations\n`);
+    console.log(`\nFound ${enrichedProjects.length} projects with external collaborations`);
+    console.log(`Cached ${orgCache.size} unique organizations\n`);
 
     // Generate data files
     console.log('Generating data files...');
