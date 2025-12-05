@@ -69,28 +69,39 @@ async function fetchFromPure(endpoint: string): Promise<any> {
 }
 
 async function fetchAllProjects(): Promise<any[]> {
-  console.log('Fetching student projects with external collaborations from Pure API...\n');
+  console.log('Fetching all student projects from Pure API...\n');
 
-  // First request to get total count (filter for projects with external collaboration)
-  const firstPage = await fetchFromPure('student-projects?externalCollaboration=true&size=100&offset=0');
+  // First request to get total count
+  const firstPage = await fetchFromPure('student-projects?size=100&offset=0');
   const totalCount = firstPage.count || 0;
-  const allProjects: any[] = [...(firstPage.items || [])];
 
-  console.log(`Total projects with external collaboration: ${totalCount}`);
-  console.log(`Fetched ${allProjects.length} projects (page 1 of ${Math.ceil(totalCount / 100)})`);
+  // Filter for projects with external collaboration during fetch
+  const allProjects: any[] = [];
+  const projectsWithCollab = firstPage.items?.filter((p: any) =>
+    p.externalCollaboration && p.externalCollaborators?.length > 0
+  ) || [];
+  allProjects.push(...projectsWithCollab);
+
+  console.log(`Total projects in Pure API: ${totalCount}`);
+  console.log(`Fetched page 1 of ${Math.ceil(totalCount / 100)} (${projectsWithCollab.length} with collaborations)`);
 
   // Fetch remaining pages
   const pageSize = 100;
   let offset = pageSize;
 
   while (offset < totalCount) {
-    const data = await fetchFromPure(`student-projects?externalCollaboration=true&size=${pageSize}&offset=${offset}`);
+    const data = await fetchFromPure(`student-projects?size=${pageSize}&offset=${offset}`);
     const projects = data.items || [];
 
-    allProjects.push(...projects);
+    // Filter for projects with external collaboration
+    const collabProjects = projects.filter((p: any) =>
+      p.externalCollaboration && p.externalCollaborators?.length > 0
+    );
+    allProjects.push(...collabProjects);
+
     const currentPage = Math.floor(offset / pageSize) + 1;
     const totalPages = Math.ceil(totalCount / pageSize);
-    console.log(`Fetched ${projects.length} projects (page ${currentPage + 1} of ${totalPages}, total: ${allProjects.length}/${totalCount})`);
+    console.log(`Fetched page ${currentPage + 1} of ${totalPages} (${collabProjects.length} with collaborations, total: ${allProjects.length})`);
 
     offset += pageSize;
 
@@ -100,7 +111,7 @@ async function fetchAllProjects(): Promise<any[]> {
     }
   }
 
-  console.log(`\nFetched ${allProjects.length} total projects with external collaborations`);
+  console.log(`\nFetched ${totalCount} total projects, ${allProjects.length} with external collaborations`);
   return allProjects;
 }
 
