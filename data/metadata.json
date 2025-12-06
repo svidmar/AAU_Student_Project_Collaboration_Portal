@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T13:18:35.571Z",
+  "lastUpdated": "2025-12-06T03:19:08.479Z",
   "filters": {
     "years": {
       "min": 2001,
@@ -340,6 +340,11 @@
         "count": 10
       },
       {
+        "name": "Innovative Communication Technologies and Entrepreneurship, Master",
+        "code": "46635663",
+        "count": 10
+      },
+      {
         "name": "Information Architecture, Master",
         "code": "5370763a",
         "count": 10
@@ -368,11 +373,6 @@
         "name": "Electronic Systems, Master",
         "code": "8f8a0964",
         "count": 10
-      },
-      {
-        "name": "Innovative Communication Technologies and Entrepreneurship, Master",
-        "code": "46635663",
-        "count": 9
       },
       {
         "name": "Joint European Master in Environmental Studies - Cities and Sustainability (JEMES CiSu)",
@@ -911,7 +911,7 @@
       },
       {
         "type": "Master programme thesis",
-        "count": 56
+        "count": 57
       }
     ],
     "collaborationTypes": [
@@ -929,7 +929,7 @@
       },
       {
         "type": "Academic",
-        "count": 189
+        "count": 190
       },
       {
         "type": "Government",
@@ -975,7 +975,7 @@
     "campuses": [
       {
         "name": "Aalborg",
-        "count": 1854
+        "count": 1855
       },
       {
         "name": "Copenhagen",
@@ -1029,7 +1029,7 @@
       },
       {
         "name": "Finland",
-        "count": 11
+        "count": 12
       },
       {
         "name": "United Kingdom",
@@ -1604,9 +1604,9 @@
     ]
   },
   "statistics": {
-    "totalProjects": 2440,
-    "totalCollaborations": 2773,
-    "uniquePartners": 1740,
+    "totalProjects": 2441,
+    "totalCollaborations": 2774,
+    "uniquePartners": 1741,
     "uniqueCountries": 53
   }
 }

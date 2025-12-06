@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-05T13:18:35.577Z",
-  "totalCount": 1740,
+  "lastUpdated": "2025-12-06T03:19:08.486Z",
+  "totalCount": 1741,
   "organizations": [
     {
       "id": "ukendt",
@@ -12168,6 +12168,13 @@
       "name": "NGI A/S",
       "type": "Corporate",
       "country": "Denmark",
+      "projectCount": 1
+    },
+    {
+      "id": "lappeenranta-lahti-university-of-technology",
+      "name": "Lappeenranta-Lahti University of Technology",
+      "type": "Academic",
+      "country": "Finland",
       "projectCount": 1
     }
   ]
