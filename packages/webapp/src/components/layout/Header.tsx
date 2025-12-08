@@ -3,7 +3,11 @@
 import { useState } from 'react';
 import { useAppStore } from '../../stores/app-store';
 
-export default function Header() {
+interface HeaderProps {
+  onMenuClick: () => void;
+}
+
+export default function Header({ onMenuClick }: HeaderProps) {
   const { projects, getFilteredProjects, metadata } = useAppStore();
   const filteredProjects = getFilteredProjects();
   const [showDisclaimer, setShowDisclaimer] = useState(false);
@@ -20,11 +24,22 @@ export default function Header() {
   return (
     <>
       <header className="bg-aau-blue text-white shadow-lg z-10">
-        <div className="px-6 py-4">
+        <div className="px-4 lg:px-6 py-4">
           <div className="flex items-center justify-between">
+            {/* Mobile menu button */}
+            <button
+              onClick={onMenuClick}
+              className="lg:hidden mr-3 p-2 rounded-md hover:bg-aau-light-blue transition-colors"
+              aria-label="Open filters menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+
             <div className="flex-1">
-              <h1 className="text-2xl font-bold">AAU Student Project Collaboration Explorer</h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <h1 className="text-lg lg:text-2xl font-bold">AAU Student Project Collaboration Explorer</h1>
+              <p className="text-xs lg:text-sm text-gray-300 mt-1 hidden sm:block">
                 Exploring external collaborations in Aalborg University thesis projects
               </p>
               {metadata && (
@@ -43,11 +58,11 @@ export default function Header() {
             </div>
 
             <div className="text-right">
-              <p className="text-3xl font-bold">{filteredProjects.length.toLocaleString()}</p>
-              <p className="text-sm text-gray-300">
+              <p className="text-xl lg:text-3xl font-bold">{filteredProjects.length.toLocaleString()}</p>
+              <p className="text-xs lg:text-sm text-gray-300">
                 {filteredProjects.length === projects.length
-                  ? 'Total Projects'
-                  : `of ${projects.length.toLocaleString()} Projects`}
+                  ? 'Total'
+                  : `of ${projects.length.toLocaleString()}`}
               </p>
             </div>
           </div>

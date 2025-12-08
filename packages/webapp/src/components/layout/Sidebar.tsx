@@ -11,7 +11,11 @@ import CampusFilter from '../filters/CampusFilter';
 import CountryFilter from '../filters/CountryFilter';
 import PartnerFilter from '../filters/PartnerFilter';
 
-export default function Sidebar() {
+interface SidebarProps {
+  onClose: () => void;
+}
+
+export default function Sidebar({ onClose }: SidebarProps) {
   const { resetFilters, filters } = useAppStore();
   const [isCollapsed, setIsCollapsed] = useState(false);
 
@@ -38,7 +42,7 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="w-80 bg-white border-r border-gray-200 flex flex-col overflow-hidden">
+    <aside className="w-80 bg-white border-r border-gray-200 flex flex-col overflow-hidden h-full">
       <div className="p-4 border-b border-gray-200 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-aau-blue">Filters</h2>
         <div className="flex items-center gap-2">
@@ -50,9 +54,20 @@ export default function Sidebar() {
               Clear All
             </button>
           )}
+          {/* Mobile close button */}
+          <button
+            onClick={onClose}
+            className="lg:hidden text-gray-500 hover:text-gray-700 transition-colors"
+            title="Close Filters"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          {/* Desktop collapse button */}
           <button
             onClick={() => setIsCollapsed(true)}
-            className="text-gray-500 hover:text-gray-700 transition-colors"
+            className="hidden lg:block text-gray-500 hover:text-gray-700 transition-colors"
             title="Hide Filters"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
