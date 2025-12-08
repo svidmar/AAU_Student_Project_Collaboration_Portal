@@ -36,26 +36,26 @@ export default function YearlyChart() {
         </p>
       </div>
 
-      <div className="flex items-end justify-between gap-1 h-48">
+      <div className="flex items-end justify-between gap-1 h-64">
         {yearData.map(({ year, count, percentage }) => (
           <div
             key={year}
-            className="flex-1 flex flex-col items-center gap-2 group relative"
+            className="flex-1 flex flex-col items-center gap-1 group relative"
           >
             <div className="relative w-full flex flex-col items-center justify-end h-full">
-              {/* Count label above bar */}
-              <div className="text-[10px] font-medium text-gray-700 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* Count label above bar - always visible */}
+              <div className="text-[9px] font-semibold text-gray-700 mb-0.5">
                 {count}
               </div>
               {/* Bar */}
               <div
-                className="w-full bg-aau-blue hover:bg-aau-light-blue transition-all duration-300 rounded-t-sm"
-                style={{ height: `${Math.max(percentage, 2)}%` }}
+                className="w-full bg-aau-blue hover:bg-aau-light-blue transition-all duration-200 rounded-t"
+                style={{ height: `${Math.max(percentage, 3)}%`, minHeight: '8px' }}
               />
             </div>
             {/* Year label */}
-            <div className="text-[10px] text-gray-600 font-medium whitespace-nowrap">
-              {year}
+            <div className="text-[9px] text-gray-600 whitespace-nowrap">
+              '{year.toString().slice(-2)}
             </div>
           </div>
         ))}
