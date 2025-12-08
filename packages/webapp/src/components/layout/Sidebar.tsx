@@ -82,10 +82,10 @@ export default function Sidebar({ onClose }: SidebarProps) {
         <YearFilter />
         <EducationFilter />
         <TypeFilter />
+        <PartnerFilter />
         <CollaborationTypeFilter />
         <CampusFilter />
         <CountryFilter />
-        <PartnerFilter />
       </div>
     </aside>
   );

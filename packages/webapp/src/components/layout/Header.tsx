@@ -47,7 +47,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
               <img
                 src="https://homes.aub.aau.dk/sv/themes/images/AAU_WHITE_UK.png"
                 alt="AAU Logo"
-                className="h-10 lg:h-12"
+                className="h-16 lg:h-20"
               />
             </a>
 
@@ -67,14 +67,6 @@ export default function Header({ onMenuClick }: HeaderProps) {
                   >
                     About this data
                   </button>
-                  <a
-                    href="https://vbn.aau.dk/themes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs bg-white text-aau-blue px-3 py-1 rounded-md hover:bg-gray-100 transition-colors font-medium"
-                  >
-                    Explore other Themes
-                  </a>
                 </div>
               )}
             </div>
@@ -184,6 +176,16 @@ This portal presents selected student thesis projects from Aalborg University (A
                 <div className="pt-4 border-t border-gray-200">
                   <p className="text-xs text-gray-500">
                     <strong>Version:</strong> {metadata.version} | <strong>Last Updated:</strong> {formatDate(metadata.lastUpdated)}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-2">
+                    <a
+                      href="https://vbn.aau.dk/themes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-aau-blue hover:text-aau-light-blue underline"
+                    >
+                      Explore other AAU Themes
+                    </a>
                   </p>
                 </div>
               )}
