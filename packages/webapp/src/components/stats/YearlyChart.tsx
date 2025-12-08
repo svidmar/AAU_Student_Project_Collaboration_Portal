@@ -15,12 +15,20 @@ export default function YearlyChart() {
 
     const years = Array.from(counts.keys()).sort((a, b) => a - b);
     const maxCount = Math.max(...counts.values());
+    const chartHeight = 240; // pixels
 
-    return years.map(year => ({
-      year,
-      count: counts.get(year) || 0,
-      percentage: ((counts.get(year) || 0) / maxCount) * 100
-    }));
+    return years.map(year => {
+      const count = counts.get(year) || 0;
+      const percentage = (count / maxCount);
+      // Calculate pixel height with minimum of 12px for visibility
+      const height = Math.max(Math.round(percentage * chartHeight), 12);
+
+      return {
+        year,
+        count,
+        height
+      };
+    });
   }, [projects]);
 
   if (yearData.length === 0) return null;
@@ -36,13 +44,13 @@ export default function YearlyChart() {
         </p>
       </div>
 
-      <div className="flex items-end justify-between gap-1 h-64">
-        {yearData.map(({ year, count, percentage }) => (
+      <div className="flex items-end justify-between gap-1" style={{ height: '240px' }}>
+        {yearData.map(({ year, count, height }) => (
           <div
             key={year}
             className="flex-1 flex flex-col items-center gap-1 group relative"
           >
-            <div className="relative w-full flex flex-col items-center justify-end h-full">
+            <div className="relative w-full flex flex-col items-center justify-end" style={{ height: '240px' }}>
               {/* Count label above bar - always visible */}
               <div className="text-[9px] font-semibold text-gray-700 mb-0.5">
                 {count}
@@ -50,7 +58,7 @@ export default function YearlyChart() {
               {/* Bar */}
               <div
                 className="w-full bg-aau-blue hover:bg-aau-light-blue transition-all duration-200 rounded-t"
-                style={{ height: `${Math.max(percentage, 3)}%`, minHeight: '8px' }}
+                style={{ height: `${height}px` }}
               />
             </div>
             {/* Year label */}
