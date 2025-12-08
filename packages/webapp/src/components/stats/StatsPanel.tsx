@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useAppStore } from '../../stores/app-store';
+import YearlyChart from './YearlyChart';
 
 export default function StatsPanel() {
   const { getFilteredProjects, metadata } = useAppStore();
@@ -71,29 +72,35 @@ export default function StatsPanel() {
         </div>
 
         {isExpanded && (
-          <div className="mt-4 pt-4 border-t border-gray-200 grid grid-cols-2 gap-6">
-            <div>
-              <h3 className="font-semibold text-sm text-gray-700 mb-2">Top Countries</h3>
-              <div className="space-y-1">
-                {topCountries.map((country) => (
-                  <div key={country.name} className="flex justify-between text-sm">
-                    <span className="text-gray-600">{country.name}</span>
-                    <span className="font-medium text-aau-blue">{country.count}</span>
-                  </div>
-                ))}
+          <div className="mt-4 pt-4 border-t border-gray-200 space-y-6">
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <h3 className="font-semibold text-sm text-gray-700 mb-2">Top Countries</h3>
+                <div className="space-y-1">
+                  {topCountries.map((country) => (
+                    <div key={country.name} className="flex justify-between text-sm">
+                      <span className="text-gray-600">{country.name}</span>
+                      <span className="font-medium text-aau-blue">{country.count}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-sm text-gray-700 mb-2">Top Partners</h3>
+                <div className="space-y-1">
+                  {topPartners.map((partner) => (
+                    <div key={partner.name} className="flex justify-between text-sm">
+                      <span className="text-gray-600 truncate mr-2">{partner.name}</span>
+                      <span className="font-medium text-aau-blue flex-shrink-0">{partner.count}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
             <div>
-              <h3 className="font-semibold text-sm text-gray-700 mb-2">Top Partners</h3>
-              <div className="space-y-1">
-                {topPartners.map((partner) => (
-                  <div key={partner.name} className="flex justify-between text-sm">
-                    <span className="text-gray-600 truncate mr-2">{partner.name}</span>
-                    <span className="font-medium text-aau-blue flex-shrink-0">{partner.count}</span>
-                  </div>
-                ))}
-              </div>
+              <YearlyChart />
             </div>
           </div>
         )}
