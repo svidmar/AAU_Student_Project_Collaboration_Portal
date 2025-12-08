@@ -36,23 +36,25 @@ export default function YearlyChart() {
         </p>
       </div>
 
-      <div className="flex items-end justify-between gap-2 h-48">
+      <div className="flex items-end justify-between gap-1 h-48">
         {yearData.map(({ year, count, percentage }) => (
           <div
             key={year}
-            className="flex-1 flex flex-col items-center gap-2 group"
+            className="flex-1 flex flex-col items-center gap-2 group relative"
           >
-            <div className="relative w-full flex items-end justify-center h-full">
-              <div
-                className="w-full bg-aau-blue hover:bg-aau-light-blue transition-all duration-300 rounded-t-md relative group"
-                style={{ height: `${percentage}%`, minHeight: '4px' }}
-              >
-                <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-xs py-1 px-2 rounded whitespace-nowrap">
-                  {count} {count === 1 ? 'project' : 'projects'}
-                </div>
+            <div className="relative w-full flex flex-col items-center justify-end h-full">
+              {/* Count label above bar */}
+              <div className="text-[10px] font-medium text-gray-700 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                {count}
               </div>
+              {/* Bar */}
+              <div
+                className="w-full bg-aau-blue hover:bg-aau-light-blue transition-all duration-300 rounded-t-sm"
+                style={{ height: `${Math.max(percentage, 2)}%` }}
+              />
             </div>
-            <div className="text-xs text-gray-600 font-medium transform -rotate-45 origin-top-left mt-2">
+            {/* Year label */}
+            <div className="text-[10px] text-gray-600 font-medium whitespace-nowrap">
               {year}
             </div>
           </div>
