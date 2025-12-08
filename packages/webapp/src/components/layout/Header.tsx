@@ -80,18 +80,14 @@ export default function Header() {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">Data Source</h3>
                 <p className="text-sm text-gray-600">
-                  This portal displays student thesis projects from Aalborg University (AAU) that have been published
-                  in the AAU VBN (Viden om Aalborg) portal. The data is extracted from the Pure API and includes
-                  information about external collaborations, supervisors, and project metadata.
+This portal presents selected student thesis projects from Aalborg University (AAU). The data is retrieved from the Pure system and includes information on external collaboration partners, supervisors, and key project metadata.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">Data Coverage</h3>
                 <p className="text-sm text-gray-600">
-                  The data includes thesis projects where external collaboration information is available in the VBN
-                  system. Not all AAU thesis projects are included - only those that have been registered with
-                  collaboration partners in the Pure system.
+                  The dataset includes only thesis projects in Pure that have been marked by students as having external collaboration. As a result, not all AAU thesis projects are represented: only non-confidential projects with registered collaboration partners are included. Furthermore, the portal covers master’s theses, professional bachelor projects, and further education (EVU) master’s projects. Semester projects and bachelor projects are thus not included.
                 </p>
               </div>
 
@@ -111,8 +107,7 @@ export default function Header() {
                   <li>Data is extracted from AAU's Pure system and may contain inconsistencies</li>
                   <li>Some collaborations may not have complete location information</li>
                   <li>Organization names and types are as registered in the Pure system</li>
-                  <li>Abstracts and titles may contain HTML formatting that has been stripped for display</li>
-                  <li>Supervisor links may be inactive if the person is no longer employed at AAU</li>
+                  <li>Supervisor links will be inactive if the person is no longer employed at AAU</li>
                   <li>Project types and education programs reflect Pure system classifications</li>
                 </ul>
               </div>
@@ -120,17 +115,31 @@ export default function Header() {
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">Data Updates</h3>
                 <p className="text-sm text-gray-600">
-                  The data is periodically updated from the AAU VBN portal. The last update date is shown in the
-                  header. New projects and changes to existing projects may not be immediately reflected.
+                  The data is updated daily. The last update date is shown in the header.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">Privacy & Usage</h3>
                 <p className="text-sm text-gray-600">
-                  All data displayed in this portal is publicly available through AAU's VBN portal. This tool is
-                  intended for research and informational purposes to explore patterns in AAU student-industry
-                  collaborations.
+                  The projects displayed in this portal are publicly available through{' '}
+                  <a
+                    href="https://projekter.aau.dk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-aau-blue hover:text-aau-light-blue underline"
+                  >
+                    AAU Student Projects
+                  </a>
+                  . To explore the full range of student projects from Aalborg University you should visit AAU Student Projects. This tool is
+                  intended for informational purposes to explore patterns in AAU student-societal
+                  collaborations. For questions, corrections, or takedown requests, please contact:{' '}
+                  <a
+                    href="mailto:vbn@aub.aau.dk"
+                    className="text-aau-blue hover:text-aau-light-blue underline"
+                  >
+                    vbn@aub.aau.dk
+                  </a>
                 </p>
               </div>
 
