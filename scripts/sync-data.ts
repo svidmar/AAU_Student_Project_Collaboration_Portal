@@ -29,7 +29,8 @@ interface EnrichedProject {
   supervisors: Array<{
     name: string;
     vbnUrl?: string;
-    isActive?: boolean;
+    orcid?: string;
+    isActive: boolean;
   }>;
   projectUrl: string;
   hasCollaboration: boolean;
@@ -45,11 +46,13 @@ interface EnrichedProject {
       };
     };
   }>;
+  keywords: string[];
   campus?: string;
 }
 
-// Cache for external organizations to avoid duplicate fetches
+// Cache for external organizations and persons to avoid duplicate fetches
 const orgCache = new Map<string, any>();
+const personCache = new Map<string, any>();
 
 async function fetchFromPure(endpoint: string): Promise<any> {
   const url = `${PURE_API_BASE_URL}/${endpoint}`;
@@ -162,6 +165,27 @@ async function fetchExternalOrganization(uuid: string): Promise<any | null> {
   }
 }
 
+async function fetchPerson(uuid: string): Promise<any | null> {
+  // Check cache first
+  if (personCache.has(uuid)) {
+    return personCache.get(uuid);
+  }
+
+  try {
+    const person = await fetchFromPure(`persons/${uuid}`);
+    personCache.set(uuid, person);
+
+    // Small delay to avoid rate limiting
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    return person;
+  } catch (error) {
+    console.warn(`Failed to fetch person ${uuid}:`, error);
+    personCache.set(uuid, null);
+    return null;
+  }
+}
+
 async function enrichProject(project: any): Promise<EnrichedProject | null> {
   // Skip projects without external collaboration
   if (!project.externalCollaboration || !project.externalCollaborators || project.externalCollaborators.length === 0) {
@@ -184,17 +208,41 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
     name: `${author.name?.firstName || ''} ${author.name?.lastName || ''}`.trim()
   })).filter((a: any) => a.name);
 
-  // Extract supervisors
-  const supervisors: Array<{ name: string; vbnUrl?: string; isActive?: boolean }> = (project.supervisors || []).map((sup: any) => {
+  // Extract supervisors with person details
+  const supervisors: Array<{ name: string; vbnUrl?: string; orcid?: string; isActive: boolean }> = [];
+  for (const sup of project.supervisors || []) {
     const person = sup.person;
     const name = extractText(person?.name);
+    if (!name) continue;
 
-    return {
+    const uuid = person?.uuid;
+    let orcid: string | undefined = undefined;
+    let isActive = false;
+
+    if (uuid) {
+      const personDetails = await fetchPerson(uuid);
+      if (personDetails) {
+        // Extract ORCID
+        orcid = personDetails.orcid || undefined;
+
+        // Check if person has active staff affiliation
+        const associations = personDetails.staffOrganisationAssociations || [];
+        const today = new Date();
+        isActive = associations.some((assoc: any) => {
+          if (!assoc.period?.endDate) return true; // No end date = active
+          const endDate = new Date(assoc.period.endDate);
+          return endDate >= today; // End date in future or today = active
+        });
+      }
+    }
+
+    supervisors.push({
       name,
-      vbnUrl: person?.uuid ? `https://vbn.aau.dk/da/persons/${person.uuid}` : undefined,
-      isActive: person?.externallyManaged !== false
-    };
-  }).filter((s: any) => s.name);
+      vbnUrl: uuid && isActive ? `https://vbn.aau.dk/da/persons/${uuid}` : undefined,
+      orcid,
+      isActive
+    });
+  }
 
   // Extract abstract
   const abstract = extractText(project.abstract);
@@ -258,6 +306,30 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
     return null;
   }
 
+  // Extract keywords (prefer en_GB, fallback to da_DK, then any)
+  const keywords: string[] = [];
+  const keywordContainers = project.keywordContainers || [];
+  for (const container of keywordContainers) {
+    const freeKeywordsList = container.freeKeywords || [];
+
+    // Try to find en_GB keywords
+    let selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'en_GB');
+
+    // Fallback to da_DK
+    if (!selectedKeywords) {
+      selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'da_DK');
+    }
+
+    // Fallback to first available
+    if (!selectedKeywords && freeKeywordsList.length > 0) {
+      selectedKeywords = freeKeywordsList[0];
+    }
+
+    if (selectedKeywords?.freeKeywords) {
+      keywords.push(...selectedKeywords.freeKeywords);
+    }
+  }
+
   return {
     id: project.uuid,
     title: extractText(project.title),
@@ -270,6 +342,7 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
     projectUrl,
     hasCollaboration: true,
     collaborations,
+    keywords,
     campus
   };
 }
@@ -405,7 +478,7 @@ async function main() {
 
       // Log progress every 100 projects
       if (i % 100 === 0 || i === allProjects.length - 1) {
-        console.log(`Processing ${i + 1}/${allProjects.length} (${enrichedProjects.length} with collaborations so far, ${orgCache.size} orgs cached)`);
+        console.log(`Processing ${i + 1}/${allProjects.length} (${enrichedProjects.length} with collaborations so far, ${orgCache.size} orgs, ${personCache.size} persons cached)`);
       }
 
       const enriched = await enrichProject(project);
@@ -415,7 +488,7 @@ async function main() {
     }
 
     console.log(`\nFound ${enrichedProjects.length} projects with external collaborations`);
-    console.log(`Cached ${orgCache.size} unique organizations\n`);
+    console.log(`Cached ${orgCache.size} unique organizations and ${personCache.size} unique persons\n`);
 
     // Generate data files
     console.log('Generating data files...');

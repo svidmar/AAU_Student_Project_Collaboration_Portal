@@ -8,8 +8,9 @@ export interface Author {
 
 export interface Supervisor {
   name: string;
-  vbnUrl: string;
-  isActive?: boolean; // Whether supervisor is currently employed at AAU
+  vbnUrl?: string; // Only present if supervisor has active AAU affiliation
+  orcid?: string; // ORCID identifier
+  isActive: boolean; // Whether supervisor is currently employed at AAU
 }
 
 export interface EducationProgram {
@@ -51,6 +52,7 @@ export interface EnrichedProject {
   projectUrl: string;
   hasCollaboration: boolean;
   collaborations: Collaboration[];
+  keywords: string[];
 }
 
 /**

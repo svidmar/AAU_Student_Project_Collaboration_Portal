@@ -70,6 +70,22 @@ export default function ProjectModal() {
             </div>
           )}
 
+          {selectedProject.keywords && selectedProject.keywords.length > 0 && (
+            <div>
+              <h3 className="font-semibold text-gray-700 mb-2">Keywords</h3>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.keywords.map((keyword, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs"
+                  >
+                    {keyword}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="grid grid-cols-2 gap-6">
             <div>
               <h3 className="font-semibold text-gray-700 mb-2">Authors</h3>
@@ -85,11 +101,8 @@ export default function ProjectModal() {
               <ul className="text-sm space-y-1">
                 {selectedProject.supervisors.map((supervisor, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    {supervisor.isActive === false ? (
-                      // Not currently employed - show name only
-                      <span className="text-gray-600">{supervisor.name}</span>
-                    ) : (
-                      // Currently employed or status unknown - show link
+                    {supervisor.vbnUrl ? (
+                      // Active employee - show VBN link
                       <a
                         href={supervisor.vbnUrl}
                         target="_blank"
@@ -98,11 +111,33 @@ export default function ProjectModal() {
                       >
                         {supervisor.name}
                       </a>
+                    ) : (
+                      // Not active or no VBN profile - show name only
+                      <span className="text-gray-600">{supervisor.name}</span>
                     )}
-                    {supervisor.isActive === false && (
-                      <span className="text-xs text-gray-400" title="Former employee - profile may be unavailable">
-                        (former employee)
-                      </span>
+                    {supervisor.orcid && (
+                      <a
+                        href={`https://orcid.org/${supervisor.orcid}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`ORCID: ${supervisor.orcid}`}
+                        className="inline-flex items-center"
+                      >
+                        <svg
+                          className="w-4 h-4"
+                          viewBox="0 0 256 256"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"
+                            fill="#A6CE39"
+                          />
+                          <path
+                            d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7C191.7 111.2 178 93 148 93h-23.7v79.4zM71.3 54.8c0 5.2-4.2 9.4-9.4 9.4s-9.4-4.2-9.4-9.4 4.2-9.4 9.4-9.4 9.4 4.2 9.4 9.4z"
+                            fill="#fff"
+                          />
+                        </svg>
+                      </a>
                     )}
                   </li>
                 ))}
