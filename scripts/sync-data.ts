@@ -308,25 +308,30 @@ async function enrichProject(project: any): Promise<EnrichedProject | null> {
 
   // Extract keywords (prefer en_GB, fallback to da_DK, then any)
   const keywords: string[] = [];
-  const keywordContainers = project.keywordContainers || [];
-  for (const container of keywordContainers) {
-    const freeKeywordsList = container.freeKeywords || [];
+  const keywordGroups = project.keywordGroups || [];
 
-    // Try to find en_GB keywords
-    let selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'en_GB');
+  for (const group of keywordGroups) {
+    const containers = group.keywordContainers || [];
 
-    // Fallback to da_DK
-    if (!selectedKeywords) {
-      selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'da_DK');
-    }
+    for (const container of containers) {
+      const freeKeywordsList = container.freeKeywords || [];
 
-    // Fallback to first available
-    if (!selectedKeywords && freeKeywordsList.length > 0) {
-      selectedKeywords = freeKeywordsList[0];
-    }
+      // Try to find en_GB keywords
+      let selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'en_GB');
 
-    if (selectedKeywords?.freeKeywords) {
-      keywords.push(...selectedKeywords.freeKeywords);
+      // Fallback to da_DK
+      if (!selectedKeywords) {
+        selectedKeywords = freeKeywordsList.find((kw: any) => kw.locale === 'da_DK');
+      }
+
+      // Fallback to first available
+      if (!selectedKeywords && freeKeywordsList.length > 0) {
+        selectedKeywords = freeKeywordsList[0];
+      }
+
+      if (selectedKeywords?.freeKeywords) {
+        keywords.push(...selectedKeywords.freeKeywords);
+      }
     }
   }
 
