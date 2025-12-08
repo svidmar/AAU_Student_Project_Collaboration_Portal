@@ -96,8 +96,8 @@ export default function ProjectTable() {
       'Type',
       'Education Program',
       'Supervisors',
-      'Partners',
-      'Collaboration Types',
+      'Collaborators',
+      'Collaborator Types',
       'Countries',
       'Abstract',
       'Project URL',
@@ -206,7 +206,7 @@ export default function ProjectTable() {
                   onClick={() => handleSort('collaborations')}
                   className="flex items-center gap-1 hover:text-aau-blue font-semibold"
                 >
-                  Partners
+                  Collaborators
                   <SortIcon field="collaborations" />
                 </button>
               </th>
@@ -245,7 +245,7 @@ export default function ProjectTable() {
                     {project.collaborations.map((c) => c.name).join(', ')}
                   </div>
                   <div className="text-xs text-gray-400 mt-1">
-                    {project.collaborations.length} partner{project.collaborations.length !== 1 ? 's' : ''}
+                    {project.collaborations.length} collaborator{project.collaborations.length !== 1 ? 's' : ''}
                   </div>
                 </td>
                 <td className="px-4 py-3 text-xs font-medium">

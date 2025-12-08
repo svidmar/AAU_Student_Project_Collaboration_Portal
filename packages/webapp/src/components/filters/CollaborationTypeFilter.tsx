@@ -16,7 +16,7 @@ export default function CollaborationTypeFilter() {
 
   return (
     <MultiSelect
-      label="Collaboration Type"
+      label="Collaborator Type"
       options={types}
       selectedValues={filters.collaborationTypes}
       onChange={(selected) => setFilters({ collaborationTypes: selected })}

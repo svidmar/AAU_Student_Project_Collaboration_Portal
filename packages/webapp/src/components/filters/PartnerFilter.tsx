@@ -17,11 +17,11 @@ export default function PartnerFilter() {
 
   return (
     <MultiSelect
-      label="Partner Organization"
+      label="Collaborator Organization"
       options={partners}
       selectedValues={filters.partners}
       onChange={(selected) => setFilters({ partners: selected })}
-      placeholder="All partners"
+      placeholder="All collaborators"
       searchable
     />
   );

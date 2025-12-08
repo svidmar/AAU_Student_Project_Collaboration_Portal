@@ -37,13 +37,27 @@ export default function Header({ onMenuClick }: HeaderProps) {
               </svg>
             </button>
 
+            {/* AAU Logo */}
+            <a
+              href="https://en.aau.dk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 hover:opacity-80 transition-opacity hidden sm:block"
+            >
+              <img
+                src="https://homes.aub.aau.dk/sv/themes/images/AAU_WHITE_UK.png"
+                alt="AAU Logo"
+                className="h-10 lg:h-12"
+              />
+            </a>
+
             <div className="flex-1">
               <h1 className="text-lg lg:text-2xl font-bold">AAU Student Project Collaboration Explorer</h1>
               <p className="text-xs lg:text-sm text-gray-300 mt-1 hidden sm:block">
                 Exploring external collaborations in Aalborg University thesis projects
               </p>
               {metadata && (
-                <div className="flex items-center gap-4 mt-2">
+                <div className="flex items-center gap-4 mt-2 flex-wrap">
                   <p className="text-xs text-gray-400">
                     Last updated: {formatDate(metadata.lastUpdated)}
                   </p>
@@ -53,6 +67,14 @@ export default function Header({ onMenuClick }: HeaderProps) {
                   >
                     About this data
                   </button>
+                  <a
+                    href="https://vbn.aau.dk/themes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs bg-white text-aau-blue px-3 py-1 rounded-md hover:bg-gray-100 transition-colors font-medium"
+                  >
+                    Explore other Themes
+                  </a>
                 </div>
               )}
             </div>
