@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-08T09:03:26.888Z",
+  "lastUpdated": "2025-12-09T03:37:54.479Z",
   "filters": {
     "years": {
       "min": 2001,
@@ -495,11 +495,6 @@
         "count": 6
       },
       {
-        "name": "Cyber Security, Master",
-        "code": "302436a8",
-        "count": 6
-      },
-      {
         "name": "Wireless Communication Systems, Master",
         "code": "92cb16bc",
         "count": 5
@@ -532,6 +527,11 @@
       {
         "name": "Economics and Business Administration (International Business), Master",
         "code": "746faba5",
+        "count": 5
+      },
+      {
+        "name": "Cyber Security, Master",
+        "code": "302436a8",
         "count": 5
       },
       {
@@ -903,7 +903,7 @@
     "projectTypes": [
       {
         "type": "Master Thesis and HD Thesis",
-        "count": 2314
+        "count": 2313
       },
       {
         "type": "Profession bachelor",
@@ -917,59 +917,59 @@
     "collaborationTypes": [
       {
         "type": "Corporate",
-        "count": 1117
+        "count": 1131
       },
       {
         "type": "Municipal",
-        "count": 344
+        "count": 343
       },
       {
         "type": "Other external organisation",
-        "count": 334
+        "count": 332
       },
       {
         "type": "Academic",
-        "count": 190
+        "count": 182
       },
       {
         "type": "Government",
-        "count": 161
+        "count": 168
       },
       {
         "type": "Unknown",
-        "count": 159
+        "count": 141
       },
       {
         "type": "NGO",
-        "count": 121
+        "count": 124
       },
       {
         "type": "Governmental",
-        "count": 99
+        "count": 98
       },
       {
         "type": "Medical",
-        "count": 74
+        "count": 79
       },
       {
         "type": "Region",
-        "count": 63
+        "count": 64
       },
       {
         "type": "Educational institution",
-        "count": 57
+        "count": 58
       },
       {
         "type": "Research institution",
         "count": 32
       },
       {
-        "type": "International organisation",
-        "count": 12
-      },
-      {
         "type": "Funding provider",
         "count": 11
+      },
+      {
+        "type": "International organisation",
+        "count": 10
       }
     ],
     "campuses": [
@@ -979,7 +979,7 @@
       },
       {
         "name": "Copenhagen",
-        "count": 503
+        "count": 502
       },
       {
         "name": "Esbjerg",
@@ -989,11 +989,11 @@
     "countries": [
       {
         "name": "Denmark",
-        "count": 2382
+        "count": 2386
       },
       {
         "name": "Germany",
-        "count": 51
+        "count": 50
       },
       {
         "name": "United States",
@@ -1008,15 +1008,15 @@
         "count": 18
       },
       {
-        "name": "Spain",
-        "count": 17
-      },
-      {
         "name": "France",
         "count": 17
       },
       {
         "name": "Greenland",
+        "count": 16
+      },
+      {
+        "name": "Spain",
         "count": 16
       },
       {
@@ -1210,12 +1210,12 @@
         "count": 54
       },
       {
-        "name": "Ramboll Foundation",
+        "name": "RAMBØLL GRUPPEN A/S",
         "count": 34
       },
       {
         "name": "Aalborg University Hospital",
-        "count": 28
+        "count": 32
       },
       {
         "name": "Hjørring Kommune",
@@ -1243,7 +1243,15 @@
       },
       {
         "name": "Københavns Kommune",
-        "count": 18
+        "count": 19
+      },
+      {
+        "name": "Novo Nordisk A/S",
+        "count": 17
+      },
+      {
+        "name": "Vejdirektoratet",
+        "count": 13
       },
       {
         "name": "Anonymous",
@@ -1262,8 +1270,8 @@
         "count": 12
       },
       {
-        "name": "Vejdirektoratet",
-        "count": 11
+        "name": "University of Copenhagen",
+        "count": 12
       },
       {
         "name": "Energinet SOV",
@@ -1291,14 +1299,6 @@
       },
       {
         "name": "Aarhus University",
-        "count": 10
-      },
-      {
-        "name": "University of Copenhagen",
-        "count": 10
-      },
-      {
-        "name": "Novo Nordisk A/S",
         "count": 10
       },
       {
@@ -1347,10 +1347,6 @@
       },
       {
         "name": "HjulmandKaptain ",
-        "count": 7
-      },
-      {
-        "name": "Novo Nordisk Foundation",
         "count": 7
       },
       {
@@ -1466,6 +1462,10 @@
         "count": 5
       },
       {
+        "name": "Artelia",
+        "count": 5
+      },
+      {
         "name": "Nokia Siemens Networks",
         "count": 4
       },
@@ -1534,6 +1534,10 @@
         "count": 4
       },
       {
+        "name": "Capital Region of Denmark",
+        "count": 4
+      },
+      {
         "name": "LIFA A/S",
         "count": 4
       },
@@ -1596,17 +1600,13 @@
       {
         "name": "Hjulmand og Kaptajn",
         "count": 3
-      },
-      {
-        "name": "Holstebro Kommune",
-        "count": 3
       }
     ]
   },
   "statistics": {
-    "totalProjects": 2441,
-    "totalCollaborations": 2774,
-    "uniquePartners": 1741,
+    "totalProjects": 2440,
+    "totalCollaborations": 2773,
+    "uniquePartners": 1724,
     "uniqueCountries": 53
   }
 }

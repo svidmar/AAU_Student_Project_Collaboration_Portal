@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-12-08T09:03:26.897Z",
-  "totalCount": 1741,
+  "lastUpdated": "2025-12-09T03:37:54.486Z",
+  "totalCount": 1724,
   "organizations": [
     {
       "id": "ukendt",
@@ -18,8 +18,8 @@
       "projectCount": 54
     },
     {
-      "id": "ramboll-foundation",
-      "name": "Ramboll Foundation",
+      "id": "ramb-ll-gruppen-a-s",
+      "name": "RAMBØLL GRUPPEN A/S",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 34
@@ -29,7 +29,7 @@
       "name": "Aalborg University Hospital",
       "type": "Medical",
       "country": "Denmark",
-      "projectCount": 28
+      "projectCount": 32
     },
     {
       "id": "hj-rring-kommune",
@@ -78,7 +78,21 @@
       "name": "Københavns Kommune",
       "type": "Municipal",
       "country": "Denmark",
-      "projectCount": 18
+      "projectCount": 19
+    },
+    {
+      "id": "novo-nordisk-a-s",
+      "name": "Novo Nordisk A/S",
+      "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 17
+    },
+    {
+      "id": "vejdirektoratet",
+      "name": "Vejdirektoratet",
+      "type": "Government",
+      "country": "Denmark",
+      "projectCount": 13
     },
     {
       "id": "anonymous",
@@ -109,11 +123,11 @@
       "projectCount": 12
     },
     {
-      "id": "vejdirektoratet",
-      "name": "Vejdirektoratet",
-      "type": "Government",
+      "id": "university-of-copenhagen",
+      "name": "University of Copenhagen",
+      "type": "Academic",
       "country": "Denmark",
-      "projectCount": 11
+      "projectCount": 12
     },
     {
       "id": "energinet-sov",
@@ -161,20 +175,6 @@
       "id": "aarhus-university",
       "name": "Aarhus University",
       "type": "Academic",
-      "country": "Denmark",
-      "projectCount": 10
-    },
-    {
-      "id": "university-of-copenhagen",
-      "name": "University of Copenhagen",
-      "type": "Academic",
-      "country": "Denmark",
-      "projectCount": 10
-    },
-    {
-      "id": "novo-nordisk-a-s",
-      "name": "Novo Nordisk A/S",
-      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 10
     },
@@ -258,13 +258,6 @@
     {
       "id": "hjulmandkaptain",
       "name": "HjulmandKaptain ",
-      "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 7
-    },
-    {
-      "id": "novo-nordisk-foundation",
-      "name": "Novo Nordisk Foundation",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 7
@@ -466,6 +459,13 @@
       "projectCount": 5
     },
     {
+      "id": "artelia",
+      "name": "Artelia",
+      "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 5
+    },
+    {
       "id": "nokia-siemens-networks",
       "name": "Nokia Siemens Networks",
       "type": "Corporate",
@@ -581,6 +581,13 @@
       "id": "kr-ger-a-s",
       "name": "Krüger A/S",
       "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 4
+    },
+    {
+      "id": "capital-region-of-denmark",
+      "name": "Capital Region of Denmark",
+      "type": "Region",
       "country": "Denmark",
       "projectCount": 4
     },
@@ -783,7 +790,7 @@
     {
       "id": "forsvarsministeriets-ejendomsstyrelse",
       "name": "Forsvarsministeriets Ejendomsstyrelse",
-      "type": "Unknown",
+      "type": "Government",
       "country": "Denmark",
       "projectCount": 3
     },
@@ -819,13 +826,6 @@
       "id": "skive-kommune",
       "name": "Skive Kommune",
       "type": "Municipal",
-      "country": "Denmark",
-      "projectCount": 3
-    },
-    {
-      "id": "capital-region-of-denmark",
-      "name": "Capital Region of Denmark",
-      "type": "Region",
       "country": "Denmark",
       "projectCount": 3
     },
@@ -951,7 +951,7 @@
     {
       "id": "telecare-nord",
       "name": "TeleCare Nord",
-      "type": "Other external organisation",
+      "type": "Medical",
       "country": "Denmark",
       "projectCount": 3
     },
@@ -979,6 +979,13 @@
     {
       "id": "trackunit-aps",
       "name": "Trackunit ApS",
+      "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 3
+    },
+    {
+      "id": "pdm-technology-aps",
+      "name": "Pdm Technology ApS",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 3
@@ -1015,13 +1022,6 @@
       "id": "defactum",
       "name": "DEFACTUM",
       "type": "Research institution",
-      "country": "Denmark",
-      "projectCount": 3
-    },
-    {
-      "id": "artelia",
-      "name": "Artelia",
-      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 3
     },
@@ -1162,13 +1162,6 @@
       "id": "geological-survey-of-denmark-and-greenland",
       "name": "Geological Survey of Denmark and Greenland",
       "type": "Government",
-      "country": "Denmark",
-      "projectCount": 2
-    },
-    {
-      "id": "vejdirektoratet-skanderborg",
-      "name": "Vejdirektoratet, Skanderborg",
-      "type": "Unknown",
       "country": "Denmark",
       "projectCount": 2
     },
@@ -1649,6 +1642,13 @@
       "projectCount": 2
     },
     {
+      "id": "uddannelses-og-forskningsministeriet",
+      "name": "Uddannelses- og forskningsministeriet",
+      "type": "Government",
+      "country": "Denmark",
+      "projectCount": 2
+    },
+    {
       "id": "danske-fragtm-nd-a-s",
       "name": "Danske Fragtmænd A/S",
       "type": "Corporate",
@@ -1831,6 +1831,13 @@
       "projectCount": 2
     },
     {
+      "id": "jabra-gn",
+      "name": "Jabra GN",
+      "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 2
+    },
+    {
       "id": "a-enggaard-a-s",
       "name": "A. Enggaard A/S",
       "type": "Corporate",
@@ -1861,6 +1868,13 @@
     {
       "id": "falck-danmark-a-s",
       "name": "Falck Danmark A/S",
+      "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 2
+    },
+    {
+      "id": "metroselskabet-i-s",
+      "name": "Metroselskabet I/S",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 2
@@ -1950,22 +1964,9 @@
       "projectCount": 2
     },
     {
-      "id": "aalborg-sygehus-aarhus-universitet",
-      "name": "Aalborg Sygehus, Aarhus Universitet",
-      "type": "Medical",
-      "projectCount": 2
-    },
-    {
       "id": "center-for-seksuelt-misbrugte",
       "name": "Center for Seksuelt Misbrugte ",
       "type": "Government",
-      "country": "Denmark",
-      "projectCount": 2
-    },
-    {
-      "id": "pdm-technology",
-      "name": "PDM Technology",
-      "type": "Other external organisation",
       "country": "Denmark",
       "projectCount": 2
     },
@@ -2029,6 +2030,13 @@
       "id": "ramboll-energy",
       "name": "Ramboll Energy",
       "type": "Corporate",
+      "country": "Denmark",
+      "projectCount": 2
+    },
+    {
+      "id": "k-ge-kommune",
+      "name": "Køge Kommune",
+      "type": "Municipal",
       "country": "Denmark",
       "projectCount": 2
     },
@@ -2833,7 +2841,7 @@
     {
       "id": "hydac",
       "name": "Hydac",
-      "type": "Unknown",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -3581,7 +3589,7 @@
     },
     {
       "id": "nkc-national-kriminalteknisk-center",
-      "name": "NKC (National Kriminalteknisk Center=",
+      "name": "NKC (National Kriminalteknisk Center)",
       "type": "Governmental",
       "country": "Denmark",
       "projectCount": 1
@@ -3846,22 +3854,22 @@
       "projectCount": 1
     },
     {
-      "id": "bodil-nysveen",
-      "name": "Bodil Nysveen",
+      "id": "nord-aurdal-kommune",
+      "name": "Nord-Aurdal Kommune",
       "type": "Municipal",
       "country": "Norway",
       "projectCount": 1
     },
     {
-      "id": "meike-singhofen",
-      "name": "Meike Singhofen",
+      "id": "s-r-aurdal-kommune",
+      "name": "Sør-Aurdal Kommune",
       "type": "Municipal",
       "country": "Norway",
       "projectCount": 1
     },
     {
-      "id": "hanne-svendsen",
-      "name": "Hanne Svendsen",
+      "id": "ystre-slidre-kommune",
+      "name": "Øystre Slidre Kommune",
       "type": "Municipal",
       "country": "Norway",
       "projectCount": 1
@@ -4667,7 +4675,7 @@
     {
       "id": "arturia",
       "name": "Arturia",
-      "type": "International organisation",
+      "type": "Corporate",
       "country": "France",
       "projectCount": 1
     },
@@ -5834,13 +5842,6 @@
       "projectCount": 1
     },
     {
-      "id": "forsknings-og-uddannelses-ministeriet",
-      "name": " Forsknings- og uddannelses-ministeriet",
-      "type": "Unknown",
-      "country": "",
-      "projectCount": 1
-    },
-    {
       "id": "omr-defornyelsen-sydhavn",
       "name": "Områdefornyelsen Sydhavn",
       "type": "Municipal",
@@ -6004,7 +6005,7 @@
     {
       "id": "forbruger-og-konkurrencestyrelsen",
       "name": "Forbruger- og konkurrencestyrelsen",
-      "type": "Unknown",
+      "type": "Government",
       "country": "Greenland",
       "projectCount": 1
     },
@@ -6247,13 +6248,6 @@
       "projectCount": 1
     },
     {
-      "id": "uddannelses-og-forskningsministeriet",
-      "name": "Uddannelses- og forskningsministeriet",
-      "type": "Government",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "professionsh-jskolen",
       "name": "Professionshøjskolen",
       "type": "Governmental",
@@ -6290,8 +6284,8 @@
     },
     {
       "id": "lykkeliga",
-      "name": "LykkeLiga",
-      "type": "Unknown",
+      "name": "Lykkeliga",
+      "type": "NGO",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -7371,7 +7365,7 @@
     {
       "id": "dybb-l-efterskole",
       "name": "Dybbøl efterskole",
-      "type": "Unknown",
+      "type": "Educational institution",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -7845,13 +7839,6 @@
       "projectCount": 1
     },
     {
-      "id": "lene-bjerg-kristensen",
-      "name": "Lene Bjerg Kristensen",
-      "type": "Municipal",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "the-lego-foundation",
       "name": "The LEGO Foundation",
       "type": "Funding provider",
@@ -7960,13 +7947,6 @@
       "id": "ultraaqua-a-s",
       "name": "ULTRAAQUA A/S",
       "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "jesper-udesen",
-      "name": "Jesper Udesen",
-      "type": "International organisation",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -8106,7 +8086,7 @@
     {
       "id": "acurail",
       "name": "AcuRail",
-      "type": "Unknown",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -8433,20 +8413,6 @@
       "projectCount": 1
     },
     {
-      "id": "leif-gjesing-hansen",
-      "name": "Leif Gjesing Hansen",
-      "type": "Governmental",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "torben-sterg-rd",
-      "name": "Torben Østergård ",
-      "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "international-renewable-energy-agency-irena",
       "name": "International Renewable Energy Agency (IRENA)",
       "type": "International organisation",
@@ -8497,7 +8463,7 @@
     {
       "id": "boligselskabet-sj-lland",
       "name": "Boligselskabet Sjælland",
-      "type": "Unknown",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -9003,8 +8969,8 @@
       "projectCount": 1
     },
     {
-      "id": "preben-pedersen",
-      "name": "Preben Pedersen",
+      "id": "oksb-l-varmev-rk",
+      "name": "Oksbøl Varmeværk",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
@@ -9080,10 +9046,10 @@
       "projectCount": 1
     },
     {
-      "id": "g-nther-rudolph",
-      "name": "Günther Rudolph",
+      "id": "sto-danmark-a-s",
+      "name": "Sto Danmark A/S",
       "type": "Corporate",
-      "country": "Germany",
+      "country": "Denmark",
       "projectCount": 1
     },
     {
@@ -9242,7 +9208,7 @@
     {
       "id": "freja-ejendomme",
       "name": "Freja Ejendomme",
-      "type": "Unknown",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -9425,13 +9391,6 @@
       "id": "br-nsh-j-husum-lokaludvalg",
       "name": "Brønshøj-Husum Lokaludvalg ",
       "type": "Municipal",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "metroselskabet-i-s",
-      "name": "Metroselskabet I/S",
-      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -9677,13 +9636,6 @@
       "id": "mandecentret",
       "name": "Mandecentret",
       "type": "NGO",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "charlotte-n-rkj-r-eggertsen",
-      "name": "Charlotte Nørkjær Eggertsen",
-      "type": "Municipal",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -9963,7 +9915,7 @@
     {
       "id": "charlotte-kappel",
       "name": "Charlotte Kappel",
-      "type": "Unknown",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -10275,6 +10227,12 @@
       "projectCount": 1
     },
     {
+      "id": "aalborg-sygehus-aarhus-universitet",
+      "name": "Aalborg Sygehus, Aarhus Universitet",
+      "type": "Medical",
+      "projectCount": 1
+    },
+    {
       "id": "roima-intelligence",
       "name": "Roima Intelligence",
       "type": "Corporate",
@@ -10583,8 +10541,8 @@
       "projectCount": 1
     },
     {
-      "id": "henrik-s-rensen",
-      "name": "Henrik Sørensen",
+      "id": "danrevi",
+      "name": "Danrevi",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
@@ -10604,9 +10562,9 @@
       "projectCount": 1
     },
     {
-      "id": "frank-sode",
-      "name": "Frank Sode",
-      "type": "Academic",
+      "id": "novadan",
+      "name": "Novadan",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -10629,13 +10587,6 @@
       "name": "Conaltura S.A.",
       "type": "Corporate",
       "country": "Colombia",
-      "projectCount": 1
-    },
-    {
-      "id": "k-ge-kommune",
-      "name": "Køge Kommune",
-      "type": "Municipal",
-      "country": "Denmark",
       "projectCount": 1
     },
     {
@@ -10765,8 +10716,8 @@
       "projectCount": 1
     },
     {
-      "id": "tue-thomsen",
-      "name": "Tue Thomsen",
+      "id": "woodsense",
+      "name": "WOODSENSE",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
@@ -10804,13 +10755,6 @@
       "name": "University of Bergen",
       "type": "Academic",
       "country": "Norway",
-      "projectCount": 1
-    },
-    {
-      "id": "pere-barlet-ros",
-      "name": "Pere Barlet-Ros",
-      "type": "Academic",
-      "country": "Spain",
       "projectCount": 1
     },
     {
@@ -10852,13 +10796,6 @@
       "id": "himmerland-boligforening",
       "name": "Himmerland Boligforening",
       "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "nina-schell-nellemann",
-      "name": "Nina Schell Nellemann",
-      "type": "Academic",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -10915,13 +10852,6 @@
       "id": "vertigo",
       "name": "Vertigo",
       "type": "Other external organisation",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "kasper-s-ndergaard",
-      "name": "Kasper Søndergaard",
-      "type": "Medical",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -11031,13 +10961,6 @@
       "projectCount": 1
     },
     {
-      "id": "jabra-gn",
-      "name": "Jabra GN",
-      "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "ny-carlsberg-glyptotek",
       "name": "Ny Carlsberg Glyptotek",
       "type": "Government",
@@ -11048,13 +10971,6 @@
       "id": "aids-fondet",
       "name": "AIDS-Fondet",
       "type": "Funding provider",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "kenneth-lindegaard-madsen",
-      "name": "Kenneth Lindegaard Madsen",
-      "type": "Academic",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -11135,8 +11051,8 @@
       "projectCount": 1
     },
     {
-      "id": "lona-bjerre-andersen",
-      "name": "Lona Bjerre Andersen",
+      "id": "neuropsykologisk-praksis",
+      "name": "Neuropsykologisk Praksis",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
@@ -11207,13 +11123,6 @@
     {
       "id": "workz",
       "name": "Workz",
-      "type": "Academic",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "marlene-briciet-lauritsen",
-      "name": "Marlene Briciet Lauritsen",
       "type": "Academic",
       "country": "Denmark",
       "projectCount": 1
@@ -11380,13 +11289,6 @@
       "projectCount": 1
     },
     {
-      "id": "jacob-skj-dt-nielsen",
-      "name": "Jacob Skjødt Nielsen",
-      "type": "Municipal",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "grundtvigs-h-jskole",
       "name": "Grundtvigs Højskole",
       "type": "Other external organisation",
@@ -11410,13 +11312,6 @@
     {
       "id": "norecco",
       "name": "Norecco",
-      "type": "Academic",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "jens-frydenvang",
-      "name": "Jens Frydenvang",
       "type": "Academic",
       "country": "Denmark",
       "projectCount": 1
@@ -11485,15 +11380,15 @@
       "projectCount": 1
     },
     {
-      "id": "arnkell-jonas-petersen",
-      "name": "Arnkell Jonas Petersen",
+      "id": "norwegian-university-of-life-sciences",
+      "name": "Norwegian University of Life Sciences",
       "type": "Academic",
       "country": "Norway",
       "projectCount": 1
     },
     {
-      "id": "mehrdad-rabani",
-      "name": "Mehrdad Rabani",
+      "id": "oslo-metropolitan-university",
+      "name": "Oslo Metropolitan University",
       "type": "Academic",
       "country": "Norway",
       "projectCount": 1
@@ -11842,13 +11737,6 @@
       "projectCount": 1
     },
     {
-      "id": "peter-s-gaard",
-      "name": "Peter Søgaard",
-      "type": "Academic",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
       "id": "center-for-sundhedsfremme-aalborg-kommune-1",
       "name": "Center for Sundhedsfremme Aalborg Kommune",
       "type": "Municipal",
@@ -11940,9 +11828,9 @@
       "projectCount": 1
     },
     {
-      "id": "lars-forsberg",
-      "name": "Lars Forsberg",
-      "type": "Academic",
+      "id": "iwi-technology",
+      "name": "IWI Technology",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -12115,9 +12003,9 @@
       "projectCount": 1
     },
     {
-      "id": "peter-sandberg-nielsen",
-      "name": "Peter Sandberg Nielsen",
-      "type": "Academic",
+      "id": "dataproces-group-a-s",
+      "name": "Dataproces Group A/S",
+      "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
     },
@@ -12145,13 +12033,6 @@
     {
       "id": "hele-landet-aps",
       "name": "Hele Landet ApS",
-      "type": "Corporate",
-      "country": "Denmark",
-      "projectCount": 1
-    },
-    {
-      "id": "pdm-technology-aps",
-      "name": "Pdm Technology ApS",
       "type": "Corporate",
       "country": "Denmark",
       "projectCount": 1
