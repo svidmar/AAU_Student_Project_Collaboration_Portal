@@ -15,7 +15,7 @@ export default function YearlyChart() {
 
     const years = Array.from(counts.keys()).sort((a, b) => a - b);
     const maxCount = Math.max(...counts.values());
-    const chartHeight = 240; // pixels
+    const chartHeight = 200; // pixels for bars only
 
     return years.map(year => {
       const count = counts.get(year) || 0;
@@ -47,21 +47,21 @@ export default function YearlyChart() {
       {/* Desktop: fit to width, Mobile: scroll horizontally */}
       <div className="overflow-x-auto -mx-2 px-2">
         <div
-          className="flex items-end gap-1 md:gap-2"
+          className="flex items-end gap-1 md:gap-2 pb-6"
           style={{
-            height: '240px',
+            height: '270px',
             minWidth: 'fit-content'
           }}
         >
           {yearData.map(({ year, count, height }) => (
             <div
               key={year}
-              className="flex flex-col items-center gap-1 group relative"
+              className="flex flex-col items-center gap-1 group relative h-full"
               style={{ minWidth: '32px', width: '32px' }}
             >
-              <div className="relative w-full flex flex-col items-center justify-end" style={{ height: '240px' }}>
+              <div className="relative w-full flex flex-col items-center justify-end flex-1">
                 {/* Count label above bar */}
-                <div className="text-[10px] md:text-[9px] font-semibold text-gray-700 mb-0.5">
+                <div className="text-[10px] md:text-[9px] font-semibold text-gray-700 mb-1 absolute" style={{ bottom: `${height + 4}px` }}>
                   {count}
                 </div>
                 {/* Bar */}
@@ -71,7 +71,7 @@ export default function YearlyChart() {
                 />
               </div>
               {/* Year label */}
-              <div className="text-[10px] md:text-[9px] text-gray-600 whitespace-nowrap">
+              <div className="text-[10px] md:text-[9px] text-gray-600 whitespace-nowrap absolute" style={{ bottom: '-20px' }}>
                 '{year.toString().slice(-2)}
               </div>
             </div>

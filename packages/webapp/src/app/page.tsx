@@ -122,14 +122,14 @@ export default function HomePage() {
           </div>
 
           {/* Content Area - stack on mobile, split on desktop */}
-          <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+          <div className="flex-1 flex flex-col lg:flex-row lg:overflow-hidden">
             {(viewMode === 'split' || viewMode === 'map') && (
-              <div className={viewMode === 'split' ? 'lg:w-2/5 flex-1 lg:border-r border-gray-200' : 'flex-1'}>
+              <div className={viewMode === 'split' ? 'lg:w-2/5 flex-1 lg:border-r border-gray-200 min-h-0' : 'flex-1 min-h-0'}>
                 <MapView />
               </div>
             )}
             {(viewMode === 'split' || viewMode === 'table') && (
-              <div className={viewMode === 'split' ? 'flex-1' : 'flex-1'}>
+              <div className={viewMode === 'split' ? 'flex-1 min-h-0' : 'flex-1 min-h-0'}>
                 <ProjectTable />
               </div>
             )}
