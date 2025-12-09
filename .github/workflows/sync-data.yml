@@ -41,18 +41,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Copy data to temporary location
+          cp -r data /tmp/data-backup
+
           # Create a new orphan branch (no history)
           git checkout --orphan data-storage-temp
 
-          # Remove all files except data/
+          # Remove all tracked files from index
           git rm -rf .
-          git clean -fd
 
-          # Add only the data directory and README
+          # Restore data from backup
+          cp -r /tmp/data-backup ./data
+
+          # Create README
           echo "# Data Storage Branch" > README.md
           echo "" >> README.md
-          echo "This orphan branch contains only data files with no commit history." >> README.md
+          echo "This branch contains data files for the AAU Student Project Collaboration Portal." >> README.md
           echo "Updated: $(date '+%Y-%m-%d %H:%M UTC')" >> README.md
+
+          # Add only data and README
           git add data/ README.md
 
           # Commit
