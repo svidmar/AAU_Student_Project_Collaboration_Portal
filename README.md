@@ -18,11 +18,12 @@ A web portal showcasing student thesis collaborations from Aalborg University.
 │  GitHub Actions (Daily Sync)            │
 │  - Fetches Pure API data                │
 │  - Generates JSON files                 │
-│  - Commits to /data folder              │
+│  - Force pushes to orphan branch        │
 └─────────────────────────────────────────┘
                     ▼
 ┌─────────────────────────────────────────┐
-│  GitHub Repository (Data Storage)       │
+│  Orphan Branch: data-storage            │
+│  - NO commit history (privacy!)         │
 │  - /data/projects.json                  │
 │  - /data/metadata.json                  │
 │  - /data/organizations.json             │
@@ -40,8 +41,11 @@ A web portal showcasing student thesis collaborations from Aalborg University.
 **Stack:**
 - Frontend: Next.js 14 (static export) hosted on AAU webserver
 - Backend: GitHub Actions (Node.js 20) for automated data sync
-- Storage: GitHub repository (JSON files)
+- Storage: GitHub orphan branch (no history for privacy compliance)
 - API: Pure API (Aalborg University research database)
+
+**Privacy by Design:**
+Data is stored in an orphan branch with NO commit history. When projects are marked confidential in Pure and removed from the API, they are completely erased from the repository without any traces in git history.
 
 **Cost:** $0/month (GitHub Actions free for public repos)
 
@@ -108,16 +112,18 @@ The webapp will fetch data from GitHub when running locally.
 
 ## Data Files
 
-GitHub Actions generates these files in `/data`:
+GitHub Actions generates these files in the `data-storage` branch:
 - `projects.json`: All project data with collaborations
 - `metadata.json`: Filter options and statistics
 - `organizations.json`: List of partner organizations
 - `search-index.json`: Optimized search index
 
-These files are publicly accessible at:
+These files are publicly accessible from the orphan branch:
 ```
-https://raw.githubusercontent.com/svidmar/AAU_Student_Project_Collaboration_Portal/main/data/projects.json
+https://raw.githubusercontent.com/svidmar/AAU_Student_Project_Collaboration_Portal/data-storage/data/projects.json
 ```
+
+**Note:** The `data-storage` branch has no commit history - each sync completely replaces the branch to ensure privacy compliance.
 
 ## License
 
