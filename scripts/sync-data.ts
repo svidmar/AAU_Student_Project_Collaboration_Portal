@@ -423,7 +423,7 @@ function generateMetadata(projects: EnrichedProject[]): any {
       partners: Array.from(organizations.entries()).map(([name, count]) => ({
         name,
         count
-      })).sort((a, b) => b.count - a.count).slice(0, 100)
+      })).sort((a, b) => b.count - a.count)
     },
     statistics: {
       totalProjects: projects.length,
