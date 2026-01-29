@@ -1,0 +1,8125 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-29T04:26:43.695Z",
+  "filters": {
+    "years": {
+      "min": 2001,
+      "max": 2026,
+      "available": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2006,
+        2007,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    "educationPrograms": [
+      {
+        "name": "Social Work, Master",
+        "code": "4fc0992d",
+        "count": 114
+      },
+      {
+        "name": "Learning and Innovative Change, Master",
+        "code": "6a7e3659",
+        "count": 108
+      },
+      {
+        "name": "Urban, Energy and Environmental Planning, Master",
+        "code": "f997d454",
+        "count": 81
+      },
+      {
+        "name": "Energy Engineering, Master",
+        "code": "731a3e07",
+        "count": 78
+      },
+      {
+        "name": "Sociology, Master",
+        "code": "1166172c",
+        "count": 73
+      },
+      {
+        "name": "Techno-Anthropology, Master",
+        "code": "469f3e80",
+        "count": 68
+      },
+      {
+        "name": "Public Health, Master",
+        "code": "8bc8de9b",
+        "count": 65
+      },
+      {
+        "name": "Service Systems Design, Master",
+        "code": "8b41949e",
+        "count": 56
+      },
+      {
+        "name": "Sustainable Design (M.SC)",
+        "code": "677b3cf4",
+        "count": 56
+      },
+      {
+        "name": "Master of Social Science (MSc) in Criminology",
+        "code": "e465fcbe",
+        "count": 56
+      },
+      {
+        "name": " IT, learning and organizational change (cand.it)",
+        "code": "cda1cb3f",
+        "count": 54
+      },
+      {
+        "name": "Sports Science, Master",
+        "code": "a868e2fe",
+        "count": 52
+      },
+      {
+        "name": "Communication, Master",
+        "code": "f1f33e26",
+        "count": 51
+      },
+      {
+        "name": "Medialogy, Master",
+        "code": "6f65551f",
+        "count": 51
+      },
+      {
+        "name": "Clinical Science and Technology, Master",
+        "code": "7b3464de",
+        "count": 50
+      },
+      {
+        "name": "Medicine with Industrial Specialisation, Master",
+        "code": "da27f4ec",
+        "count": 49
+      },
+      {
+        "name": "Water and Environmental Engineering , Master",
+        "code": "b4b33a9d",
+        "count": 47
+      },
+      {
+        "name": "Public Administration and Social Science",
+        "code": "7a787db9",
+        "count": 43
+      },
+      {
+        "name": "Industrial Design, Master",
+        "code": "2551c7d0",
+        "count": 40
+      },
+      {
+        "name": "Culture, Communication and Globalization, Master",
+        "code": "40f56212",
+        "count": 36
+      },
+      {
+        "name": "Interactive Digital Media, Master",
+        "code": "abd31bbb",
+        "count": 34
+      },
+      {
+        "name": "Experience Design, Master",
+        "code": "92536494",
+        "count": 33
+      },
+      {
+        "name": "Tourism, Master",
+        "code": "7c0c3b15",
+        "count": 32
+      },
+      {
+        "name": "Surveying, Planning and Land Management (cand.geom.), Master",
+        "code": "93b636ab",
+        "count": 30
+      },
+      {
+        "name": "Software, Master",
+        "code": "e3457d5d",
+        "count": 28
+      },
+      {
+        "name": "Engineering Psychology, Master",
+        "code": "eec7f6ee",
+        "count": 26
+      },
+      {
+        "name": "Control and Automation, Master",
+        "code": "4d9ed736",
+        "count": 25
+      },
+      {
+        "name": "Sustaianable Cities, Master",
+        "code": "b661d427",
+        "count": 25
+      },
+      {
+        "name": "Transport Engineering, Master",
+        "code": "d5f6679e",
+        "count": 25
+      },
+      {
+        "name": "Civil Engineering",
+        "code": "dcba0078",
+        "count": 24
+      },
+      {
+        "name": "Vision, Graphics and Interactive Systems, Master",
+        "code": "35a53769",
+        "count": 23
+      },
+      {
+        "name": "Laws, Master",
+        "code": "4699ea74",
+        "count": 22
+      },
+      {
+        "name": "Psychology, Master",
+        "code": "918dc12e",
+        "count": 22
+      },
+      {
+        "name": "Development and International Relations, Master",
+        "code": "de78223c",
+        "count": 22
+      },
+      {
+        "name": "Information Studies (Human Centered Informatics), Master",
+        "code": "2bdda2c7",
+        "count": 21
+      },
+      {
+        "name": "Urban Design, Master",
+        "code": "6a5f29b8",
+        "count": 21
+      },
+      {
+        "name": "Sustainable Energy Engineering, Master",
+        "code": "0a391d12",
+        "count": 20
+      },
+      {
+        "name": "Biomedical Engineering and Informatics, Master",
+        "code": "adc3ecc0",
+        "count": 19
+      },
+      {
+        "name": "Management in the Building Industry, Master",
+        "code": "4c077c06",
+        "count": 17
+      },
+      {
+        "name": "Design of Mechanical Systems, Master",
+        "code": "af8b257d",
+        "count": 17
+      },
+      {
+        "name": "Risk and Safety Management, Candidate",
+        "code": "dbefd6e3",
+        "count": 17
+      },
+      {
+        "name": "Sound and Music Computing",
+        "code": "ebdb1681",
+        "count": 17
+      },
+      {
+        "name": "Building Energy Design",
+        "code": "2caeb5cd",
+        "count": 17
+      },
+      {
+        "name": "Structural and Civil Engineering, Master",
+        "code": "de1daae1",
+        "count": 16
+      },
+      {
+        "name": "History, Master",
+        "code": "6fb3eb7b",
+        "count": 16
+      },
+      {
+        "name": "Sports Technology (cand.tech.), Master",
+        "code": "25493374",
+        "count": 15
+      },
+      {
+        "name": "Integrated Food Studies (cand.tech.), Master",
+        "code": "c7a0d655",
+        "count": 15
+      },
+      {
+        "name": "Economics and Business Administration (International Business Economics), Master",
+        "code": "10a60b17",
+        "count": 15
+      },
+      {
+        "name": "Nanotechnology, Master",
+        "code": "b4317640",
+        "count": 14
+      },
+      {
+        "name": "Lighting Design",
+        "code": "b127ea09",
+        "count": 14
+      },
+      {
+        "name": "Mathematical Engineering, Master",
+        "code": "8b15458d",
+        "count": 14
+      },
+      {
+        "name": "Architecture, Master",
+        "code": "b5b9b707",
+        "count": 13
+      },
+      {
+        "name": "Signal Processing and Computing, Master",
+        "code": "62c89b5a",
+        "count": 13
+      },
+      {
+        "name": "Sustainable Energy Engineering, Bachelor ",
+        "code": "3939196d",
+        "count": 12
+      },
+      {
+        "name": "Social Work, Bachelor",
+        "code": "8e20c6bd",
+        "count": 12
+      },
+      {
+        "name": "Surveying, Planning and Land Management (cand.tech.), Master",
+        "code": "26d6bfa8",
+        "count": 12
+      },
+      {
+        "name": "Graduate Diploma in Business Administration (Financial and Management Accounting)",
+        "code": "c46107cf",
+        "count": 11
+      },
+      {
+        "name": "Mathematics, Master",
+        "code": "917319ae",
+        "count": 11
+      },
+      {
+        "name": "Manufacturing Technology, Master",
+        "code": "d38771d0",
+        "count": 11
+      },
+      {
+        "name": "Computer Science, Master",
+        "code": "7c6eb48d",
+        "count": 11
+      },
+      {
+        "name": "International Business Communication (English), Master",
+        "code": "c1f90cc3",
+        "count": 11
+      },
+      {
+        "name": "Electronic Systems, Master",
+        "code": "8f8a0964",
+        "count": 11
+      },
+      {
+        "name": "Building Informatics (cand.tech.), Master",
+        "code": "9beea6dd",
+        "count": 10
+      },
+      {
+        "name": "Innovative Communication Technologies and Entrepreneurship, Master",
+        "code": "46635663",
+        "count": 10
+      },
+      {
+        "name": "Information Architecture, Master",
+        "code": "5370763a",
+        "count": 10
+      },
+      {
+        "name": "Economics and Business Administration (Organisation and strategy), Master",
+        "code": "fb6f7c65",
+        "count": 10
+      },
+      {
+        "name": "Indoor Environmental and Energy Engineering, Master",
+        "code": "e6fe40ad",
+        "count": 10
+      },
+      {
+        "name": "Global Refugee Studies, Master",
+        "code": "c0337383",
+        "count": 10
+      },
+      {
+        "name": "Information Technology, Master",
+        "code": "d4ae754d",
+        "count": 10
+      },
+      {
+        "name": "Joint European Master in Environmental Studies - Cities and Sustainability (JEMES CiSu)",
+        "code": "77119442",
+        "count": 9
+      },
+      {
+        "name": "Business Administration and Commercial Law, Master",
+        "code": "9e58374f",
+        "count": 9
+      },
+      {
+        "name": "Information Technology, Specializing in ICT, Learning and Organizational Change, Master",
+        "code": "1c9b9a2c",
+        "count": 9
+      },
+      {
+        "name": "Robotics, M.Sc.",
+        "code": "8a729bd5",
+        "count": 9
+      },
+      {
+        "name": "Graduate Diploma in Business Administration (Organization and Management)",
+        "code": "a6e661fa",
+        "count": 8
+      },
+      {
+        "name": "Construction Management and Informatics (cand.tech.), Master",
+        "code": "d766642a",
+        "count": 8
+      },
+      {
+        "name": "Sustainable Biotechnology, Master",
+        "code": "2a82518b",
+        "count": 8
+      },
+      {
+        "name": "Social Sciences, Master",
+        "code": "17515d10",
+        "count": 8
+      },
+      {
+        "name": "Economics and Business Administration (Management Accounting and Control), Master",
+        "code": "09609c01",
+        "count": 8
+      },
+      {
+        "name": "Economics and Business Administration (International Marketing), Master",
+        "code": "2131a62d",
+        "count": 7
+      },
+      {
+        "name": "Economics, Master",
+        "code": "6a578661",
+        "count": 7
+      },
+      {
+        "name": "Networks and Distributed Systems, Master",
+        "code": "597fd5bc",
+        "count": 7
+      },
+      {
+        "name": "Applied Philosophy, Master",
+        "code": "ca080c26",
+        "count": 7
+      },
+      {
+        "name": "Entrepreneurial Engineering, Master",
+        "code": "43db8838",
+        "count": 7
+      },
+      {
+        "name": "Digital Communication Leadership (Erasmus+)",
+        "code": "c64ad746",
+        "count": 7
+      },
+      {
+        "name": "Interaction Design, Master of Science (MSc)",
+        "code": "c56a269a",
+        "count": 7
+      },
+      {
+        "name": "Mechanical Design",
+        "code": "c5c37d9f",
+        "count": 6
+      },
+      {
+        "name": "Acoustics and Audio Technology, Master",
+        "code": "1272cad2",
+        "count": 6
+      },
+      {
+        "name": "Urban Design (cand.tech.), Master",
+        "code": "5a807632",
+        "count": 6
+      },
+      {
+        "name": "Electro-Mechanical System Design, Master",
+        "code": "99125aee",
+        "count": 6
+      },
+      {
+        "name": "Business Economics and Auditing, Master",
+        "code": "589c2d37",
+        "count": 6
+      },
+      {
+        "name": "Operations and Innovation Management, Master of Science (MSc)",
+        "code": "66d35909",
+        "count": 6
+      },
+      {
+        "name": "Chemical Engineering, Master",
+        "code": "23466509",
+        "count": 6
+      },
+      {
+        "name": "Digitalisation and Application Development, MSc",
+        "code": "9d749f57",
+        "count": 6
+      },
+      {
+        "name": "Wireless Communication Systems, Master",
+        "code": "92cb16bc",
+        "count": 5
+      },
+      {
+        "name": "Master of Learning Processes (Continuing education)",
+        "code": "b9c6f76b",
+        "count": 5
+      },
+      {
+        "name": "Master of ICT and Learning (MIL) (Continuing education)",
+        "code": "2e06b9e5",
+        "count": 5
+      },
+      {
+        "name": "Oil and Gas Technology, Master",
+        "code": "a96099a4",
+        "count": 5
+      },
+      {
+        "name": "Mechanical Engineering, Bachelor of Engineering",
+        "code": "ba9a2a00",
+        "count": 5
+      },
+      {
+        "name": "Mathematics-Economics, Master",
+        "code": "e210e141",
+        "count": 5
+      },
+      {
+        "name": "Economics and Business Administration (International Business), Master",
+        "code": "746faba5",
+        "count": 5
+      },
+      {
+        "name": "Cyber Security, Master",
+        "code": "302436a8",
+        "count": 5
+      },
+      {
+        "name": "Computer Science (IT), Master",
+        "code": "74075dae",
+        "count": 4
+      },
+      {
+        "name": "English, Master",
+        "code": "16916eb1",
+        "count": 4
+      },
+      {
+        "name": "Management in the Building Industry (cand.tech.), Master",
+        "code": "7be7379e",
+        "count": 4
+      },
+      {
+        "name": "Operations and Supply Chain Management, Master",
+        "code": "045c2eff",
+        "count": 4
+      },
+      {
+        "name": "Operations and Innovation Management (cand.tech.), Master",
+        "code": "202f7a72",
+        "count": 4
+      },
+      {
+        "name": "Geography, Master",
+        "code": "6b4d733b",
+        "count": 4
+      },
+      {
+        "name": "Construction Management and Building Informatics, MSc.",
+        "code": "d6c2330d",
+        "count": 4
+      },
+      {
+        "name": " Master of Science (MSc) in Health (Musculoskeletal Physiotherapy)",
+        "code": "9b024698",
+        "count": 4
+      },
+      {
+        "name": "Communication Technology",
+        "code": "bd876627",
+        "count": 4
+      },
+      {
+        "name": "Artificial Intelligence, Vision and Sound, MSc.",
+        "code": "88de11f3",
+        "count": 4
+      },
+      {
+        "name": "Mechanical Engineering and Industry",
+        "code": "4291ebb9",
+        "count": 3
+      },
+      {
+        "name": "Chemical Engineering and Biotechnology",
+        "code": "ce9df305",
+        "count": 3
+      },
+      {
+        "name": "Master of Humanistic Palliative Care (Continuing Education)",
+        "code": "cbe3143a",
+        "count": 3
+      },
+      {
+        "name": "Operations and Management Engineering, Master of Science (MSc) (cand.polyt.)",
+        "code": "f70113b9",
+        "count": 3
+      },
+      {
+        "name": "Architecture (cand.tech.), Master",
+        "code": "bb798c77",
+        "count": 3
+      },
+      {
+        "name": "Master of Organizational Coaching and Learning (MOC)",
+        "code": "28940548",
+        "count": 3
+      },
+      {
+        "name": "Physical Geography, Master",
+        "code": "2b364f72",
+        "count": 3
+      },
+      {
+        "name": "Medicine, Master",
+        "code": "226848b0",
+        "count": 3
+      },
+      {
+        "name": "Global Systems Design (cand.tech.), Master",
+        "code": "1049b9ea",
+        "count": 3
+      },
+      {
+        "name": "Economics and Business Administration (Innovation and Entrepreneurship), Master",
+        "code": "3aca6a41",
+        "count": 3
+      },
+      {
+        "name": "City, Housing and Settlement Patterns. M.Sc.",
+        "code": "72028035",
+        "count": 3
+      },
+      {
+        "name": "Nordic Master in Social Work and Welfare(Noswel)",
+        "code": "937006b8",
+        "count": 3
+      },
+      {
+        "name": "Danish, Master",
+        "code": "7722ae82",
+        "count": 3
+      },
+      {
+        "name": "Economics and Business Administration (Marketing and Sales), Master",
+        "code": "b9ca7b1c",
+        "count": 3
+      },
+      {
+        "name": "Computer Engineering, Master",
+        "code": "652e553b",
+        "count": 3
+      },
+      {
+        "name": "Elektronics and IT, Master (Elite Wireless Communication)",
+        "code": "0fbc6b7c",
+        "count": 2
+      },
+      {
+        "name": "Mechanical Design, Master",
+        "code": "5ea661c1",
+        "count": 2
+      },
+      {
+        "name": "Biology, Master",
+        "code": "648304c9",
+        "count": 2
+      },
+      {
+        "name": "Music, Master",
+        "code": "6af0ddd7",
+        "count": 2
+      },
+      {
+        "name": "Master of Technology Management (MTM) (Continuing education)",
+        "code": "657e277c",
+        "count": 2
+      },
+      {
+        "name": "Informatics, Master",
+        "code": "34d40a30",
+        "count": 2
+      },
+      {
+        "name": "Software Development, Master",
+        "code": "5453b932",
+        "count": 2
+      },
+      {
+        "name": "Materials Engineering, Master",
+        "code": "0c78c13d",
+        "count": 2
+      },
+      {
+        "name": "Advanced Development in Social Work, Master of Science (MSc)",
+        "code": "47bd729f",
+        "count": 2
+      },
+      {
+        "name": "International Business Communication (Spanish), Master",
+        "code": "756a1287",
+        "count": 2
+      },
+      {
+        "name": "Master of Building Physics",
+        "code": "6adce591",
+        "count": 2
+      },
+      {
+        "name": "Computer Science (IT - International Track)",
+        "code": "e32dc320",
+        "count": 2
+      },
+      {
+        "name": "MSc in Intelligent Reliable Systems (Esbjerg)",
+        "code": "ec831c0c",
+        "count": 2
+      },
+      {
+        "name": "German, Master",
+        "code": "6ea8745d",
+        "count": 2
+      },
+      {
+        "name": "Chemistry, Master (polyt)",
+        "code": "c3bfe112",
+        "count": 2
+      },
+      {
+        "name": "Master of Science (MSc) in Engineering (Bioengineering)",
+        "code": "ce89ac62",
+        "count": 2
+      },
+      {
+        "name": "International Relations, MSc.",
+        "code": "3f302237",
+        "count": 2
+      },
+      {
+        "name": "Economics and Business Administration (Business Data Science), MSc.",
+        "code": "8b957452",
+        "count": 2
+      },
+      {
+        "name": "Data Science and Machine Learning, Msc.",
+        "code": "4a4afbee",
+        "count": 2
+      },
+      {
+        "name": "Master of Vulnerable Children and Young People, Professional Management (Continuing Education)",
+        "code": "c0c8acac",
+        "count": 1
+      },
+      {
+        "name": "Master of Health Informatics (Continuing education)",
+        "code": "64743476",
+        "count": 1
+      },
+      {
+        "name": "Master of Public Administration (Continuing Education)",
+        "code": "4c6ed83f",
+        "count": 1
+      },
+      {
+        "name": "Embedded Software Systems, Master",
+        "code": "23bdd966",
+        "count": 1
+      },
+      {
+        "name": "Culture, Communication and Globalization. English",
+        "code": "9eb3dbbd",
+        "count": 1
+      },
+      {
+        "name": "Electronic and Computer Engineering",
+        "code": "1a97025a",
+        "count": 1
+      },
+      {
+        "name": "Master of Sexology (Continuing education)",
+        "code": "b023a9f8",
+        "count": 1
+      },
+      {
+        "name": "Environmental Engineering, Master",
+        "code": "b5f145ba",
+        "count": 1
+      },
+      {
+        "name": "Export Technology",
+        "code": "9615c32a",
+        "count": 1
+      },
+      {
+        "name": "Physics, Master",
+        "code": "dade7319",
+        "count": 1
+      },
+      {
+        "name": "International Business Communication (German), Master",
+        "code": "5e0f208f",
+        "count": 1
+      },
+      {
+        "name": "European Studies, Master",
+        "code": "2db31c39",
+        "count": 1
+      },
+      {
+        "name": "Music Therapy, Master",
+        "code": "33ffdff7",
+        "count": 1
+      },
+      {
+        "name": "Graduate Diploma in Business Administration (Financial Planning)",
+        "code": "a6799edb",
+        "count": 1
+      },
+      {
+        "name": "Master of Business Administration (MBA) (Continuing Education)",
+        "code": "629c96d7",
+        "count": 1
+      },
+      {
+        "name": "Master of Pain Science and Multidisciplinary Pain  (Continuing Education)",
+        "code": "149ecb0d",
+        "count": 1
+      },
+      {
+        "name": "Electronic and Electrical Engineering",
+        "code": "17461379",
+        "count": 1
+      },
+      {
+        "name": "Science in Economics (Innovation, Knowledge and Economic Dynamics), Master",
+        "code": "fdeed061",
+        "count": 1
+      },
+      {
+        "name": "Chemistry, Master (Scient)",
+        "code": "3303d070",
+        "count": 1
+      },
+      {
+        "name": "Advanced Power Electronics, MSc.",
+        "code": "385afd58",
+        "count": 1
+      },
+      {
+        "name": "Economics and Business Administration (Finance), MSc.",
+        "code": "834c69c0",
+        "count": 1
+      },
+      {
+        "name": "Mathematics and Statistics (Minor subject)",
+        "code": "5261b1e9",
+        "count": 1
+      },
+      {
+        "name": "Electronics",
+        "code": "6e1d2598",
+        "count": 1
+      },
+      {
+        "name": "Technology in Environmental Science, MSc.",
+        "code": "3ee8aa03",
+        "count": 1
+      },
+      {
+        "name": "Physics and Technology, Master",
+        "code": "29b8f903",
+        "count": 1
+      },
+      {
+        "name": "Medical Biotechnology, Master",
+        "code": "0da11826",
+        "count": 1
+      },
+      {
+        "name": "Biotechnology, Master",
+        "code": "363617e8",
+        "count": 1
+      },
+      {
+        "name": "Mechanics and Production, BSc.",
+        "code": "b9d18278",
+        "count": 1
+      },
+      {
+        "name": "Entrepreneurial Business Engineering, Master",
+        "code": "81f467a5",
+        "count": 1
+      }
+    ],
+    "projectTypes": [
+      {
+        "type": "Master Thesis and HD Thesis",
+        "count": 2319
+      },
+      {
+        "type": "Profession bachelor",
+        "count": 70
+      },
+      {
+        "type": "Master programme thesis",
+        "count": 58
+      }
+    ],
+    "collaborationTypes": [
+      {
+        "type": "Corporate",
+        "count": 1136
+      },
+      {
+        "type": "Municipal",
+        "count": 346
+      },
+      {
+        "type": "Other external organisation",
+        "count": 330
+      },
+      {
+        "type": "Academic",
+        "count": 180
+      },
+      {
+        "type": "Government",
+        "count": 171
+      },
+      {
+        "type": "Unknown",
+        "count": 138
+      },
+      {
+        "type": "NGO",
+        "count": 125
+      },
+      {
+        "type": "Governmental",
+        "count": 97
+      },
+      {
+        "type": "Medical",
+        "count": 82
+      },
+      {
+        "type": "Region",
+        "count": 64
+      },
+      {
+        "type": "Educational institution",
+        "count": 59
+      },
+      {
+        "type": "Research institution",
+        "count": 32
+      },
+      {
+        "type": "Funding provider",
+        "count": 11
+      },
+      {
+        "type": "International organisation",
+        "count": 10
+      }
+    ],
+    "campuses": [
+      {
+        "name": "Aalborg",
+        "count": 1862
+      },
+      {
+        "name": "Copenhagen",
+        "count": 502
+      },
+      {
+        "name": "Esbjerg",
+        "count": 83
+      }
+    ],
+    "countries": [
+      {
+        "name": "Denmark",
+        "count": 2393
+      },
+      {
+        "name": "Germany",
+        "count": 51
+      },
+      {
+        "name": "United States",
+        "count": 34
+      },
+      {
+        "name": "Sweden",
+        "count": 23
+      },
+      {
+        "name": "Norway",
+        "count": 18
+      },
+      {
+        "name": "Spain",
+        "count": 17
+      },
+      {
+        "name": "France",
+        "count": 17
+      },
+      {
+        "name": "Greenland",
+        "count": 16
+      },
+      {
+        "name": "Switzerland",
+        "count": 14
+      },
+      {
+        "name": "Netherlands",
+        "count": 13
+      },
+      {
+        "name": "Finland",
+        "count": 12
+      },
+      {
+        "name": "United Kingdom",
+        "count": 11
+      },
+      {
+        "name": "Belgium",
+        "count": 9
+      },
+      {
+        "name": "Australia",
+        "count": 9
+      },
+      {
+        "name": "China",
+        "count": 9
+      },
+      {
+        "name": "Austria",
+        "count": 9
+      },
+      {
+        "name": "Lithuania",
+        "count": 7
+      },
+      {
+        "name": "Faroe Islands",
+        "count": 7
+      },
+      {
+        "name": "Iceland",
+        "count": 5
+      },
+      {
+        "name": "Italy",
+        "count": 5
+      },
+      {
+        "name": "Japan",
+        "count": 4
+      },
+      {
+        "name": "New Zealand",
+        "count": 4
+      },
+      {
+        "name": "Canada",
+        "count": 4
+      },
+      {
+        "name": "Colombia",
+        "count": 4
+      },
+      {
+        "name": "Czech Republic",
+        "count": 4
+      },
+      {
+        "name": "Slovakia",
+        "count": 4
+      },
+      {
+        "name": "Kenya",
+        "count": 3
+      },
+      {
+        "name": "Greece",
+        "count": 3
+      },
+      {
+        "name": "Russian Federation",
+        "count": 3
+      },
+      {
+        "name": "Latvia",
+        "count": 3
+      },
+      {
+        "name": "India",
+        "count": 3
+      },
+      {
+        "name": "Bulgaria",
+        "count": 2
+      },
+      {
+        "name": "Ireland",
+        "count": 2
+      },
+      {
+        "name": "Lebanon",
+        "count": 2
+      },
+      {
+        "name": "Honduras",
+        "count": 2
+      },
+      {
+        "name": "Mexico",
+        "count": 2
+      },
+      {
+        "name": "Poland",
+        "count": 2
+      },
+      {
+        "name": "Uganda",
+        "count": 2
+      },
+      {
+        "name": "Romania",
+        "count": 2
+      },
+      {
+        "name": "Brazil",
+        "count": 2
+      },
+      {
+        "name": "Philippines",
+        "count": 1
+      },
+      {
+        "name": "South Africa",
+        "count": 1
+      },
+      {
+        "name": "Viet Nam",
+        "count": 1
+      },
+      {
+        "name": "Costa Rica",
+        "count": 1
+      },
+      {
+        "name": "Peru",
+        "count": 1
+      },
+      {
+        "name": "Panama",
+        "count": 1
+      },
+      {
+        "name": "Iraq",
+        "count": 1
+      },
+      {
+        "name": "Nepal",
+        "count": 1
+      },
+      {
+        "name": "United Arab Emirates",
+        "count": 1
+      },
+      {
+        "name": "Tanzania, United Republic of",
+        "count": 1
+      },
+      {
+        "name": "Indonesia",
+        "count": 1
+      },
+      {
+        "name": "Cuba",
+        "count": 1
+      },
+      {
+        "name": "Portugal",
+        "count": 1
+      },
+      {
+        "name": "Bangladesh",
+        "count": 1
+      }
+    ],
+    "partners": [
+      {
+        "name": "Ukendt",
+        "count": 74
+      },
+      {
+        "name": "Aalborg Municipality",
+        "count": 54
+      },
+      {
+        "name": "Aalborg University Hospital",
+        "count": 34
+      },
+      {
+        "name": "RAMBØLL GRUPPEN A/S",
+        "count": 34
+      },
+      {
+        "name": "Hjørring Kommune",
+        "count": 26
+      },
+      {
+        "name": "NIRAS A/S",
+        "count": 24
+      },
+      {
+        "name": "COWI A/S",
+        "count": 23
+      },
+      {
+        "name": "Grundfos DK AS",
+        "count": 23
+      },
+      {
+        "name": "Aarhus Kommune",
+        "count": 21
+      },
+      {
+        "name": "Region Nordjylland",
+        "count": 20
+      },
+      {
+        "name": "Københavns Kommune",
+        "count": 19
+      },
+      {
+        "name": "Novo Nordisk A/S",
+        "count": 17
+      },
+      {
+        "name": "Vejdirektoratet",
+        "count": 13
+      },
+      {
+        "name": "Anonymous",
+        "count": 12
+      },
+      {
+        "name": "University College of Northern Denmark",
+        "count": 12
+      },
+      {
+        "name": "Oticon Danmark AS",
+        "count": 12
+      },
+      {
+        "name": "Siemens",
+        "count": 12
+      },
+      {
+        "name": "University of Copenhagen",
+        "count": 12
+      },
+      {
+        "name": "Energinet SOV",
+        "count": 11
+      },
+      {
+        "name": "Nordjyllands Politi",
+        "count": 11
+      },
+      {
+        "name": "Kriminalforsorgen",
+        "count": 11
+      },
+      {
+        "name": "RTX A/S",
+        "count": 11
+      },
+      {
+        "name": "Aalborg Forsyning A/S",
+        "count": 10
+      },
+      {
+        "name": "Aarhus University Hospital",
+        "count": 10
+      },
+      {
+        "name": "Aarhus University",
+        "count": 10
+      },
+      {
+        "name": "Bang & Olufsen A/S",
+        "count": 9
+      },
+      {
+        "name": "Vestas Wind Systems AS",
+        "count": 9
+      },
+      {
+        "name": "Danish Cancer Society",
+        "count": 9
+      },
+      {
+        "name": "Steno Diabetes Centers",
+        "count": 9
+      },
+      {
+        "name": "Randers Kommune",
+        "count": 8
+      },
+      {
+        "name": "Spar Nord",
+        "count": 8
+      },
+      {
+        "name": "LEGO Systems AS",
+        "count": 8
+      },
+      {
+        "name": "Frederikshavn Municipality",
+        "count": 7
+      },
+      {
+        "name": "VIVE – The Danish Center for Social Science Research",
+        "count": 7
+      },
+      {
+        "name": "Folkesundhed Aarhus",
+        "count": 7
+      },
+      {
+        "name": "Viborg Kommune",
+        "count": 7
+      },
+      {
+        "name": "HjulmandKaptain ",
+        "count": 7
+      },
+      {
+        "name": "CERN",
+        "count": 7
+      },
+      {
+        "name": "Region Midtjylland",
+        "count": 7
+      },
+      {
+        "name": "Aalborg Boldspilklub A/S",
+        "count": 7
+      },
+      {
+        "name": "Envidan A/S",
+        "count": 6
+      },
+      {
+        "name": "Red Cross",
+        "count": 6
+      },
+      {
+        "name": "Danfoss AS",
+        "count": 6
+      },
+      {
+        "name": "KK Wind Solutions A/S",
+        "count": 6
+      },
+      {
+        "name": "MOE A/S",
+        "count": 6
+      },
+      {
+        "name": "MT Højgaard",
+        "count": 6
+      },
+      {
+        "name": "Technical University of Denmark",
+        "count": 6
+      },
+      {
+        "name": "DHI Water - Environment - Health",
+        "count": 6
+      },
+      {
+        "name": "Danish Football Association",
+        "count": 6
+      },
+      {
+        "name": "C.F. Møller",
+        "count": 5
+      },
+      {
+        "name": "Telenor",
+        "count": 5
+      },
+      {
+        "name": "Aarhus Vand A/S",
+        "count": 5
+      },
+      {
+        "name": "Enversion A/S",
+        "count": 5
+      },
+      {
+        "name": "University of International Relations",
+        "count": 5
+      },
+      {
+        "name": "Aalborg Zoo",
+        "count": 5
+      },
+      {
+        "name": "Semco Maritime A/S",
+        "count": 5
+      },
+      {
+        "name": "Østjyllands Politi",
+        "count": 5
+      },
+      {
+        "name": "Port of Aalborg A/S",
+        "count": 5
+      },
+      {
+        "name": "Vejle Kommune",
+        "count": 5
+      },
+      {
+        "name": "Esbjerg Kommune",
+        "count": 5
+      },
+      {
+        "name": "Midt- og Vestjyllands Politi",
+        "count": 5
+      },
+      {
+        "name": "Orbicon",
+        "count": 5
+      },
+      {
+        "name": "Sweco AB",
+        "count": 5
+      },
+      {
+        "name": "HOFOR",
+        "count": 5
+      },
+      {
+        "name": "Eurowind Energy A/S",
+        "count": 5
+      },
+      {
+        "name": "Artelia",
+        "count": 5
+      },
+      {
+        "name": "Nokia Siemens Networks",
+        "count": 4
+      },
+      {
+        "name": "Hasseris Gymnasium",
+        "count": 4
+      },
+      {
+        "name": "Arla Foods",
+        "count": 4
+      },
+      {
+        "name": "Det Nordjyske Mediehus A/S",
+        "count": 4
+      },
+      {
+        "name": "Brønderslev Neurorehabiliteringscenter",
+        "count": 4
+      },
+      {
+        "name": "National Research Centre for the Working Environment",
+        "count": 4
+      },
+      {
+        "name": "Vattenfall",
+        "count": 4
+      },
+      {
+        "name": "Neogrid Technologies ApS",
+        "count": 4
+      },
+      {
+        "name": "DIGNITY - Danish Institute Against torture",
+        "count": 4
+      },
+      {
+        "name": "Sundhedscenter Aalborg",
+        "count": 4
+      },
+      {
+        "name": "Aalborg University",
+        "count": 4
+      },
+      {
+        "name": "Erhvervsstyrelsen",
+        "count": 4
+      },
+      {
+        "name": "Nørresundby Gymnasium & HF",
+        "count": 4
+      },
+      {
+        "name": "Moesgaard Museum",
+        "count": 4
+      },
+      {
+        "name": "Duke University",
+        "count": 4
+      },
+      {
+        "name": "Terma AS",
+        "count": 4
+      },
+      {
+        "name": "Krüger A/S",
+        "count": 4
+      },
+      {
+        "name": "Capital Region of Denmark",
+        "count": 4
+      },
+      {
+        "name": "LIFA A/S",
+        "count": 4
+      },
+      {
+        "name": "Senfølgerforeningen",
+        "count": 4
+      },
+      {
+        "name": "Høje-Taastrup Kommune",
+        "count": 4
+      },
+      {
+        "name": "Rigshospitalet, Copenhagen University Hospital",
+        "count": 4
+      },
+      {
+        "name": "Create it REAL A/S",
+        "count": 4
+      },
+      {
+        "name": "Keysight Technologies",
+        "count": 4
+      },
+      {
+        "name": "Kompasset - En sikret institution",
+        "count": 4
+      },
+      {
+        "name": "Volvo Car Corporation",
+        "count": 4
+      },
+      {
+        "name": "Aalborg Stadsarkiv",
+        "count": 4
+      },
+      {
+        "name": "LE34",
+        "count": 4
+      },
+      {
+        "name": "MAN Energy Solutions",
+        "count": 4
+      },
+      {
+        "name": "KMD A/S",
+        "count": 4
+      },
+      {
+        "name": "European Space Agency - ESA",
+        "count": 4
+      },
+      {
+        "name": "Rema 1000 Danalien",
+        "count": 4
+      },
+      {
+        "name": "Behandlingsrådet",
+        "count": 4
+      },
+      {
+        "name": "North Denmark Regional Hospital",
+        "count": 4
+      },
+      {
+        "name": "Hjulmand og Kaptajn",
+        "count": 3
+      },
+      {
+        "name": "Holstebro Kommune",
+        "count": 3
+      },
+      {
+        "name": "Unity Studios",
+        "count": 3
+      },
+      {
+        "name": "Copenhagen University Hospital",
+        "count": 3
+      },
+      {
+        "name": "MadMarked A/S",
+        "count": 3
+      },
+      {
+        "name": "Mariagerfjord Kommune",
+        "count": 3
+      },
+      {
+        "name": "Neas Energy A/S",
+        "count": 3
+      },
+      {
+        "name": "Brønderslev Kommune",
+        "count": 3
+      },
+      {
+        "name": "Sky-Watch",
+        "count": 3
+      },
+      {
+        "name": "DONG Energy A/S",
+        "count": 3
+      },
+      {
+        "name": "ARKINORD A/S",
+        "count": 3
+      },
+      {
+        "name": "Exigo A/S",
+        "count": 3
+      },
+      {
+        "name": "TC Electronic",
+        "count": 3
+      },
+      {
+        "name": "Forsvarsministeriets Ejendomsstyrelse",
+        "count": 3
+      },
+      {
+        "name": "Jammerbugt Kommune",
+        "count": 3
+      },
+      {
+        "name": "Varde Kommune",
+        "count": 3
+      },
+      {
+        "name": "Added Values P/S",
+        "count": 3
+      },
+      {
+        "name": "EMD International A/S",
+        "count": 3
+      },
+      {
+        "name": "Skive Kommune",
+        "count": 3
+      },
+      {
+        "name": "Danish Crown",
+        "count": 3
+      },
+      {
+        "name": "Roskilde Kommune",
+        "count": 3
+      },
+      {
+        "name": "Composhield A/S",
+        "count": 3
+      },
+      {
+        "name": "Danish Health Data Authority",
+        "count": 3
+      },
+      {
+        "name": "Velux",
+        "count": 3
+      },
+      {
+        "name": "Banedanmark",
+        "count": 3
+      },
+      {
+        "name": "R&D A/S",
+        "count": 3
+      },
+      {
+        "name": "Liftra ApS",
+        "count": 3
+      },
+      {
+        "name": "SEGES Innovation P/S",
+        "count": 3
+      },
+      {
+        "name": "H. Lundbeck A/S",
+        "count": 3
+      },
+      {
+        "name": "Nordjyllands Beredskab",
+        "count": 3
+      },
+      {
+        "name": "Danish Design Center",
+        "count": 3
+      },
+      {
+        "name": "Thisted Kommune",
+        "count": 3
+      },
+      {
+        "name": "Skanderborg Kommune",
+        "count": 3
+      },
+      {
+        "name": "Muskelsvindfonden",
+        "count": 3
+      },
+      {
+        "name": "Danish Geodata Agency",
+        "count": 3
+      },
+      {
+        "name": "33A",
+        "count": 3
+      },
+      {
+        "name": "TeleCare Nord",
+        "count": 3
+      },
+      {
+        "name": "DGI",
+        "count": 3
+      },
+      {
+        "name": "BITZER Electronics A/S",
+        "count": 3
+      },
+      {
+        "name": "Bornholms Affaldsbehandling",
+        "count": 3
+      },
+      {
+        "name": "Trackunit ApS",
+        "count": 3
+      },
+      {
+        "name": "Pdm Technology ApS",
+        "count": 3
+      },
+      {
+        "name": "WatsonC",
+        "count": 3
+      },
+      {
+        "name": "Maersk Group",
+        "count": 3
+      },
+      {
+        "name": "AstraZeneca",
+        "count": 3
+      },
+      {
+        "name": "DEFACTUM",
+        "count": 3
+      },
+      {
+        "name": "Kuben Management",
+        "count": 2
+      },
+      {
+        "name": "Man Diesel & Turbo",
+        "count": 2
+      },
+      {
+        "name": "Vesthimmerlands Kommune",
+        "count": 2
+      },
+      {
+        "name": "Statens Museum for Kunst",
+        "count": 2
+      },
+      {
+        "name": "FBE Klinisk Biokemi Syd",
+        "count": 2
+      },
+      {
+        "name": "Toms Gruppen A/S",
+        "count": 2
+      },
+      {
+        "name": "Bispebjerg Hospital",
+        "count": 2
+      },
+      {
+        "name": "Ingeniørgruppen Vestjylland",
+        "count": 2
+      },
+      {
+        "name": "Ankerfjord Hospice",
+        "count": 2
+      },
+      {
+        "name": "Diakonissestiftelsens hospice",
+        "count": 2
+      },
+      {
+        "name": "Öko-Institut e.V.",
+        "count": 2
+      },
+      {
+        "name": "TRIP TRAP DENMARK A/S",
+        "count": 2
+      },
+      {
+        "name": "Højer ",
+        "count": 2
+      },
+      {
+        "name": "Gynækologisk-obstetrisk afdeling Aalborg Universitetshospital ",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Teater",
+        "count": 2
+      },
+      {
+        "name": "Teater GROB",
+        "count": 2
+      },
+      {
+        "name": "Nokia",
+        "count": 2
+      },
+      {
+        "name": "Bruel and Kjaer",
+        "count": 2
+      },
+      {
+        "name": "Alexandra Institute",
+        "count": 2
+      },
+      {
+        "name": "Geological Survey of Denmark and Greenland",
+        "count": 2
+      },
+      {
+        "name": "Ente Vasco de la Energía",
+        "count": 2
+      },
+      {
+        "name": "PANDORA A/S",
+        "count": 2
+      },
+      {
+        "name": "Systematic A/S",
+        "count": 2
+      },
+      {
+        "name": "DBI",
+        "count": 2
+      },
+      {
+        "name": "Dansk Flygtningehjælp Ungdom",
+        "count": 2
+      },
+      {
+        "name": "Maersk Oil",
+        "count": 2
+      },
+      {
+        "name": "Arkil A/S",
+        "count": 2
+      },
+      {
+        "name": "Bech Bruun ",
+        "count": 2
+      },
+      {
+        "name": "Silkeborg Kommune",
+        "count": 2
+      },
+      {
+        "name": "Deloitte",
+        "count": 2
+      },
+      {
+        "name": "Skolen i spil",
+        "count": 2
+      },
+      {
+        "name": "Vejle Sygehus",
+        "count": 2
+      },
+      {
+        "name": "Lynge skole",
+        "count": 2
+      },
+      {
+        "name": "Barry Callebaut",
+        "count": 2
+      },
+      {
+        "name": "Agri Nord",
+        "count": 2
+      },
+      {
+        "name": "BlueTown",
+        "count": 2
+      },
+      {
+        "name": "projekt UDENFOR",
+        "count": 2
+      },
+      {
+        "name": "Foreningen for Kræftramte med Senfølger",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Skoleforvaltning ",
+        "count": 2
+      },
+      {
+        "name": "Vejle Spildevand A/S",
+        "count": 2
+      },
+      {
+        "name": "Psykiatrien Region Nordjylland",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Handelsskole",
+        "count": 2
+      },
+      {
+        "name": "Solrød Gymnasium",
+        "count": 2
+      },
+      {
+        "name": "Arbejdernes Andels Boligforening",
+        "count": 2
+      },
+      {
+        "name": "Ingeniørgruppen Varde AS Rådgivende ingeniører F.R.I.",
+        "count": 2
+      },
+      {
+        "name": "UCL University College Lillebaelt",
+        "count": 2
+      },
+      {
+        "name": "Nordjyllands Trafikselskab",
+        "count": 2
+      },
+      {
+        "name": "Stenaldercenter Ertebølle",
+        "count": 2
+      },
+      {
+        "name": "VUC & hf Nordjylland",
+        "count": 2
+      },
+      {
+        "name": "Milestone Systems A/S",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Karneval",
+        "count": 2
+      },
+      {
+        "name": "University of California Merced",
+        "count": 2
+      },
+      {
+        "name": "GomSpace A/S",
+        "count": 2
+      },
+      {
+        "name": "Kim Schøtt Olsen",
+        "count": 2
+      },
+      {
+        "name": "Ikast-Brande Spildevand A/S",
+        "count": 2
+      },
+      {
+        "name": "Transparency International",
+        "count": 2
+      },
+      {
+        "name": "Danish Red Cross",
+        "count": 2
+      },
+      {
+        "name": "Ældre sagen",
+        "count": 2
+      },
+      {
+        "name": "Spraino ApS",
+        "count": 2
+      },
+      {
+        "name": "Arne Andersen Vrå A/S",
+        "count": 2
+      },
+      {
+        "name": "DALI A/S",
+        "count": 2
+      },
+      {
+        "name": "zacho-Lind A/S ",
+        "count": 2
+      },
+      {
+        "name": "Center for IT, Medico og Telefoni",
+        "count": 2
+      },
+      {
+        "name": "Lindab A/S",
+        "count": 2
+      },
+      {
+        "name": "Danske Bank",
+        "count": 2
+      },
+      {
+        "name": "Destination Djursland",
+        "count": 2
+      },
+      {
+        "name": "Fraunhofer Institute for Solar Energy Systems",
+        "count": 2
+      },
+      {
+        "name": "Aalborg CSP",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Energie Technik A/S",
+        "count": 2
+      },
+      {
+        "name": "Kamstrup A/S ",
+        "count": 2
+      },
+      {
+        "name": "Styrelsen for Dataforsyning og Effektivisering",
+        "count": 2
+      },
+      {
+        "name": "New Zealand College of Chiropractic",
+        "count": 2
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "count": 2
+      },
+      {
+        "name": "Lunds Tekniska Högskola, Lunds Universitet",
+        "count": 2
+      },
+      {
+        "name": "VisitAalborg",
+        "count": 2
+      },
+      {
+        "name": "Aalborghus Gymnasium & HF",
+        "count": 2
+      },
+      {
+        "name": "SubC Partner",
+        "count": 2
+      },
+      {
+        "name": "Dokk1",
+        "count": 2
+      },
+      {
+        "name": "Brøns Ingeniørfirma ApS",
+        "count": 2
+      },
+      {
+        "name": "Vesthimmerlands Museum",
+        "count": 2
+      },
+      {
+        "name": "Sygehusapoteket Region Nordjylland",
+        "count": 2
+      },
+      {
+        "name": "Combine A/S",
+        "count": 2
+      },
+      {
+        "name": "Seluxit A/S",
+        "count": 2
+      },
+      {
+        "name": "National Museum of Denmark",
+        "count": 2
+      },
+      {
+        "name": "Re:Voir",
+        "count": 2
+      },
+      {
+        "name": "Red Barnet",
+        "count": 2
+      },
+      {
+        "name": "Lemvig Vand & Spildevand A/S",
+        "count": 2
+      },
+      {
+        "name": "GN Hearing A/S",
+        "count": 2
+      },
+      {
+        "name": "Miljøpunkt Amager",
+        "count": 2
+      },
+      {
+        "name": "Uddannelses- og forskningsministeriet",
+        "count": 2
+      },
+      {
+        "name": "Danske Fragtmænd A/S",
+        "count": 2
+      },
+      {
+        "name": "Samsung Denmark Research Center",
+        "count": 2
+      },
+      {
+        "name": "MapsPeople",
+        "count": 2
+      },
+      {
+        "name": "HK",
+        "count": 2
+      },
+      {
+        "name": "CompanYoung",
+        "count": 2
+      },
+      {
+        "name": "Aarhus Stadsarkiv",
+        "count": 2
+      },
+      {
+        "name": "Landsforeningen for Efterladte efter Selvmord",
+        "count": 2
+      },
+      {
+        "name": "Lemvig Kommune",
+        "count": 2
+      },
+      {
+        "name": "Kirkens Korshær",
+        "count": 2
+      },
+      {
+        "name": "MedCom",
+        "count": 2
+      },
+      {
+        "name": "Kommunernes Landsforening",
+        "count": 2
+      },
+      {
+        "name": "Nets A/S",
+        "count": 2
+      },
+      {
+        "name": "VisitDenmark",
+        "count": 2
+      },
+      {
+        "name": "Kommune",
+        "count": 2
+      },
+      {
+        "name": "Odense Kommune",
+        "count": 2
+      },
+      {
+        "name": "Stifler",
+        "count": 2
+      },
+      {
+        "name": "Bentax",
+        "count": 2
+      },
+      {
+        "name": "Alfa Laval Aalborg",
+        "count": 2
+      },
+      {
+        "name": "HF & VUC Nord",
+        "count": 2
+      },
+      {
+        "name": "University of Greenland",
+        "count": 2
+      },
+      {
+        "name": "Nykredit",
+        "count": 2
+      },
+      {
+        "name": "Nilfisk A/S",
+        "count": 2
+      },
+      {
+        "name": "Dynaudio A/S",
+        "count": 2
+      },
+      {
+        "name": "Asiaq",
+        "count": 2
+      },
+      {
+        "name": "PlanEnergi",
+        "count": 2
+      },
+      {
+        "name": "Sønderborg Kommune",
+        "count": 2
+      },
+      {
+        "name": "Jabra GN",
+        "count": 2
+      },
+      {
+        "name": "A. Enggaard A/S",
+        "count": 2
+      },
+      {
+        "name": "Albertsen Lab",
+        "count": 2
+      },
+      {
+        "name": "3F",
+        "count": 2
+      },
+      {
+        "name": "DEIF A/S ",
+        "count": 2
+      },
+      {
+        "name": "Falck Danmark A/S",
+        "count": 2
+      },
+      {
+        "name": "Metroselskabet I/S",
+        "count": 2
+      },
+      {
+        "name": "Arkitema",
+        "count": 2
+      },
+      {
+        "name": "Syd- og Sønderjyllands Politi",
+        "count": 2
+      },
+      {
+        "name": "Herning Kommune",
+        "count": 2
+      },
+      {
+        "name": "Robotto",
+        "count": 2
+      },
+      {
+        "name": "Miljøpunkt Østerbro",
+        "count": 2
+      },
+      {
+        "name": "Danish Technological Institute",
+        "count": 2
+      },
+      {
+        "name": "Life Science Robotics ApS",
+        "count": 2
+      },
+      {
+        "name": "University of Southern Denmark",
+        "count": 2
+      },
+      {
+        "name": "Enheden for Kriminalpræventive Indsatser",
+        "count": 2
+      },
+      {
+        "name": "Aalto University",
+        "count": 2
+      },
+      {
+        "name": "Dansk Kyst- og Naturturisme",
+        "count": 2
+      },
+      {
+        "name": "Holbæk Kommune",
+        "count": 2
+      },
+      {
+        "name": "Center for Seksuelt Misbrugte ",
+        "count": 2
+      },
+      {
+        "name": "Fyns Politi",
+        "count": 2
+      },
+      {
+        "name": "Struer Kommune",
+        "count": 2
+      },
+      {
+        "name": "Get Media Savvy",
+        "count": 2
+      },
+      {
+        "name": "Coop Danmark A/S",
+        "count": 2
+      },
+      {
+        "name": "Brancheekspert",
+        "count": 2
+      },
+      {
+        "name": "KVINFO",
+        "count": 2
+      },
+      {
+        "name": "Forening Oplysning om Gadeliv",
+        "count": 2
+      },
+      {
+        "name": "FOKUS Folkeoplysning",
+        "count": 2
+      },
+      {
+        "name": "Ramboll Energy",
+        "count": 2
+      },
+      {
+        "name": "Køge Kommune",
+        "count": 2
+      },
+      {
+        "name": "Blue World Technologies",
+        "count": 2
+      },
+      {
+        "name": "University of California at San Diego",
+        "count": 2
+      },
+      {
+        "name": "Dansk Ungdoms Fællesråd",
+        "count": 2
+      },
+      {
+        "name": "Government of Greenland",
+        "count": 2
+      },
+      {
+        "name": "Innovationsklinikken",
+        "count": 2
+      },
+      {
+        "name": "Muninn ApS",
+        "count": 2
+      },
+      {
+        "name": "Aalborg Sportskarate",
+        "count": 2
+      },
+      {
+        "name": "Frederiksberg Kommune",
+        "count": 2
+      },
+      {
+        "name": "DGI Nordjylland",
+        "count": 2
+      },
+      {
+        "name": "JH Staldservice",
+        "count": 1
+      },
+      {
+        "name": "Office du Tourisme de la Ville de Liège",
+        "count": 1
+      },
+      {
+        "name": "Belman Production A/S",
+        "count": 1
+      },
+      {
+        "name": "YouSee A/S",
+        "count": 1
+      },
+      {
+        "name": "VUC Storstrøm",
+        "count": 1
+      },
+      {
+        "name": "Krone Vinduer",
+        "count": 1
+      },
+      {
+        "name": "Nordic Easy Chair A/S",
+        "count": 1
+      },
+      {
+        "name": "SGM Light A/S",
+        "count": 1
+      },
+      {
+        "name": "Trombose Centeret, Aalborg Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "ECCO Sko A/S",
+        "count": 1
+      },
+      {
+        "name": "KK-Electronic A/S",
+        "count": 1
+      },
+      {
+        "name": "Projekt 9220",
+        "count": 1
+      },
+      {
+        "name": "S2 Games",
+        "count": 1
+      },
+      {
+        "name": "Have Kommunikation ",
+        "count": 1
+      },
+      {
+        "name": "Horsens Ny Teater",
+        "count": 1
+      },
+      {
+        "name": "Lyngsoe Systems ",
+        "count": 1
+      },
+      {
+        "name": "Kirsten Baggesen",
+        "count": 1
+      },
+      {
+        "name": "Nyremedicinsk Ambulatorium, Medicinerhuset, Aalborg Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "StreetSoccerAarhus, DGI Østjylland",
+        "count": 1
+      },
+      {
+        "name": "Entreprenør 1",
+        "count": 1
+      },
+      {
+        "name": "Entreprenør 2",
+        "count": 1
+      },
+      {
+        "name": "Entreprenør 3",
+        "count": 1
+      },
+      {
+        "name": "Vestas A/S",
+        "count": 1
+      },
+      {
+        "name": "Landsnet",
+        "count": 1
+      },
+      {
+        "name": "MSS Professional A/S",
+        "count": 1
+      },
+      {
+        "name": "Solution Hub",
+        "count": 1
+      },
+      {
+        "name": "Regionshuset, Region Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "University of New South Wales",
+        "count": 1
+      },
+      {
+        "name": "AccelerEyes",
+        "count": 1
+      },
+      {
+        "name": "Thorbjørn Vynne",
+        "count": 1
+      },
+      {
+        "name": "Renesas Mobile",
+        "count": 1
+      },
+      {
+        "name": "Smartcom-Bulgaria AD",
+        "count": 1
+      },
+      {
+        "name": "Wave Star A/S",
+        "count": 1
+      },
+      {
+        "name": "Nordic Green",
+        "count": 1
+      },
+      {
+        "name": "Det Norske Veritas",
+        "count": 1
+      },
+      {
+        "name": "Geriatrisk Afdeling, Medicinsk Center, Aalborg Sygehus",
+        "count": 1
+      },
+      {
+        "name": "Rødovre Kommune",
+        "count": 1
+      },
+      {
+        "name": "Swords to Plowshares",
+        "count": 1
+      },
+      {
+        "name": "Psykiatrisk Center Glostrup",
+        "count": 1
+      },
+      {
+        "name": "Kløverengen",
+        "count": 1
+      },
+      {
+        "name": "Skolegades Skole",
+        "count": 1
+      },
+      {
+        "name": "Familieafdeling",
+        "count": 1
+      },
+      {
+        "name": "Under the Same Sky Kenya",
+        "count": 1
+      },
+      {
+        "name": "Umande Trust",
+        "count": 1
+      },
+      {
+        "name": "IBIS Danmark",
+        "count": 1
+      },
+      {
+        "name": "Danida / Danish Foreign Ministry",
+        "count": 1
+      },
+      {
+        "name": "CrossFit Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Skælskør Julemærkehjem",
+        "count": 1
+      },
+      {
+        "name": "Frivilligcentre & Selvhjælp Danmark ",
+        "count": 1
+      },
+      {
+        "name": "Viking Life-Saving Equipment A/S",
+        "count": 1
+      },
+      {
+        "name": "Nordjyllands Kystmuseum (Skagen By- og Egnsmuseum, Bangsbo Museum & Sæby Museum)",
+        "count": 1
+      },
+      {
+        "name": "Bunker43",
+        "count": 1
+      },
+      {
+        "name": "AGCO",
+        "count": 1
+      },
+      {
+        "name": "Arvid Nilsson",
+        "count": 1
+      },
+      {
+        "name": "Ea Energy Analyses",
+        "count": 1
+      },
+      {
+        "name": "Nordland Automatic A/S",
+        "count": 1
+      },
+      {
+        "name": "Erhvervsakademiet Lillebaelt, Bygningskonstruktøruddannelsen",
+        "count": 1
+      },
+      {
+        "name": "Hospice Vendsyssel",
+        "count": 1
+      },
+      {
+        "name": "Ilulissats Isfjords kontor",
+        "count": 1
+      },
+      {
+        "name": "Johansson og Kalstrup A/S",
+        "count": 1
+      },
+      {
+        "name": "Uhrehøje",
+        "count": 1
+      },
+      {
+        "name": "Skovdyrkerforeningen Midtjylland",
+        "count": 1
+      },
+      {
+        "name": "Martin Professional A/S",
+        "count": 1
+      },
+      {
+        "name": "Jan Ovesen",
+        "count": 1
+      },
+      {
+        "name": "Huge Lawn",
+        "count": 1
+      },
+      {
+        "name": "OJ ELECTRONICS A/S",
+        "count": 1
+      },
+      {
+        "name": "Stahl-Zentrum ",
+        "count": 1
+      },
+      {
+        "name": "Energieintensive Industrien Deutschland",
+        "count": 1
+      },
+      {
+        "name": "Verband der Industriellen Energie- und Kraftwirtschaft",
+        "count": 1
+      },
+      {
+        "name": "Bundesverband Erneuerbarer Energien e.V .",
+        "count": 1
+      },
+      {
+        "name": "Bund der Energieverbraucher",
+        "count": 1
+      },
+      {
+        "name": "Verbraucherzentrale Hessen e.V .",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Hospital and Aarhus University Hospital",
+        "count": 1
+      },
+      {
+        "name": "Gynækologisk Klinik Taastrup",
+        "count": 1
+      },
+      {
+        "name": "Danish Building Research Institute (SBI), Department of Energy and Environment",
+        "count": 1
+      },
+      {
+        "name": "Tuco Marine ApS",
+        "count": 1
+      },
+      {
+        "name": "CCBR A/S",
+        "count": 1
+      },
+      {
+        "name": "Takeda Pharmaceutical Company Limited",
+        "count": 1
+      },
+      {
+        "name": "Haderslev Sundhedspleje",
+        "count": 1
+      },
+      {
+        "name": "Haderslev fødeafdeling",
+        "count": 1
+      },
+      {
+        "name": "Faaborg-Midtfyn Kommune",
+        "count": 1
+      },
+      {
+        "name": "Experimentarium",
+        "count": 1
+      },
+      {
+        "name": "Arbejdermuseet",
+        "count": 1
+      },
+      {
+        "name": "Butler | Loftet retail",
+        "count": 1
+      },
+      {
+        "name": "Sustainable Energy Authority of Ireland",
+        "count": 1
+      },
+      {
+        "name": "Antvorskov Skole",
+        "count": 1
+      },
+      {
+        "name": "Dinnerssurfer",
+        "count": 1
+      },
+      {
+        "name": "Enveo",
+        "count": 1
+      },
+      {
+        "name": "Suspekt",
+        "count": 1
+      },
+      {
+        "name": "Barnets Blå Hus",
+        "count": 1
+      },
+      {
+        "name": "Nordjyllands Idrætshøjskole",
+        "count": 1
+      },
+      {
+        "name": "Newline A/S",
+        "count": 1
+      },
+      {
+        "name": "Gug skole",
+        "count": 1
+      },
+      {
+        "name": "Hobro Hospital",
+        "count": 1
+      },
+      {
+        "name": "Bodylab",
+        "count": 1
+      },
+      {
+        "name": "Marathon Travel Club",
+        "count": 1
+      },
+      {
+        "name": "Össur",
+        "count": 1
+      },
+      {
+        "name": "Joe & The Juice",
+        "count": 1
+      },
+      {
+        "name": "Søren Toft",
+        "count": 1
+      },
+      {
+        "name": "Danmarks Radio",
+        "count": 1
+      },
+      {
+        "name": "MAN B&W Diesel A/S",
+        "count": 1
+      },
+      {
+        "name": "Nem Byg Tjæreborg A/S",
+        "count": 1
+      },
+      {
+        "name": "Siemens A/S, Flow Instruments",
+        "count": 1
+      },
+      {
+        "name": "DVI Energi",
+        "count": 1
+      },
+      {
+        "name": "EnergiMidt A/S",
+        "count": 1
+      },
+      {
+        "name": "Hydac",
+        "count": 1
+      },
+      {
+        "name": "Tetra Pak Scanima",
+        "count": 1
+      },
+      {
+        "name": "Flinders University",
+        "count": 1
+      },
+      {
+        "name": "Dansk Telemedicin A/S",
+        "count": 1
+      },
+      {
+        "name": "Dermato-Venerologisk afdeling og Videncenter for Sårheling afdeling D/S",
+        "count": 1
+      },
+      {
+        "name": "Hjemmesygeplejen Nørrebro",
+        "count": 1
+      },
+      {
+        "name": "Dansk Supermarked A/S",
+        "count": 1
+      },
+      {
+        "name": "FORCE Technology",
+        "count": 1
+      },
+      {
+        "name": "Sticks'n'Sushi",
+        "count": 1
+      },
+      {
+        "name": "Beijing University of Posts and Telecommunications",
+        "count": 1
+      },
+      {
+        "name": "Access2innovation",
+        "count": 1
+      },
+      {
+        "name": "Kruse Smith ",
+        "count": 1
+      },
+      {
+        "name": "Kuvatek A/S",
+        "count": 1
+      },
+      {
+        "name": "Nordsøen Oceanarium",
+        "count": 1
+      },
+      {
+        "name": "Inwido Denmark A/S",
+        "count": 1
+      },
+      {
+        "name": "WATERKOTTE GmbH",
+        "count": 1
+      },
+      {
+        "name": "M-I SWACO, A Schlumberger Company",
+        "count": 1
+      },
+      {
+        "name": "Frederikshavn Forsyning A/S",
+        "count": 1
+      },
+      {
+        "name": "ASTRIUM Space Transportation",
+        "count": 1
+      },
+      {
+        "name": "Landsforeningen Liv & Død",
+        "count": 1
+      },
+      {
+        "name": "Balay - Rehabilitation Center",
+        "count": 1
+      },
+      {
+        "name": "Durango Town Council",
+        "count": 1
+      },
+      {
+        "name": "Maab Aquitectura y Urbanismo",
+        "count": 1
+      },
+      {
+        "name": "Maab Arquitectura y Urbanismo",
+        "count": 1
+      },
+      {
+        "name": "Aramaio Town Council",
+        "count": 1
+      },
+      {
+        "name": "Beizama Town Council",
+        "count": 1
+      },
+      {
+        "name": "Abadiño Town Council",
+        "count": 1
+      },
+      {
+        "name": "Centre for Civil Society",
+        "count": 1
+      },
+      {
+        "name": "Engineers Without Borders Australia",
+        "count": 1
+      },
+      {
+        "name": "3 anonyme kommuner",
+        "count": 1
+      },
+      {
+        "name": "Sundhed - Plan og Kvalitet, Region Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "Trænregimentet, Hærens Center for Logistik og Militærpoliti",
+        "count": 1
+      },
+      {
+        "name": "IC Companys",
+        "count": 1
+      },
+      {
+        "name": "Florida International University",
+        "count": 1
+      },
+      {
+        "name": "Vamp S. A.",
+        "count": 1
+      },
+      {
+        "name": "LT Automation Aps",
+        "count": 1
+      },
+      {
+        "name": "The Danish Heart Foundation",
+        "count": 1
+      },
+      {
+        "name": "Ideaal (Allan Bjerre)",
+        "count": 1
+      },
+      {
+        "name": "Idify (Michael Nørkjær)",
+        "count": 1
+      },
+      {
+        "name": "Hello World Mobile (Michael Bak)",
+        "count": 1
+      },
+      {
+        "name": "Københavns Erhvervsservice (Janus Krarup)",
+        "count": 1
+      },
+      {
+        "name": "Symbion (Brian List)",
+        "count": 1
+      },
+      {
+        "name": "Unit for Cognitive Neuroscience",
+        "count": 1
+      },
+      {
+        "name": "Morsø",
+        "count": 1
+      },
+      {
+        "name": "Ideaal ApS",
+        "count": 1
+      },
+      {
+        "name": "AgroTech A/S",
+        "count": 1
+      },
+      {
+        "name": "Rusmiddelcenter Silkeborg",
+        "count": 1
+      },
+      {
+        "name": "Per Mortensen ",
+        "count": 1
+      },
+      {
+        "name": "Det Grønne Hus",
+        "count": 1
+      },
+      {
+        "name": "Olav kristensen ApS",
+        "count": 1
+      },
+      {
+        "name": "Meebox ApS",
+        "count": 1
+      },
+      {
+        "name": "PsykInfo Midt",
+        "count": 1
+      },
+      {
+        "name": "Krifa",
+        "count": 1
+      },
+      {
+        "name": "Dansk Forsorgsselskab",
+        "count": 1
+      },
+      {
+        "name": "Platform 4",
+        "count": 1
+      },
+      {
+        "name": "Timan A/S",
+        "count": 1
+      },
+      {
+        "name": "Stick2Nature",
+        "count": 1
+      },
+      {
+        "name": "Idéklinikken",
+        "count": 1
+      },
+      {
+        "name": "AndICE",
+        "count": 1
+      },
+      {
+        "name": "AD PRecision Mechanics",
+        "count": 1
+      },
+      {
+        "name": "Slettestrand Feriecenter",
+        "count": 1
+      },
+      {
+        "name": "Aabenraa Kommune",
+        "count": 1
+      },
+      {
+        "name": "Awareness Against Human Trafficking (HAART) ",
+        "count": 1
+      },
+      {
+        "name": "Fonden VEGA",
+        "count": 1
+      },
+      {
+        "name": "Akaciegården",
+        "count": 1
+      },
+      {
+        "name": "Interdisciplinary Center for Organizational Architecture (ICOA)",
+        "count": 1
+      },
+      {
+        "name": "BARBARA I GONGINI",
+        "count": 1
+      },
+      {
+        "name": "Fiberline Composites A/S",
+        "count": 1
+      },
+      {
+        "name": "Lasertryk",
+        "count": 1
+      },
+      {
+        "name": "Danefæ",
+        "count": 1
+      },
+      {
+        "name": "Skovby skolen",
+        "count": 1
+      },
+      {
+        "name": "Nota",
+        "count": 1
+      },
+      {
+        "name": "Sygehus Vendsyssel",
+        "count": 1
+      },
+      {
+        "name": "Manova ",
+        "count": 1
+      },
+      {
+        "name": "Aalborg FunCenter",
+        "count": 1
+      },
+      {
+        "name": "Studentum.dk",
+        "count": 1
+      },
+      {
+        "name": "Randers Sundhedscenter",
+        "count": 1
+      },
+      {
+        "name": "Trine Ramsgaard-Jensen",
+        "count": 1
+      },
+      {
+        "name": "Sund Info, Aalborg Sygehus, Aarhus Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "Egmont",
+        "count": 1
+      },
+      {
+        "name": "Københavns Musikteater",
+        "count": 1
+      },
+      {
+        "name": "CAE",
+        "count": 1
+      },
+      {
+        "name": "Lindpro A/S",
+        "count": 1
+      },
+      {
+        "name": "Streetammo ApS",
+        "count": 1
+      },
+      {
+        "name": "Sundhedscenter Vejle",
+        "count": 1
+      },
+      {
+        "name": "daman",
+        "count": 1
+      },
+      {
+        "name": "Thy-Mors HF & VUC, Thisted-afdelingen",
+        "count": 1
+      },
+      {
+        "name": "Fortrolig",
+        "count": 1
+      },
+      {
+        "name": "Active Sportswear International A/S",
+        "count": 1
+      },
+      {
+        "name": "Sportskarate.dk",
+        "count": 1
+      },
+      {
+        "name": "Susanne Ravn",
+        "count": 1
+      },
+      {
+        "name": "Roskilde Forsyning",
+        "count": 1
+      },
+      {
+        "name": "Anders Kofoed-Wiuff",
+        "count": 1
+      },
+      {
+        "name": "János Hethey",
+        "count": 1
+      },
+      {
+        "name": "Spiio",
+        "count": 1
+      },
+      {
+        "name": "Auckland University of Technology",
+        "count": 1
+      },
+      {
+        "name": "The German Institute of Food Technologies (DIL)",
+        "count": 1
+      },
+      {
+        "name": "Tommy Mølbak",
+        "count": 1
+      },
+      {
+        "name": "Chalmers University of Technology",
+        "count": 1
+      },
+      {
+        "name": "VestKronik v. Arbejdsmedicinsk Klinik Regionshospitalet Herning",
+        "count": 1
+      },
+      {
+        "name": "Lloyd's Register ODS",
+        "count": 1
+      },
+      {
+        "name": "National Oilwell Varco Flexibles",
+        "count": 1
+      },
+      {
+        "name": "Venligboerne",
+        "count": 1
+      },
+      {
+        "name": "Danish Board of Technology Foundation",
+        "count": 1
+      },
+      {
+        "name": "Robert Bosch Foundation",
+        "count": 1
+      },
+      {
+        "name": "Jyske Bank A/S",
+        "count": 1
+      },
+      {
+        "name": "ALECTIA",
+        "count": 1
+      },
+      {
+        "name": "NKC (National Kriminalteknisk Center)",
+        "count": 1
+      },
+      {
+        "name": "Landsorganisationen LEV",
+        "count": 1
+      },
+      {
+        "name": "The Neighborhood Initiative",
+        "count": 1
+      },
+      {
+        "name": "Grontmij",
+        "count": 1
+      },
+      {
+        "name": "Plejecenter Skovhuset",
+        "count": 1
+      },
+      {
+        "name": "Engineers Without Borders Denmark (Ingeniører uden Grænser)",
+        "count": 1
+      },
+      {
+        "name": "VIA University College",
+        "count": 1
+      },
+      {
+        "name": "Brovst skole",
+        "count": 1
+      },
+      {
+        "name": "Ringkøbing-Skjern Kommune",
+        "count": 1
+      },
+      {
+        "name": "Hjemmeværnet: Hjemmeværnsdistrikt Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "NN",
+        "count": 1
+      },
+      {
+        "name": "Lithuanian Gay League",
+        "count": 1
+      },
+      {
+        "name": "Tolerant Youth Association",
+        "count": 1
+      },
+      {
+        "name": "Grennessminde",
+        "count": 1
+      },
+      {
+        "name": "Greenlandic Representation Office in Copenhagen",
+        "count": 1
+      },
+      {
+        "name": "Københavns Kommunes 18+ indsats, Center for Forebyggelse og Rådgivning",
+        "count": 1
+      },
+      {
+        "name": "Sun Charter",
+        "count": 1
+      },
+      {
+        "name": "UNICEF Danmarl",
+        "count": 1
+      },
+      {
+        "name": "Sager der samler",
+        "count": 1
+      },
+      {
+        "name": "Retssexologisk klinik i Risskov",
+        "count": 1
+      },
+      {
+        "name": "Lægerne Sløjfen",
+        "count": 1
+      },
+      {
+        "name": "Airbus",
+        "count": 1
+      },
+      {
+        "name": "Danmarks Evalueringsinstitut, EVA",
+        "count": 1
+      },
+      {
+        "name": "Johnson Controls",
+        "count": 1
+      },
+      {
+        "name": "BioPorto Diagnostics A/S",
+        "count": 1
+      },
+      {
+        "name": "Institute of Transport Economics",
+        "count": 1
+      },
+      {
+        "name": "Tignermedia",
+        "count": 1
+      },
+      {
+        "name": "SSP Forebyggelse Randers v/Claus Hansen",
+        "count": 1
+      },
+      {
+        "name": "M/S Museet for Søfart, Skoletjenesten",
+        "count": 1
+      },
+      {
+        "name": "Expan",
+        "count": 1
+      },
+      {
+        "name": "Børn, Unge & Sorg",
+        "count": 1
+      },
+      {
+        "name": "Alternativet",
+        "count": 1
+      },
+      {
+        "name": "FairstartGlobal",
+        "count": 1
+      },
+      {
+        "name": "Thisted Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "BSO Raadgivende Ingeniører ApS",
+        "count": 1
+      },
+      {
+        "name": "Sund Vækst Huset",
+        "count": 1
+      },
+      {
+        "name": "Gynækologisk-Obstetrisk afdeling, Aalborg Universitetshospital Nord",
+        "count": 1
+      },
+      {
+        "name": "Tylstrup Skole",
+        "count": 1
+      },
+      {
+        "name": "Nord-Aurdal Kommune",
+        "count": 1
+      },
+      {
+        "name": "Sør-Aurdal Kommune",
+        "count": 1
+      },
+      {
+        "name": "Øystre Slidre Kommune",
+        "count": 1
+      },
+      {
+        "name": "Thy-Mors Energi Service A/S",
+        "count": 1
+      },
+      {
+        "name": "Jorton A/S",
+        "count": 1
+      },
+      {
+        "name": "XL-BYG Aaby Tømmer",
+        "count": 1
+      },
+      {
+        "name": "Bygma Risskov",
+        "count": 1
+      },
+      {
+        "name": "Stark ",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter Aalborg (Sygedagpengehuset)",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter Favrskov ",
+        "count": 1
+      },
+      {
+        "name": "A/S Dansk Shell",
+        "count": 1
+      },
+      {
+        "name": "NIBIO",
+        "count": 1
+      },
+      {
+        "name": "Grøn Energi",
+        "count": 1
+      },
+      {
+        "name": "Østhimmerlands Ungdomsskole",
+        "count": 1
+      },
+      {
+        "name": "Children and Youth Centre - CYC",
+        "count": 1
+      },
+      {
+        "name": "Det Nationale Institut for Kommuners og Regioners Analyse og forskning (KORA)",
+        "count": 1
+      },
+      {
+        "name": "Københavnerteamet",
+        "count": 1
+      },
+      {
+        "name": "INGENIØR'NE A/S",
+        "count": 1
+      },
+      {
+        "name": "Det Samfundsnyttige Landbrug",
+        "count": 1
+      },
+      {
+        "name": "Rehabiliteringscenter for Flygtninge",
+        "count": 1
+      },
+      {
+        "name": "ExcaliCare Children's Organisation",
+        "count": 1
+      },
+      {
+        "name": "Miele Danmark",
+        "count": 1
+      },
+      {
+        "name": "Helsingør Kommune",
+        "count": 1
+      },
+      {
+        "name": "Helsingør Forsyning",
+        "count": 1
+      },
+      {
+        "name": "Center for Telemedicin",
+        "count": 1
+      },
+      {
+        "name": "Ivo Widlak",
+        "count": 1
+      },
+      {
+        "name": "Gregg Kobelinski",
+        "count": 1
+      },
+      {
+        "name": "Fyn Bus",
+        "count": 1
+      },
+      {
+        "name": "Nordjyllands Historiske Museum",
+        "count": 1
+      },
+      {
+        "name": "Muskelsvindsfonden",
+        "count": 1
+      },
+      {
+        "name": "Lydenskab",
+        "count": 1
+      },
+      {
+        "name": "Erhvervsakademi Aarhus",
+        "count": 1
+      },
+      {
+        "name": "Ordkraft Festivalen",
+        "count": 1
+      },
+      {
+        "name": "Fitnessdk",
+        "count": 1
+      },
+      {
+        "name": "Esoftflow Company Limited",
+        "count": 1
+      },
+      {
+        "name": "FLSmidth",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Bibliotekerne, Hovedbiblioteket",
+        "count": 1
+      },
+      {
+        "name": "Colas Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Regions Hospital Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "Waternet",
+        "count": 1
+      },
+      {
+        "name": "Ulla Møller Weinreich",
+        "count": 1
+      },
+      {
+        "name": "Knight Moves",
+        "count": 1
+      },
+      {
+        "name": "Susanne Andersen",
+        "count": 1
+      },
+      {
+        "name": "Thise Mejeri",
+        "count": 1
+      },
+      {
+        "name": "Kalø Økologisk Landbrugsskole",
+        "count": 1
+      },
+      {
+        "name": "Dyrenes Beskyttelse",
+        "count": 1
+      },
+      {
+        "name": "Jersey Græskalv",
+        "count": 1
+      },
+      {
+        "name": "Karneval i Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Den Sorte Diamant",
+        "count": 1
+      },
+      {
+        "name": "Nordic Foodworks",
+        "count": 1
+      },
+      {
+        "name": "Kitchen Collective",
+        "count": 1
+      },
+      {
+        "name": "Beredskabscenter Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Centre for Vision, Speech and Signal Processing, University of Surrey",
+        "count": 1
+      },
+      {
+        "name": "Københavns Hovedbibliotek",
+        "count": 1
+      },
+      {
+        "name": "Wolturnus A/S",
+        "count": 1
+      },
+      {
+        "name": "Creature",
+        "count": 1
+      },
+      {
+        "name": "3D Printhuset A/S",
+        "count": 1
+      },
+      {
+        "name": "Metako",
+        "count": 1
+      },
+      {
+        "name": "Vesthimmerlands Gymnasium & HF",
+        "count": 1
+      },
+      {
+        "name": "adidas",
+        "count": 1
+      },
+      {
+        "name": "Daniel Lux",
+        "count": 1
+      },
+      {
+        "name": "Michelle Nielsen-Dharmaratne ",
+        "count": 1
+      },
+      {
+        "name": "Confirm ",
+        "count": 1
+      },
+      {
+        "name": "3D Structural Design ApS",
+        "count": 1
+      },
+      {
+        "name": "ISC Consulting Engineers",
+        "count": 1
+      },
+      {
+        "name": "Municipality Veendam",
+        "count": 1
+      },
+      {
+        "name": "Monsenso ApS",
+        "count": 1
+      },
+      {
+        "name": "FirstAED",
+        "count": 1
+      },
+      {
+        "name": "TeleSkin",
+        "count": 1
+      },
+      {
+        "name": "Vertic Healthcare",
+        "count": 1
+      },
+      {
+        "name": "Regionalt kompetansesenter for rusmiddelforskning (KORFOR)",
+        "count": 1
+      },
+      {
+        "name": "Andritz AG",
+        "count": 1
+      },
+      {
+        "name": "AlgaePARC",
+        "count": 1
+      },
+      {
+        "name": "National Center for Registerbased Research",
+        "count": 1
+      },
+      {
+        "name": "Leibniz-Institute of Freshwater Ecology and Inland Fisheries",
+        "count": 1
+      },
+      {
+        "name": "Center for National Vejledning",
+        "count": 1
+      },
+      {
+        "name": "Syddjurs Kommune",
+        "count": 1
+      },
+      {
+        "name": "International Organization for Migration (IOM)",
+        "count": 1
+      },
+      {
+        "name": "Svendborg Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Roskilde havn",
+        "count": 1
+      },
+      {
+        "name": "Det Lokalhistoriske Arkiv i Gentofte",
+        "count": 1
+      },
+      {
+        "name": "Køge Arkiverne",
+        "count": 1
+      },
+      {
+        "name": "Odense Stadsarkiv",
+        "count": 1
+      },
+      {
+        "name": "Kolding Stadsarkiv",
+        "count": 1
+      },
+      {
+        "name": "Sæt Skolen i Spil",
+        "count": 1
+      },
+      {
+        "name": "Norsfell",
+        "count": 1
+      },
+      {
+        "name": "Råd & Dåd",
+        "count": 1
+      },
+      {
+        "name": "Langeland Kommune",
+        "count": 1
+      },
+      {
+        "name": "The Black Diamond",
+        "count": 1
+      },
+      {
+        "name": "Borgercenter Børn og Unge BHV",
+        "count": 1
+      },
+      {
+        "name": "The Storm P. Museum",
+        "count": 1
+      },
+      {
+        "name": "CEPOS",
+        "count": 1
+      },
+      {
+        "name": "Movidius",
+        "count": 1
+      },
+      {
+        "name": "Det Danske Filminstitut",
+        "count": 1
+      },
+      {
+        "name": "Casa Campesina ",
+        "count": 1
+      },
+      {
+        "name": "Reron",
+        "count": 1
+      },
+      {
+        "name": "The Finnish Red Cross",
+        "count": 1
+      },
+      {
+        "name": "HSA Systems",
+        "count": 1
+      },
+      {
+        "name": "DADIU",
+        "count": 1
+      },
+      {
+        "name": "Klinisk Forskningsenhed - Onkologisk afd.",
+        "count": 1
+      },
+      {
+        "name": "Christian Neubert",
+        "count": 1
+      },
+      {
+        "name": "Dansk Medicinsk Data Distribution",
+        "count": 1
+      },
+      {
+        "name": "Danish Defence Estates & Infrastructure Organisation",
+        "count": 1
+      },
+      {
+        "name": "Vilnius Gediminas Technical University",
+        "count": 1
+      },
+      {
+        "name": "Neoprojektai",
+        "count": 1
+      },
+      {
+        "name": "Gabusta",
+        "count": 1
+      },
+      {
+        "name": "InnoBIM",
+        "count": 1
+      },
+      {
+        "name": "A. Zilinskio ir Ko",
+        "count": 1
+      },
+      {
+        "name": "SubC Partners",
+        "count": 1
+      },
+      {
+        "name": "Sydvestjysk Brandvæsen",
+        "count": 1
+      },
+      {
+        "name": "Project Grobund (grobund.org)",
+        "count": 1
+      },
+      {
+        "name": "Neurobiology Research Unit",
+        "count": 1
+      },
+      {
+        "name": "Forssøgstationen",
+        "count": 1
+      },
+      {
+        "name": "Universitets- og Bygningsstyrelsen",
+        "count": 1
+      },
+      {
+        "name": "University College Copenhagen",
+        "count": 1
+      },
+      {
+        "name": "Rebild Forsyning",
+        "count": 1
+      },
+      {
+        "name": "Klakvík municipal ",
+        "count": 1
+      },
+      {
+        "name": "Arturia",
+        "count": 1
+      },
+      {
+        "name": "Nordisk Film Biografer",
+        "count": 1
+      },
+      {
+        "name": "Heartland Festival",
+        "count": 1
+      },
+      {
+        "name": "herningCentret",
+        "count": 1
+      },
+      {
+        "name": "bytorvHORSENS",
+        "count": 1
+      },
+      {
+        "name": "Emplate",
+        "count": 1
+      },
+      {
+        "name": "Business aalborg",
+        "count": 1
+      },
+      {
+        "name": "Funday Factory",
+        "count": 1
+      },
+      {
+        "name": "Nordjysk Elitesport",
+        "count": 1
+      },
+      {
+        "name": "AskCody",
+        "count": 1
+      },
+      {
+        "name": "Debito",
+        "count": 1
+      },
+      {
+        "name": "Traede",
+        "count": 1
+      },
+      {
+        "name": "Mellervangskolen",
+        "count": 1
+      },
+      {
+        "name": "Center for Diabetes, Københavns Kommune",
+        "count": 1
+      },
+      {
+        "name": "Regional Hospital Southern Denmark",
+        "count": 1
+      },
+      {
+        "name": "Allerød Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Frederiksborg Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Viborg Gymnasium og Hf",
+        "count": 1
+      },
+      {
+        "name": "Social- og Sundhedsskolen i Silkeborg",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Tekniske Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "CFU - center for familier og unge",
+        "count": 1
+      },
+      {
+        "name": "Enigma Museum",
+        "count": 1
+      },
+      {
+        "name": "Haver til maver ",
+        "count": 1
+      },
+      {
+        "name": "Nikolas Feith Tan",
+        "count": 1
+      },
+      {
+        "name": "Holger K. Nielsen",
+        "count": 1
+      },
+      {
+        "name": "Gorm Fosdal",
+        "count": 1
+      },
+      {
+        "name": "Skolen for den Tredje Alder",
+        "count": 1
+      },
+      {
+        "name": "Skandinavisk Transport Kompagni A/S",
+        "count": 1
+      },
+      {
+        "name": "Neocortec",
+        "count": 1
+      },
+      {
+        "name": "Denex",
+        "count": 1
+      },
+      {
+        "name": "Canned Head Studios",
+        "count": 1
+      },
+      {
+        "name": "ÅF lighting",
+        "count": 1
+      },
+      {
+        "name": "Valhøj Skole",
+        "count": 1
+      },
+      {
+        "name": "NutriDia",
+        "count": 1
+      },
+      {
+        "name": "Dansk Stalking Center",
+        "count": 1
+      },
+      {
+        "name": "Mette Daapan",
+        "count": 1
+      },
+      {
+        "name": "BILA A/S",
+        "count": 1
+      },
+      {
+        "name": "Peter Birk Andersen",
+        "count": 1
+      },
+      {
+        "name": "Centre for Advanced Imaging, University of Queensland",
+        "count": 1
+      },
+      {
+        "name": "Hjerte-Lungekirurgisk Afdeling, Aalborg Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "Vermund Larsen A/S",
+        "count": 1
+      },
+      {
+        "name": "Aalbog Gummivarefabrik A/S",
+        "count": 1
+      },
+      {
+        "name": "Raul Benitez Iglesias",
+        "count": 1
+      },
+      {
+        "name": "NAVICON A/S",
+        "count": 1
+      },
+      {
+        "name": "Wolfgang Weinzierl",
+        "count": 1
+      },
+      {
+        "name": "ACTAS ",
+        "count": 1
+      },
+      {
+        "name": "Kube Data ApS",
+        "count": 1
+      },
+      {
+        "name": "IT student group sw805f17",
+        "count": 1
+      },
+      {
+        "name": "Urtekram International A/S",
+        "count": 1
+      },
+      {
+        "name": "InnoAid",
+        "count": 1
+      },
+      {
+        "name": "Blågard skole",
+        "count": 1
+      },
+      {
+        "name": "EvoBus GmbH",
+        "count": 1
+      },
+      {
+        "name": "NIWA",
+        "count": 1
+      },
+      {
+        "name": "Statens Serum Institut",
+        "count": 1
+      },
+      {
+        "name": "BluSense Diagnostics",
+        "count": 1
+      },
+      {
+        "name": "Frirummet",
+        "count": 1
+      },
+      {
+        "name": "Psykiatrien i Region Syddanmark",
+        "count": 1
+      },
+      {
+        "name": "Ungehuset 3D, Esbjerg Kommune",
+        "count": 1
+      },
+      {
+        "name": "Merlin Entertainments",
+        "count": 1
+      },
+      {
+        "name": "SEA - Supporting Entrepreneurship at Aalborg University",
+        "count": 1
+      },
+      {
+        "name": "Lyngby-Taarbæk Kommune",
+        "count": 1
+      },
+      {
+        "name": "Lyngby Taarbæk Vidensby",
+        "count": 1
+      },
+      {
+        "name": "SKAT",
+        "count": 1
+      },
+      {
+        "name": "Studievalg Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "Jess Riis Jensen",
+        "count": 1
+      },
+      {
+        "name": "Center for Psykisk Sundhedsfremme",
+        "count": 1
+      },
+      {
+        "name": "University College Absalon",
+        "count": 1
+      },
+      {
+        "name": "Center for Autisme Herlev",
+        "count": 1
+      },
+      {
+        "name": "Lundsbygårdens Børnehave",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Det Kristne Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Hartopolis ",
+        "count": 1
+      },
+      {
+        "name": "SEV",
+        "count": 1
+      },
+      {
+        "name": "Bryden Wood",
+        "count": 1
+      },
+      {
+        "name": "BAM Danmark",
+        "count": 1
+      },
+      {
+        "name": "Rijkswaterstaat",
+        "count": 1
+      },
+      {
+        "name": "Bravida A/S",
+        "count": 1
+      },
+      {
+        "name": "Teater Sort/Hvid",
+        "count": 1
+      },
+      {
+        "name": "By- og Landskabsforvaltningen",
+        "count": 1
+      },
+      {
+        "name": "Præstemarkskolen ",
+        "count": 1
+      },
+      {
+        "name": "ISS Facility Services A/S",
+        "count": 1
+      },
+      {
+        "name": "Rasmus Arendt Nielsen",
+        "count": 1
+      },
+      {
+        "name": "VIVA Arkitekter",
+        "count": 1
+      },
+      {
+        "name": "Rebild Kommune",
+        "count": 1
+      },
+      {
+        "name": "Søren Gyldenhof Schilder",
+        "count": 1
+      },
+      {
+        "name": "Ankestyrelsen",
+        "count": 1
+      },
+      {
+        "name": "Petra Rössel",
+        "count": 1
+      },
+      {
+        "name": "Bornholms Regionskommune",
+        "count": 1
+      },
+      {
+        "name": "Bloddonorerne i Danmark",
+        "count": 1
+      },
+      {
+        "name": "handelsskole Hjørring",
+        "count": 1
+      },
+      {
+        "name": "Husumvold Kirke ",
+        "count": 1
+      },
+      {
+        "name": "Jacob Hilmer Architecture",
+        "count": 1
+      },
+      {
+        "name": "H.L. Muffer ApS",
+        "count": 1
+      },
+      {
+        "name": "YOKE",
+        "count": 1
+      },
+      {
+        "name": "Peter Aichinger",
+        "count": 1
+      },
+      {
+        "name": "Arura Aps ",
+        "count": 1
+      },
+      {
+        "name": "Thorsten Holst",
+        "count": 1
+      },
+      {
+        "name": "Spielraum für Alle e.V.",
+        "count": 1
+      },
+      {
+        "name": "Mercantec",
+        "count": 1
+      },
+      {
+        "name": "Karolina M. Zielinska Dabkowska",
+        "count": 1
+      },
+      {
+        "name": "Lightsphere GmbH",
+        "count": 1
+      },
+      {
+        "name": "Randers Regnskov",
+        "count": 1
+      },
+      {
+        "name": "BullAnt logistics ",
+        "count": 1
+      },
+      {
+        "name": "Ranum Efterskole College",
+        "count": 1
+      },
+      {
+        "name": "Legsom",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Fredsby",
+        "count": 1
+      },
+      {
+        "name": "Foodsharing Copenhagen",
+        "count": 1
+      },
+      {
+        "name": "Dronninglund Efterskole",
+        "count": 1
+      },
+      {
+        "name": "Norddjurs Kommune",
+        "count": 1
+      },
+      {
+        "name": "YoungCRM",
+        "count": 1
+      },
+      {
+        "name": "Bydelsmødrenes Landsorganisation",
+        "count": 1
+      },
+      {
+        "name": "Sundhedsforvaltning, lokal afdeling Vanløse, Brønshøj og Husum",
+        "count": 1
+      },
+      {
+        "name": "Implement Consulting Group",
+        "count": 1
+      },
+      {
+        "name": "Aalbrog Events ",
+        "count": 1
+      },
+      {
+        "name": "Job- og Aktivhuset",
+        "count": 1
+      },
+      {
+        "name": "The Brain, Body, And Self Laboratory",
+        "count": 1
+      },
+      {
+        "name": "BørneRiget, Rigshospitalet",
+        "count": 1
+      },
+      {
+        "name": "KFUMs Idrætsforbund",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Renovation",
+        "count": 1
+      },
+      {
+        "name": "Museum Ragnarock",
+        "count": 1
+      },
+      {
+        "name": "Tirpitz Museet",
+        "count": 1
+      },
+      {
+        "name": "Ole Østergaard",
+        "count": 1
+      },
+      {
+        "name": "St. Petersburg National Research University of Information Technologies, Mechanics and Optics (ITMO)",
+        "count": 1
+      },
+      {
+        "name": "Angela Andrews",
+        "count": 1
+      },
+      {
+        "name": "Fagerhult",
+        "count": 1
+      },
+      {
+        "name": "Centro Tecnologico Leitat",
+        "count": 1
+      },
+      {
+        "name": "Sintex A/S",
+        "count": 1
+      },
+      {
+        "name": "MinForening",
+        "count": 1
+      },
+      {
+        "name": "Nka Foundation",
+        "count": 1
+      },
+      {
+        "name": "Interfibio- Universitat Rovira i Virgili",
+        "count": 1
+      },
+      {
+        "name": "B&R Automation",
+        "count": 1
+      },
+      {
+        "name": "Haderslev Kommune",
+        "count": 1
+      },
+      {
+        "name": "SÅ LETTER VI",
+        "count": 1
+      },
+      {
+        "name": "SPARKX",
+        "count": 1
+      },
+      {
+        "name": "Healthcare Center Skive",
+        "count": 1
+      },
+      {
+        "name": "Syd- og Sønderjyllands politi",
+        "count": 1
+      },
+      {
+        "name": "BGI Akademiet",
+        "count": 1
+      },
+      {
+        "name": "FUNSINCOPA",
+        "count": 1
+      },
+      {
+        "name": "The Back to Life Project",
+        "count": 1
+      },
+      {
+        "name": "Dansk Ingeniør Service A/S",
+        "count": 1
+      },
+      {
+        "name": "Elitesport Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Riga Technical University",
+        "count": 1
+      },
+      {
+        "name": "GAME",
+        "count": 1
+      },
+      {
+        "name": "Rådet for Folkesundhed",
+        "count": 1
+      },
+      {
+        "name": "Widex",
+        "count": 1
+      },
+      {
+        "name": "Natural History Museum Aarhus",
+        "count": 1
+      },
+      {
+        "name": "Nidec Global Appliances, Germany",
+        "count": 1
+      },
+      {
+        "name": "Geopartner Landinspektører A/S",
+        "count": 1
+      },
+      {
+        "name": "DC-System",
+        "count": 1
+      },
+      {
+        "name": "TU Wien",
+        "count": 1
+      },
+      {
+        "name": "Austurbrú",
+        "count": 1
+      },
+      {
+        "name": "REBUS",
+        "count": 1
+      },
+      {
+        "name": "Statsbygg AS",
+        "count": 1
+      },
+      {
+        "name": "Elia",
+        "count": 1
+      },
+      {
+        "name": "Super Cykelsti Sekrateriatet",
+        "count": 1
+      },
+      {
+        "name": "E.ON",
+        "count": 1
+      },
+      {
+        "name": "SINTEF",
+        "count": 1
+      },
+      {
+        "name": "Logimatic",
+        "count": 1
+      },
+      {
+        "name": "University of Natural Resources and Life Sciences, Vienna",
+        "count": 1
+      },
+      {
+        "name": "Agile Automotive",
+        "count": 1
+      },
+      {
+        "name": "Innovationshuset",
+        "count": 1
+      },
+      {
+        "name": "Columbia University",
+        "count": 1
+      },
+      {
+        "name": "Mikkel Lydholm Rasmussen",
+        "count": 1
+      },
+      {
+        "name": "Kaffé Fair",
+        "count": 1
+      },
+      {
+        "name": "Niels Erik von Freiesleben",
+        "count": 1
+      },
+      {
+        "name": "Anders Kring",
+        "count": 1
+      },
+      {
+        "name": "Områdefornyelsen Sydhavn",
+        "count": 1
+      },
+      {
+        "name": "Det Danske Spejderkorps",
+        "count": 1
+      },
+      {
+        "name": "Neurocenter østerskoven",
+        "count": 1
+      },
+      {
+        "name": "NMI - Natural and Medical Science Institure",
+        "count": 1
+      },
+      {
+        "name": "Farstrup Skole",
+        "count": 1
+      },
+      {
+        "name": "Sulsted Skole",
+        "count": 1
+      },
+      {
+        "name": "Kaiser Sport & Ortopædi",
+        "count": 1
+      },
+      {
+        "name": "VAM A/S",
+        "count": 1
+      },
+      {
+        "name": "Vestfrost Solutions",
+        "count": 1
+      },
+      {
+        "name": "Atkins ",
+        "count": 1
+      },
+      {
+        "name": "Årstiderne Arkitekter",
+        "count": 1
+      },
+      {
+        "name": "Aerones",
+        "count": 1
+      },
+      {
+        "name": "CLEAN Cluster",
+        "count": 1
+      },
+      {
+        "name": "Erik Bjørn",
+        "count": 1
+      },
+      {
+        "name": "Carsoe A/S",
+        "count": 1
+      },
+      {
+        "name": "Bladt Industries",
+        "count": 1
+      },
+      {
+        "name": "Forsvaret",
+        "count": 1
+      },
+      {
+        "name": "Baba - fordi far er vigtig",
+        "count": 1
+      },
+      {
+        "name": "Naalakkersuisut",
+        "count": 1
+      },
+      {
+        "name": "Fodboldklub",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Kaserner",
+        "count": 1
+      },
+      {
+        "name": "3F Skagerak",
+        "count": 1
+      },
+      {
+        "name": "Shapescape",
+        "count": 1
+      },
+      {
+        "name": "Forbruger- og konkurrencestyrelsen",
+        "count": 1
+      },
+      {
+        "name": "Rob Marsh",
+        "count": 1
+      },
+      {
+        "name": "Sam Productions",
+        "count": 1
+      },
+      {
+        "name": "Disruptive Option",
+        "count": 1
+      },
+      {
+        "name": "DIVR Labs",
+        "count": 1
+      },
+      {
+        "name": "Kanda",
+        "count": 1
+      },
+      {
+        "name": "University of Twente",
+        "count": 1
+      },
+      {
+        "name": "Foreningen Menneskebiblioteket",
+        "count": 1
+      },
+      {
+        "name": "Urologisk afdeling, Aalborg Sygehus Nord",
+        "count": 1
+      },
+      {
+        "name": "AIAIAI Aps",
+        "count": 1
+      },
+      {
+        "name": "People’s Eatery",
+        "count": 1
+      },
+      {
+        "name": "Equidad de Género",
+        "count": 1
+      },
+      {
+        "name": "Airmaster ",
+        "count": 1
+      },
+      {
+        "name": "Folketingets IT-Udviklingsafdeling",
+        "count": 1
+      },
+      {
+        "name": "Entranet",
+        "count": 1
+      },
+      {
+        "name": "Skolevisioner",
+        "count": 1
+      },
+      {
+        "name": "Rigsarkivet",
+        "count": 1
+      },
+      {
+        "name": "Rigshospitalet, Infektionshygiejnisk enhed",
+        "count": 1
+      },
+      {
+        "name": "Arctic  Consensus",
+        "count": 1
+      },
+      {
+        "name": "Erik Møller Arkitekter ",
+        "count": 1
+      },
+      {
+        "name": "Department of Paediatrics, Herlev Hospital, Herlev, Denmark.",
+        "count": 1
+      },
+      {
+        "name": "Danmarks Tekniske Museum",
+        "count": 1
+      },
+      {
+        "name": "MacArtney",
+        "count": 1
+      },
+      {
+        "name": "Aktiv Patientstøtte",
+        "count": 1
+      },
+      {
+        "name": "Team Danmark",
+        "count": 1
+      },
+      {
+        "name": "Steeper Energy",
+        "count": 1
+      },
+      {
+        "name": "Breakthrough India",
+        "count": 1
+      },
+      {
+        "name": "De Særlige Pladser",
+        "count": 1
+      },
+      {
+        "name": "Vestas Aircoil A/S",
+        "count": 1
+      },
+      {
+        "name": "DIgSILENT GmbH",
+        "count": 1
+      },
+      {
+        "name": "Mathias Kjeldahl Jørgens",
+        "count": 1
+      },
+      {
+        "name": "Lunden",
+        "count": 1
+      },
+      {
+        "name": "Forskningsenhed for børne-og ungdomspsykiatri",
+        "count": 1
+      },
+      {
+        "name": "Offentlig sundhedssektor",
+        "count": 1
+      },
+      {
+        "name": "Projekt BRUS",
+        "count": 1
+      },
+      {
+        "name": "Professionshøjskolen",
+        "count": 1
+      },
+      {
+        "name": "Videnscenter for Demens i Region Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "EUC Nord",
+        "count": 1
+      },
+      {
+        "name": "Baglandet",
+        "count": 1
+      },
+      {
+        "name": "Vision of Scandinavia",
+        "count": 1
+      },
+      {
+        "name": "Lykkeliga",
+        "count": 1
+      },
+      {
+        "name": "Intelligent Logistic Solutions Sp. z.o.o.",
+        "count": 1
+      },
+      {
+        "name": "Opgang2",
+        "count": 1
+      },
+      {
+        "name": "Rejseselskabet",
+        "count": 1
+      },
+      {
+        "name": "Randers Stadsarkiv",
+        "count": 1
+      },
+      {
+        "name": "Hasseris Boligselskab",
+        "count": 1
+      },
+      {
+        "name": "C:NTACT",
+        "count": 1
+      },
+      {
+        "name": "Anne-Lise Møller Jensen ",
+        "count": 1
+      },
+      {
+        "name": "Slots- og Kulturstyrelsen",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Historiske Museum",
+        "count": 1
+      },
+      {
+        "name": "Vendsyssel Historiske Museum",
+        "count": 1
+      },
+      {
+        "name": "Antero",
+        "count": 1
+      },
+      {
+        "name": "Frederikshavn Stadsarkiv",
+        "count": 1
+      },
+      {
+        "name": "Utzon Center",
+        "count": 1
+      },
+      {
+        "name": "Reklamebureauet Fedder+Okkels",
+        "count": 1
+      },
+      {
+        "name": "Gentofte Kommune",
+        "count": 1
+      },
+      {
+        "name": "Center for Samskabelse ",
+        "count": 1
+      },
+      {
+        "name": "AW",
+        "count": 1
+      },
+      {
+        "name": "Ole Stadel Thulstrup",
+        "count": 1
+      },
+      {
+        "name": "Ole Agger",
+        "count": 1
+      },
+      {
+        "name": "folkeskoler",
+        "count": 1
+      },
+      {
+        "name": "Multiconsult",
+        "count": 1
+      },
+      {
+        "name": "Scandic Hotels",
+        "count": 1
+      },
+      {
+        "name": "Vejlefjord Rehabilitation Center",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Krisecenter",
+        "count": 1
+      },
+      {
+        "name": "Næstved Kommune",
+        "count": 1
+      },
+      {
+        "name": "KAB",
+        "count": 1
+      },
+      {
+        "name": "Sundby-Hvorup Boligselskab",
+        "count": 1
+      },
+      {
+        "name": "GN ReSound A/S Lautrupbjerg 7, DK-2750 Ballerup",
+        "count": 1
+      },
+      {
+        "name": "ZenithOptimedia",
+        "count": 1
+      },
+      {
+        "name": "2muse",
+        "count": 1
+      },
+      {
+        "name": "Mitsubishi Materials Corporation",
+        "count": 1
+      },
+      {
+        "name": "TDC",
+        "count": 1
+      },
+      {
+        "name": "OfficeFit",
+        "count": 1
+      },
+      {
+        "name": "Leo Innovation Lab ",
+        "count": 1
+      },
+      {
+        "name": "Litepoint",
+        "count": 1
+      },
+      {
+        "name": "Cheetah Digital",
+        "count": 1
+      },
+      {
+        "name": "Carsten Mølgaard",
+        "count": 1
+      },
+      {
+        "name": "Joint Arctic Command",
+        "count": 1
+      },
+      {
+        "name": "Fladbro Kro",
+        "count": 1
+      },
+      {
+        "name": "Hvalpsund Net A/S",
+        "count": 1
+      },
+      {
+        "name": "Anybody Technology A/S",
+        "count": 1
+      },
+      {
+        "name": "University of Canberra",
+        "count": 1
+      },
+      {
+        "name": "Acarix A/S",
+        "count": 1
+      },
+      {
+        "name": "SANDHOLT APS",
+        "count": 1
+      },
+      {
+        "name": "OutHere",
+        "count": 1
+      },
+      {
+        "name": "FC Midtjylland",
+        "count": 1
+      },
+      {
+        "name": "Skanderborg Forsyning",
+        "count": 1
+      },
+      {
+        "name": "Amphi-Bac ApS",
+        "count": 1
+      },
+      {
+        "name": "Calvin College",
+        "count": 1
+      },
+      {
+        "name": "Miljøstyrelsen",
+        "count": 1
+      },
+      {
+        "name": "Repair Café Danmark",
+        "count": 1
+      },
+      {
+        "name": "Midttrafik",
+        "count": 1
+      },
+      {
+        "name": "Aarhus Letbane",
+        "count": 1
+      },
+      {
+        "name": "ECONET",
+        "count": 1
+      },
+      {
+        "name": "Horn Vindue",
+        "count": 1
+      },
+      {
+        "name": " ÅF Consults",
+        "count": 1
+      },
+      {
+        "name": "Fraunhofer Institute for Industrial Engineering",
+        "count": 1
+      },
+      {
+        "name": "Aars District Heating",
+        "count": 1
+      },
+      {
+        "name": "R.A.’s Støttefond",
+        "count": 1
+      },
+      {
+        "name": "Landbrugsstyrelsen",
+        "count": 1
+      },
+      {
+        "name": "Econet",
+        "count": 1
+      },
+      {
+        "name": "Eniig",
+        "count": 1
+      },
+      {
+        "name": "Waste and Resources Action Programme",
+        "count": 1
+      },
+      {
+        "name": "Rehfeld Medical",
+        "count": 1
+      },
+      {
+        "name": "Potsdam Institute for Climate Impact Research",
+        "count": 1
+      },
+      {
+        "name": "Dannozzle",
+        "count": 1
+      },
+      {
+        "name": "Sarah Thomas",
+        "count": 1
+      },
+      {
+        "name": "Diálogos",
+        "count": 1
+      },
+      {
+        "name": "J. Schmalz GmbH",
+        "count": 1
+      },
+      {
+        "name": "Via Trafik",
+        "count": 1
+      },
+      {
+        "name": "CSort",
+        "count": 1
+      },
+      {
+        "name": "Khora ApS",
+        "count": 1
+      },
+      {
+        "name": "Advanced Traffic Systems",
+        "count": 1
+      },
+      {
+        "name": "Kruse Smith",
+        "count": 1
+      },
+      {
+        "name": "Enheden for Psykiatrisk Forskning ved Psykiatrien i Region Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "Polyteknik A/S",
+        "count": 1
+      },
+      {
+        "name": "Ecole Polytechnique Federale de Lausanne",
+        "count": 1
+      },
+      {
+        "name": "Max Planck Institute for Medical Research",
+        "count": 1
+      },
+      {
+        "name": "Hudevad A/S",
+        "count": 1
+      },
+      {
+        "name": "Horn Vinduer",
+        "count": 1
+      },
+      {
+        "name": "Concito",
+        "count": 1
+      },
+      {
+        "name": "Café Exit",
+        "count": 1
+      },
+      {
+        "name": "Center for IT-Ledelse, CIM",
+        "count": 1
+      },
+      {
+        "name": "Løs Market",
+        "count": 1
+      },
+      {
+        "name": " Lead:Famly",
+        "count": 1
+      },
+      {
+        "name": "BoConcept A/S",
+        "count": 1
+      },
+      {
+        "name": "Ableton AG",
+        "count": 1
+      },
+      {
+        "name": "Middelfart Sparekasse",
+        "count": 1
+      },
+      {
+        "name": "Fraunhofer Institute for Cell Therapy and Immunology",
+        "count": 1
+      },
+      {
+        "name": "Aarstiderne A/S",
+        "count": 1
+      },
+      {
+        "name": "DendroPharm GmbH",
+        "count": 1
+      },
+      {
+        "name": "Lix Technologies",
+        "count": 1
+      },
+      {
+        "name": "Replay Institute",
+        "count": 1
+      },
+      {
+        "name": "Peer to Peer Odense",
+        "count": 1
+      },
+      {
+        "name": "The United Nations climate change negotiations",
+        "count": 1
+      },
+      {
+        "name": "Direktoratet for Kriminalforsorg",
+        "count": 1
+      },
+      {
+        "name": "3D Realms",
+        "count": 1
+      },
+      {
+        "name": "Ursula Maier-Rabler",
+        "count": 1
+      },
+      {
+        "name": "Glostrup Kommune",
+        "count": 1
+      },
+      {
+        "name": "Camp Adventure",
+        "count": 1
+      },
+      {
+        "name": "Novo Nordisk Foundation Center for Protein Research, Faculty of Health and Medical Sciences, University of Copenhagen, Denmark.",
+        "count": 1
+      },
+      {
+        "name": "lundbycenterets plejehjem",
+        "count": 1
+      },
+      {
+        "name": "HF-Cold Hawaii",
+        "count": 1
+      },
+      {
+        "name": "Musik i Lejet",
+        "count": 1
+      },
+      {
+        "name": "Region",
+        "count": 1
+      },
+      {
+        "name": "MicroChange",
+        "count": 1
+      },
+      {
+        "name": "Dronninglund  Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "PerformanceLab og Crossfit Lageret",
+        "count": 1
+      },
+      {
+        "name": "El Cambio Academy",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Sundhedscenter",
+        "count": 1
+      },
+      {
+        "name": "Tegnestuen Vandkunsten A/S",
+        "count": 1
+      },
+      {
+        "name": "Nanna Dyrup Svane",
+        "count": 1
+      },
+      {
+        "name": "Lodam Electronics",
+        "count": 1
+      },
+      {
+        "name": "MetaCritic",
+        "count": 1
+      },
+      {
+        "name": "VirusTotal",
+        "count": 1
+      },
+      {
+        "name": "G+ Offshore Wind Health and Safety Organisation",
+        "count": 1
+      },
+      {
+        "name": "The Energy Institute",
+        "count": 1
+      },
+      {
+        "name": "Netherlands Organisation for Applied Scientific Research",
+        "count": 1
+      },
+      {
+        "name": "Copenhagenize France",
+        "count": 1
+      },
+      {
+        "name": "SC.ACOMIN.SA",
+        "count": 1
+      },
+      {
+        "name": "Kathrine Jepsen",
+        "count": 1
+      },
+      {
+        "name": "Dansk Affaldsforening",
+        "count": 1
+      },
+      {
+        "name": "Danmission",
+        "count": 1
+      },
+      {
+        "name": "Lakrids by Bülow",
+        "count": 1
+      },
+      {
+        "name": "København Kommune (Døgntilbud BBU)",
+        "count": 1
+      },
+      {
+        "name": "Hans Jensen Transport",
+        "count": 1
+      },
+      {
+        "name": "Grobund",
+        "count": 1
+      },
+      {
+        "name": "Small Living Albertslund",
+        "count": 1
+      },
+      {
+        "name": "CPHVillage",
+        "count": 1
+      },
+      {
+        "name": "Anne-Mette Sonne Andersen",
+        "count": 1
+      },
+      {
+        "name": "Tingcentralen",
+        "count": 1
+      },
+      {
+        "name": "Rudme Friskole",
+        "count": 1
+      },
+      {
+        "name": "Clappy",
+        "count": 1
+      },
+      {
+        "name": "Kobra Skin",
+        "count": 1
+      },
+      {
+        "name": "ParkBee",
+        "count": 1
+      },
+      {
+        "name": "DSV Panalpina A/S",
+        "count": 1
+      },
+      {
+        "name": "Vestergård Landbrug ApS",
+        "count": 1
+      },
+      {
+        "name": "CoolRunner",
+        "count": 1
+      },
+      {
+        "name": "Med24",
+        "count": 1
+      },
+      {
+        "name": "Inwido Danmark",
+        "count": 1
+      },
+      {
+        "name": "KamillianerGaardens Hospice",
+        "count": 1
+      },
+      {
+        "name": "Hospice Djursland ",
+        "count": 1
+      },
+      {
+        "name": "Hospice Limfjord",
+        "count": 1
+      },
+      {
+        "name": "Hospice Sjælland",
+        "count": 1
+      },
+      {
+        "name": "Hospice Sønderjylland",
+        "count": 1
+      },
+      {
+        "name": "Erslev Skole",
+        "count": 1
+      },
+      {
+        "name": "Reykjavík University",
+        "count": 1
+      },
+      {
+        "name": "Oslo kommune",
+        "count": 1
+      },
+      {
+        "name": "Herningsholmskolen, Holtbjerg",
+        "count": 1
+      },
+      {
+        "name": "International Organization for Migration",
+        "count": 1
+      },
+      {
+        "name": "Civil Development Organization",
+        "count": 1
+      },
+      {
+        "name": "Danish Center for Clinical Health Services Research (DACS), Department of Clinical Medicine, Aalborg University, Aalborg, Denmark.",
+        "count": 1
+      },
+      {
+        "name": "Plejecenter Albertshøj ",
+        "count": 1
+      },
+      {
+        "name": "Amgros I/S",
+        "count": 1
+      },
+      {
+        "name": "Dybbøl efterskole",
+        "count": 1
+      },
+      {
+        "name": "VUC",
+        "count": 1
+      },
+      {
+        "name": "Nuuday",
+        "count": 1
+      },
+      {
+        "name": "LEO Pharma AS",
+        "count": 1
+      },
+      {
+        "name": "Kraftværket",
+        "count": 1
+      },
+      {
+        "name": "Kildehuset",
+        "count": 1
+      },
+      {
+        "name": "Designit Copenhagen",
+        "count": 1
+      },
+      {
+        "name": "AAU Inkubator",
+        "count": 1
+      },
+      {
+        "name": "Ircam",
+        "count": 1
+      },
+      {
+        "name": "Asyl Center Jelling",
+        "count": 1
+      },
+      {
+        "name": "Landbrug og Fødevarer",
+        "count": 1
+      },
+      {
+        "name": "House of Møn",
+        "count": 1
+      },
+      {
+        "name": "Royal Danish Academy – Architecture, Design, Conservation",
+        "count": 1
+      },
+      {
+        "name": "Blue Power Partners",
+        "count": 1
+      },
+      {
+        "name": "VRVis Zentrum für Virtual Reality und Visualisierung Forschungs-GmbH",
+        "count": 1
+      },
+      {
+        "name": "People for Heritage Concern",
+        "count": 1
+      },
+      {
+        "name": "Lake Chad Basin Commission",
+        "count": 1
+      },
+      {
+        "name": " Musikmuseet",
+        "count": 1
+      },
+      {
+        "name": "Det Udenrigspolitiske Selskab",
+        "count": 1
+      },
+      {
+        "name": "Wickstrøm & Langkilde ApS",
+        "count": 1
+      },
+      {
+        "name": "Community of Sant’Egidio",
+        "count": 1
+      },
+      {
+        "name": "Tværfagligt Smertecenter",
+        "count": 1
+      },
+      {
+        "name": "The Ministry of Immigration and Integration",
+        "count": 1
+      },
+      {
+        "name": "ICYE Denmark",
+        "count": 1
+      },
+      {
+        "name": "Aleris-Hamlet Aalborg",
+        "count": 1
+      },
+      {
+        "name": "IDA",
+        "count": 1
+      },
+      {
+        "name": "Suðuroyar Sparikassi",
+        "count": 1
+      },
+      {
+        "name": "LegalUp",
+        "count": 1
+      },
+      {
+        "name": "Marilyn Anne",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Centre for PBL in Engineering Science and Sustainability",
+        "count": 1
+      },
+      {
+        "name": "Walk With Path",
+        "count": 1
+      },
+      {
+        "name": "Rehabiliteringscenter",
+        "count": 1
+      },
+      {
+        "name": "EcoGuerreros",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Portland A/S",
+        "count": 1
+      },
+      {
+        "name": "Socialpsykiatrien Nordjylland",
+        "count": 1
+      },
+      {
+        "name": "Vital Beats ",
+        "count": 1
+      },
+      {
+        "name": "Buster - Film- og mediefestival for børn og unge ",
+        "count": 1
+      },
+      {
+        "name": "ØNSK kaffe",
+        "count": 1
+      },
+      {
+        "name": "CleverCoffee",
+        "count": 1
+      },
+      {
+        "name": "Coffee Collective",
+        "count": 1
+      },
+      {
+        "name": "Cevea",
+        "count": 1
+      },
+      {
+        "name": "Redmark",
+        "count": 1
+      },
+      {
+        "name": "Grønlands Nationalmuseum",
+        "count": 1
+      },
+      {
+        "name": "Føroya Náttúrugripasavn",
+        "count": 1
+      },
+      {
+        "name": "LEGO Education",
+        "count": 1
+      },
+      {
+        "name": "Netcompany",
+        "count": 1
+      },
+      {
+        "name": "Christian Lodberg Hvas",
+        "count": 1
+      },
+      {
+        "name": "Stidsholt efterskole",
+        "count": 1
+      },
+      {
+        "name": "Nexus",
+        "count": 1
+      },
+      {
+        "name": "Nordens Hus",
+        "count": 1
+      },
+      {
+        "name": "The Collective of Prostitutes of Seville",
+        "count": 1
+      },
+      {
+        "name": "Memox",
+        "count": 1
+      },
+      {
+        "name": "Abena",
+        "count": 1
+      },
+      {
+        "name": "Spire",
+        "count": 1
+      },
+      {
+        "name": "Hudevad furniture",
+        "count": 1
+      },
+      {
+        "name": "Rekom",
+        "count": 1
+      },
+      {
+        "name": "CentaFlow",
+        "count": 1
+      },
+      {
+        "name": "Goldwind Energy ApS",
+        "count": 1
+      },
+      {
+        "name": "Charles University",
+        "count": 1
+      },
+      {
+        "name": "Thermex",
+        "count": 1
+      },
+      {
+        "name": "Guldbæk",
+        "count": 1
+      },
+      {
+        "name": "Heden",
+        "count": 1
+      },
+      {
+        "name": "DR Skole",
+        "count": 1
+      },
+      {
+        "name": "b-token",
+        "count": 1
+      },
+      {
+        "name": "Migatronic",
+        "count": 1
+      },
+      {
+        "name": "Henrik Toft Simonsen",
+        "count": 1
+      },
+      {
+        "name": "Center for Præhospital og Akutforskning",
+        "count": 1
+      },
+      {
+        "name": "Guldborgsund Kommune",
+        "count": 1
+      },
+      {
+        "name": "The LEGO Foundation",
+        "count": 1
+      },
+      {
+        "name": "DMI",
+        "count": 1
+      },
+      {
+        "name": "Gatehouse",
+        "count": 1
+      },
+      {
+        "name": "Automatic V/S",
+        "count": 1
+      },
+      {
+        "name": "Gladsaxe Kommune",
+        "count": 1
+      },
+      {
+        "name": "InLogic A/S",
+        "count": 1
+      },
+      {
+        "name": "DANVA",
+        "count": 1
+      },
+      {
+        "name": "Veron",
+        "count": 1
+      },
+      {
+        "name": "Ageing Lab",
+        "count": 1
+      },
+      {
+        "name": "Košice Municipality",
+        "count": 1
+      },
+      {
+        "name": "Vallensbæk Kommune",
+        "count": 1
+      },
+      {
+        "name": "Egholmskolen",
+        "count": 1
+      },
+      {
+        "name": "Riga City Council Development Department",
+        "count": 1
+      },
+      {
+        "name": "Fraunhofer HHI",
+        "count": 1
+      },
+      {
+        "name": "Albertslund Kommune",
+        "count": 1
+      },
+      {
+        "name": "ULTRAAQUA A/S",
+        "count": 1
+      },
+      {
+        "name": "Nordunet A/S",
+        "count": 1
+      },
+      {
+        "name": "HMK Bilcon A/S",
+        "count": 1
+      },
+      {
+        "name": "Connected Cars A/S",
+        "count": 1
+      },
+      {
+        "name": "Veovo",
+        "count": 1
+      },
+      {
+        "name": "AFRY",
+        "count": 1
+      },
+      {
+        "name": "Egense Forsamlingshus",
+        "count": 1
+      },
+      {
+        "name": "Cembrit Holding",
+        "count": 1
+      },
+      {
+        "name": "Jacob Kidmose",
+        "count": 1
+      },
+      {
+        "name": "iMotions A/S",
+        "count": 1
+      },
+      {
+        "name": "Søren Cajus",
+        "count": 1
+      },
+      {
+        "name": "Niels Falk",
+        "count": 1
+      },
+      {
+        "name": "Mayes Ali",
+        "count": 1
+      },
+      {
+        "name": "Jakob Guldbrandsen",
+        "count": 1
+      },
+      {
+        "name": "Lars Spindler",
+        "count": 1
+      },
+      {
+        "name": "Søren Pedersen",
+        "count": 1
+      },
+      {
+        "name": "Kenneth Lundholm-Stenkjær",
+        "count": 1
+      },
+      {
+        "name": "Karsten Westergaard",
+        "count": 1
+      },
+      {
+        "name": "UC SYD",
+        "count": 1
+      },
+      {
+        "name": "FlexShape",
+        "count": 1
+      },
+      {
+        "name": "AcuRail",
+        "count": 1
+      },
+      {
+        "name": "2021.AI",
+        "count": 1
+      },
+      {
+        "name": "Jordansk ligestillings forening",
+        "count": 1
+      },
+      {
+        "name": "Grønlands Politi",
+        "count": 1
+      },
+      {
+        "name": "UCLA",
+        "count": 1
+      },
+      {
+        "name": "Plus-Plus A/S",
+        "count": 1
+      },
+      {
+        "name": "København- og Frederiksberg Huslejenævn",
+        "count": 1
+      },
+      {
+        "name": "CDUL",
+        "count": 1
+      },
+      {
+        "name": "GS1 Denmark",
+        "count": 1
+      },
+      {
+        "name": "Danner",
+        "count": 1
+      },
+      {
+        "name": "Babylon National School",
+        "count": 1
+      },
+      {
+        "name": "Ingerfair",
+        "count": 1
+      },
+      {
+        "name": "Økologisk Landsforening",
+        "count": 1
+      },
+      {
+        "name": "SDSN Youth",
+        "count": 1
+      },
+      {
+        "name": "Den Gamle By",
+        "count": 1
+      },
+      {
+        "name": "Arctic Street Food",
+        "count": 1
+      },
+      {
+        "name": "Københavns Politi",
+        "count": 1
+      },
+      {
+        "name": "Fjord Line",
+        "count": 1
+      },
+      {
+        "name": "The Index Project ",
+        "count": 1
+      },
+      {
+        "name": "Dantech Freezing Systems",
+        "count": 1
+      },
+      {
+        "name": "MeetinVR",
+        "count": 1
+      },
+      {
+        "name": "Mercedes-Benz",
+        "count": 1
+      },
+      {
+        "name": "Yesil Cember GmbH",
+        "count": 1
+      },
+      {
+        "name": "Transformative Urban Environmental",
+        "count": 1
+      },
+      {
+        "name": "Styregruppe og videnskabeligt udvalg for HNPCC registeret, Gastroenheden, Hvidovre Hospital",
+        "count": 1
+      },
+      {
+        "name": "Danish Veterinary and Food Administration",
+        "count": 1
+      },
+      {
+        "name": "Catalin Gavriluta",
+        "count": 1
+      },
+      {
+        "name": "The Danish Rights Alliance",
+        "count": 1
+      },
+      {
+        "name": "Irdeto ",
+        "count": 1
+      },
+      {
+        "name": "Den Gode By",
+        "count": 1
+      },
+      {
+        "name": "Transition",
+        "count": 1
+      },
+      {
+        "name": "Byholm skole",
+        "count": 1
+      },
+      {
+        "name": "Zurich University of Applied Sciences",
+        "count": 1
+      },
+      {
+        "name": "SOSU Nord",
+        "count": 1
+      },
+      {
+        "name": "Soacha APS",
+        "count": 1
+      },
+      {
+        "name": "Sygeplejeråds Uddannelsesfond",
+        "count": 1
+      },
+      {
+        "name": "Infomedia",
+        "count": 1
+      },
+      {
+        "name": "Alianza por la Solidaridad - Action Aid",
+        "count": 1
+      },
+      {
+        "name": "FOA",
+        "count": 1
+      },
+      {
+        "name": "Børne- og Ungdomspædagogernes Landsforbund",
+        "count": 1
+      },
+      {
+        "name": "Gymnasieskolernes lærerforening",
+        "count": 1
+      },
+      {
+        "name": "Danske Handicaporganisationer",
+        "count": 1
+      },
+      {
+        "name": "Dansk Arbejdsgiverforening",
+        "count": 1
+      },
+      {
+        "name": "Gate 21",
+        "count": 1
+      },
+      {
+        "name": "R&D Department, Skamol",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Airport",
+        "count": 1
+      },
+      {
+        "name": "Combi Terminal Twente Rotterdam",
+        "count": 1
+      },
+      {
+        "name": "International Renewable Energy Agency (IRENA)",
+        "count": 1
+      },
+      {
+        "name": "University of Tasmania",
+        "count": 1
+      },
+      {
+        "name": "RobLight",
+        "count": 1
+      },
+      {
+        "name": " Danish Aerospace Centre",
+        "count": 1
+      },
+      {
+        "name": "Into Action",
+        "count": 1
+      },
+      {
+        "name": "Corporate Social responsibility",
+        "count": 1
+      },
+      {
+        "name": "Clemens Advokatfirma",
+        "count": 1
+      },
+      {
+        "name": "Boligselskabet Sjælland",
+        "count": 1
+      },
+      {
+        "name": "North West cultural association of Denmark",
+        "count": 1
+      },
+      {
+        "name": "Vejle Bibliotek",
+        "count": 1
+      },
+      {
+        "name": "Street Under Buen",
+        "count": 1
+      },
+      {
+        "name": "Ørsted A/S",
+        "count": 1
+      },
+      {
+        "name": "The Rockwool Foundation",
+        "count": 1
+      },
+      {
+        "name": "Landsforeningen Liv&Død",
+        "count": 1
+      },
+      {
+        "name": "Bedre Psykiatri Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Visiolink",
+        "count": 1
+      },
+      {
+        "name": "Stupid Studio",
+        "count": 1
+      },
+      {
+        "name": "ATHCO Enginering",
+        "count": 1
+      },
+      {
+        "name": "Cardiology Stem Cell Center, Rigshospitalet",
+        "count": 1
+      },
+      {
+        "name": "Truemax Copenhagen Academy",
+        "count": 1
+      },
+      {
+        "name": "NB-Ventilation A/S",
+        "count": 1
+      },
+      {
+        "name": "MAN Diesel and Turbo",
+        "count": 1
+      },
+      {
+        "name": "Aga khan Rural Support Programme",
+        "count": 1
+      },
+      {
+        "name": " Grankoglen",
+        "count": 1
+      },
+      {
+        "name": "Offerrådgivningen i Danmark",
+        "count": 1
+      },
+      {
+        "name": "Lendager Group",
+        "count": 1
+      },
+      {
+        "name": " Almen Modstand",
+        "count": 1
+      },
+      {
+        "name": "Bloom Institute",
+        "count": 1
+      },
+      {
+        "name": "HR & Arbejdsmiljø",
+        "count": 1
+      },
+      {
+        "name": "Plejecentret Nældebjerg",
+        "count": 1
+      },
+      {
+        "name": "Nældebjerg Plejecenter",
+        "count": 1
+      },
+      {
+        "name": "Nældebjerg ",
+        "count": 1
+      },
+      {
+        "name": "Støvring Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Kardiologisk afsnit S2",
+        "count": 1
+      },
+      {
+        "name": "VentriJect",
+        "count": 1
+      },
+      {
+        "name": "Hvidovre Kommune",
+        "count": 1
+      },
+      {
+        "name": "Stevns Kommune",
+        "count": 1
+      },
+      {
+        "name": "Hjælp Til Pårørende",
+        "count": 1
+      },
+      {
+        "name": "AAU It Services",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Handelsgymnasium",
+        "count": 1
+      },
+      {
+        "name": "Tradium",
+        "count": 1
+      },
+      {
+        "name": " IOspect",
+        "count": 1
+      },
+      {
+        "name": "Viborg Bibliotekerne",
+        "count": 1
+      },
+      {
+        "name": "Wadden Sea National Park",
+        "count": 1
+      },
+      {
+        "name": "Skoleforvaltningen",
+        "count": 1
+      },
+      {
+        "name": "TV 2",
+        "count": 1
+      },
+      {
+        "name": "HTH",
+        "count": 1
+      },
+      {
+        "name": "Great Dane Airlines A/S",
+        "count": 1
+      },
+      {
+        "name": "Global Leadership Network",
+        "count": 1
+      },
+      {
+        "name": "LEAP Technology ApS",
+        "count": 1
+      },
+      {
+        "name": "Luxury Around",
+        "count": 1
+      },
+      {
+        "name": "La Casa Latina",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter Hjørring",
+        "count": 1
+      },
+      {
+        "name": "Lasso X A/S",
+        "count": 1
+      },
+      {
+        "name": "Vejgaard Kiropraktisk Klinik ",
+        "count": 1
+      },
+      {
+        "name": "BioMend",
+        "count": 1
+      },
+      {
+        "name": "Læseforeningen",
+        "count": 1
+      },
+      {
+        "name": "Convince",
+        "count": 1
+      },
+      {
+        "name": "Stilken",
+        "count": 1
+      },
+      {
+        "name": "OpdagDanmark ApS",
+        "count": 1
+      },
+      {
+        "name": "NNIT AS",
+        "count": 1
+      },
+      {
+        "name": "Destination Nord",
+        "count": 1
+      },
+      {
+        "name": "Foreningen Nydansker ",
+        "count": 1
+      },
+      {
+        "name": "Department of Pediatrics at Aalborg University Hospital",
+        "count": 1
+      },
+      {
+        "name": "Freeway ApS",
+        "count": 1
+      },
+      {
+        "name": "Project 44",
+        "count": 1
+      },
+      {
+        "name": "Revision Limfjord",
+        "count": 1
+      },
+      {
+        "name": "Nohara Holding Inc.,",
+        "count": 1
+      },
+      {
+        "name": "AGCO Corporation",
+        "count": 1
+      },
+      {
+        "name": "Plastix",
+        "count": 1
+      },
+      {
+        "name": "Videncenter for Velfærdsteknologi - VihTej",
+        "count": 1
+      },
+      {
+        "name": "Hjørring Badminton Arena",
+        "count": 1
+      },
+      {
+        "name": "Dane RC ApS",
+        "count": 1
+      },
+      {
+        "name": "Eye-See",
+        "count": 1
+      },
+      {
+        "name": "Artlinco",
+        "count": 1
+      },
+      {
+        "name": "BioX Aps",
+        "count": 1
+      },
+      {
+        "name": "Niels Jul Jacobsen",
+        "count": 1
+      },
+      {
+        "name": "Søren Tranberg Hansen",
+        "count": 1
+      },
+      {
+        "name": "Mobile Industrial Robots",
+        "count": 1
+      },
+      {
+        "name": "Geopartner A/S",
+        "count": 1
+      },
+      {
+        "name": "Oksbøl Varmeværk",
+        "count": 1
+      },
+      {
+        "name": "Ea Energy Analysis",
+        "count": 1
+      },
+      {
+        "name": "København kommune - Uddanelse og bæredygtig omstilling",
+        "count": 1
+      },
+      {
+        "name": "Geopartner ",
+        "count": 1
+      },
+      {
+        "name": "Frederiksberg Municipality",
+        "count": 1
+      },
+      {
+        "name": "Lithium Balance A/S",
+        "count": 1
+      },
+      {
+        "name": "Dixa",
+        "count": 1
+      },
+      {
+        "name": "Hydrogen Valley",
+        "count": 1
+      },
+      {
+        "name": "International Flavors and Fragrances, Inc.",
+        "count": 1
+      },
+      {
+        "name": "Khora",
+        "count": 1
+      },
+      {
+        "name": "Center for Rusmiddelforskning, Aarhus",
+        "count": 1
+      },
+      {
+        "name": "Sto Danmark A/S",
+        "count": 1
+      },
+      {
+        "name": "Rigspolitiets Nationale Center for Cybercrime",
+        "count": 1
+      },
+      {
+        "name": "Den Sociale Retshjælps Fond",
+        "count": 1
+      },
+      {
+        "name": "Nordjyllands Politi - Det kriminalpræventive sekretariat",
+        "count": 1
+      },
+      {
+        "name": "University of Pittsburgh",
+        "count": 1
+      },
+      {
+        "name": "Voi Technology",
+        "count": 1
+      },
+      {
+        "name": "SR Batymetri",
+        "count": 1
+      },
+      {
+        "name": "Nabogo",
+        "count": 1
+      },
+      {
+        "name": "Tom Steen Jensen",
+        "count": 1
+      },
+      {
+        "name": "Dezide",
+        "count": 1
+      },
+      {
+        "name": "Ambolt ApS",
+        "count": 1
+      },
+      {
+        "name": "Brønderslev Kommune, Børn & Familie - Varige Spor Vest",
+        "count": 1
+      },
+      {
+        "name": "BEC",
+        "count": 1
+      },
+      {
+        "name": "Tech Invent A/S",
+        "count": 1
+      },
+      {
+        "name": "Chengmaoyuan Technology CO.",
+        "count": 1
+      },
+      {
+        "name": " Good Century printing packing Co.",
+        "count": 1
+      },
+      {
+        "name": "Design-People",
+        "count": 1
+      },
+      {
+        "name": "CLAAS KGaA mbH",
+        "count": 1
+      },
+      {
+        "name": "Danmarks Jægerforbund",
+        "count": 1
+      },
+      {
+        "name": "Malaysian Communication and Multimedia Commission",
+        "count": 1
+      },
+      {
+        "name": "Norconsult",
+        "count": 1
+      },
+      {
+        "name": "Swiss Federal Laboratories for Materials Science and Technology (Empa)",
+        "count": 1
+      },
+      {
+        "name": "BetaFactory",
+        "count": 1
+      },
+      {
+        "name": "Freja Ejendomme",
+        "count": 1
+      },
+      {
+        "name": "MAET Pets",
+        "count": 1
+      },
+      {
+        "name": "Dansk Center for Sundhedsøkonomi",
+        "count": 1
+      },
+      {
+        "name": "INSP! Roskilde",
+        "count": 1
+      },
+      {
+        "name": "AaB esport",
+        "count": 1
+      },
+      {
+        "name": "Kunsten Museum of Modern Art Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Mareena",
+        "count": 1
+      },
+      {
+        "name": "Råt&Godt",
+        "count": 1
+      },
+      {
+        "name": "Comeback",
+        "count": 1
+      },
+      {
+        "name": "Guldsmeden Hotels",
+        "count": 1
+      },
+      {
+        "name": " Hoval A/S",
+        "count": 1
+      },
+      {
+        "name": "Prihoda",
+        "count": 1
+      },
+      {
+        "name": "tt coil A/S",
+        "count": 1
+      },
+      {
+        "name": "ACERA",
+        "count": 1
+      },
+      {
+        "name": "BAYO.S",
+        "count": 1
+      },
+      {
+        "name": "Bankdata",
+        "count": 1
+      },
+      {
+        "name": "Liva-Rehab",
+        "count": 1
+      },
+      {
+        "name": "Destination Himmerland",
+        "count": 1
+      },
+      {
+        "name": "Vaskeriet Neptun",
+        "count": 1
+      },
+      {
+        "name": "Gjøl Vakuum Anlæg A/S ",
+        "count": 1
+      },
+      {
+        "name": "Hedensteds-gruppen A/S",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Svømmeklub",
+        "count": 1
+      },
+      {
+        "name": "Justitsministeriet",
+        "count": 1
+      },
+      {
+        "name": "Formue Nord A/S",
+        "count": 1
+      },
+      {
+        "name": "Blackpool Council",
+        "count": 1
+      },
+      {
+        "name": "Builders Support",
+        "count": 1
+      },
+      {
+        "name": "Brønshøj-Husum Lokaludvalg ",
+        "count": 1
+      },
+      {
+        "name": " Royal Danish Ballet",
+        "count": 1
+      },
+      {
+        "name": "N. Zahles Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Danish Emergency Management Agency (DEMA)",
+        "count": 1
+      },
+      {
+        "name": "Den Danske Filmskole",
+        "count": 1
+      },
+      {
+        "name": "Johannes Kepler University Linz",
+        "count": 1
+      },
+      {
+        "name": "Audio Modeling",
+        "count": 1
+      },
+      {
+        "name": "Gehl - Making Cities for People",
+        "count": 1
+      },
+      {
+        "name": "Babyaudio",
+        "count": 1
+      },
+      {
+        "name": "SLA Architects",
+        "count": 1
+      },
+      {
+        "name": "Day Hospital Centre André Boulloche",
+        "count": 1
+      },
+      {
+        "name": "Université Paris-Saclay",
+        "count": 1
+      },
+      {
+        "name": "BC3 Basque Centre for Climate Change",
+        "count": 1
+      },
+      {
+        "name": "Senior & Omsorg",
+        "count": 1
+      },
+      {
+        "name": "Ammenet.dk",
+        "count": 1
+      },
+      {
+        "name": "Sygehus Lillebælt ",
+        "count": 1
+      },
+      {
+        "name": "Haldor Topsoe AS",
+        "count": 1
+      },
+      {
+        "name": "Nationalpark Thy",
+        "count": 1
+      },
+      {
+        "name": "Besættelsesmuseet",
+        "count": 1
+      },
+      {
+        "name": "Migatronic ",
+        "count": 1
+      },
+      {
+        "name": "TECHCOLLEGE",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter Hvidovre",
+        "count": 1
+      },
+      {
+        "name": "VitaSim",
+        "count": 1
+      },
+      {
+        "name": "Sofus Døgndata",
+        "count": 1
+      },
+      {
+        "name": "Nanna Bentzen",
+        "count": 1
+      },
+      {
+        "name": "Helnan Marselis Hotel",
+        "count": 1
+      },
+      {
+        "name": "Vokalo",
+        "count": 1
+      },
+      {
+        "name": "OpdagDanmark",
+        "count": 1
+      },
+      {
+        "name": "Steven Tito Academy",
+        "count": 1
+      },
+      {
+        "name": "Horsens Kommune",
+        "count": 1
+      },
+      {
+        "name": "Promentum",
+        "count": 1
+      },
+      {
+        "name": "Væksthusets Forskningscenter",
+        "count": 1
+      },
+      {
+        "name": "Videnshuset Cabi",
+        "count": 1
+      },
+      {
+        "name": "Dialog mod Vold",
+        "count": 1
+      },
+      {
+        "name": "Alternativ til Vold",
+        "count": 1
+      },
+      {
+        "name": "Mandecentret",
+        "count": 1
+      },
+      {
+        "name": "Headspace",
+        "count": 1
+      },
+      {
+        "name": "Regionshospitalet Hammel Neurocenter",
+        "count": 1
+      },
+      {
+        "name": "CBB",
+        "count": 1
+      },
+      {
+        "name": "Sportsefterskolen Aabybro",
+        "count": 1
+      },
+      {
+        "name": "Den Sociale Hjemmepleje",
+        "count": 1
+      },
+      {
+        "name": "Bakkebo",
+        "count": 1
+      },
+      {
+        "name": "Kardiologisk stamcellecenter, Rigshospitalet",
+        "count": 1
+      },
+      {
+        "name": "Hjerte-, Lunge-, Karkirurgisk Forskningsenhed",
+        "count": 1
+      },
+      {
+        "name": "Bispebjerg-Frederiksberg Hospital",
+        "count": 1
+      },
+      {
+        "name": "Icebug AB",
+        "count": 1
+      },
+      {
+        "name": "North Urban Art Studio",
+        "count": 1
+      },
+      {
+        "name": " Danmarks Videnscenter for Integration ",
+        "count": 1
+      },
+      {
+        "name": "Rud Pedersen Public Affairs",
+        "count": 1
+      },
+      {
+        "name": "TrackMan A/S",
+        "count": 1
+      },
+      {
+        "name": "AQUACOMBINE Project",
+        "count": 1
+      },
+      {
+        "name": "HelloMind",
+        "count": 1
+      },
+      {
+        "name": "Virtual Learning Lab, Københavns Universitet",
+        "count": 1
+      },
+      {
+        "name": "AIVERO AS",
+        "count": 1
+      },
+      {
+        "name": "Mita-Teknik",
+        "count": 1
+      },
+      {
+        "name": "Stockholm Resilience Centre",
+        "count": 1
+      },
+      {
+        "name": "SMPL Robotics",
+        "count": 1
+      },
+      {
+        "name": "SKOV AS",
+        "count": 1
+      },
+      {
+        "name": "EURAC Research",
+        "count": 1
+      },
+      {
+        "name": "Sano Centre for Computational Personalised Medicine",
+        "count": 1
+      },
+      {
+        "name": "DreamPlan",
+        "count": 1
+      },
+      {
+        "name": "SAYS WHO",
+        "count": 1
+      },
+      {
+        "name": "Greve Kommune",
+        "count": 1
+      },
+      {
+        "name": "Juul & Hansen Arkitekter",
+        "count": 1
+      },
+      {
+        "name": "LandSyd Landinspektører",
+        "count": 1
+      },
+      {
+        "name": "Frederiksberg Forsyning",
+        "count": 1
+      },
+      {
+        "name": "ReDI School of Digital Integration Denmark",
+        "count": 1
+      },
+      {
+        "name": "Center for Logistik & Samarbejde",
+        "count": 1
+      },
+      {
+        "name": "Vordingborg Kommune",
+        "count": 1
+      },
+      {
+        "name": "Elsinore Kommune",
+        "count": 1
+      },
+      {
+        "name": "Landsverk",
+        "count": 1
+      },
+      {
+        "name": "Jobcenter",
+        "count": 1
+      },
+      {
+        "name": "Despacio",
+        "count": 1
+      },
+      {
+        "name": "Retspsykiatrisk Afdeling, Skejby",
+        "count": 1
+      },
+      {
+        "name": "Sydsjællands og Lolland-Falsters Politi",
+        "count": 1
+      },
+      {
+        "name": "Charlotte Kappel",
+        "count": 1
+      },
+      {
+        "name": "NC3",
+        "count": 1
+      },
+      {
+        "name": "Horserød Fængsel",
+        "count": 1
+      },
+      {
+        "name": "University of Oslo",
+        "count": 1
+      },
+      {
+        "name": "Hjørring Vandselskab",
+        "count": 1
+      },
+      {
+        "name": "Ircon Ltd",
+        "count": 1
+      },
+      {
+        "name": "Enemærke og Petersen",
+        "count": 1
+      },
+      {
+        "name": "WSP Global Inc.",
+        "count": 1
+      },
+      {
+        "name": "California State University Long Beach",
+        "count": 1
+      },
+      {
+        "name": "WatsonC ",
+        "count": 1
+      },
+      {
+        "name": "Madservice Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Elbek & Vejrup A/S",
+        "count": 1
+      },
+      {
+        "name": "The University of Tokyo",
+        "count": 1
+      },
+      {
+        "name": "UBIRCH GmbH",
+        "count": 1
+      },
+      {
+        "name": "Work-live-stay ",
+        "count": 1
+      },
+      {
+        "name": "Egmont Højskolen",
+        "count": 1
+      },
+      {
+        "name": "Bravo Shoes Uganda",
+        "count": 1
+      },
+      {
+        "name": "Forsvarsakademiet",
+        "count": 1
+      },
+      {
+        "name": "Justitia",
+        "count": 1
+      },
+      {
+        "name": "Sustainn",
+        "count": 1
+      },
+      {
+        "name": "Brentford Community Sports Trust",
+        "count": 1
+      },
+      {
+        "name": "Hjørring Vandselskab A/S",
+        "count": 1
+      },
+      {
+        "name": "Universidade Federal do Paraná",
+        "count": 1
+      },
+      {
+        "name": "Universidade Paulista",
+        "count": 1
+      },
+      {
+        "name": "VMS Group A/S",
+        "count": 1
+      },
+      {
+        "name": "Khora Virtual Reality",
+        "count": 1
+      },
+      {
+        "name": "Dansk Vegetarisk Forening",
+        "count": 1
+      },
+      {
+        "name": "Recreational Fear Lab",
+        "count": 1
+      },
+      {
+        "name": "Oscars Biludlejning ApS",
+        "count": 1
+      },
+      {
+        "name": "VisuTask ApS",
+        "count": 1
+      },
+      {
+        "name": "Dan-Iso A/S",
+        "count": 1
+      },
+      {
+        "name": "JATALOCK ApS",
+        "count": 1
+      },
+      {
+        "name": "Færch & Co",
+        "count": 1
+      },
+      {
+        "name": "Onda Rural",
+        "count": 1
+      },
+      {
+        "name": "Tryg Foundation",
+        "count": 1
+      },
+      {
+        "name": "DAHL Advokatpartnerselskab",
+        "count": 1
+      },
+      {
+        "name": "Ferring Pharmaceuticals",
+        "count": 1
+      },
+      {
+        "name": "IBM",
+        "count": 1
+      },
+      {
+        "name": "Bergen Kommune",
+        "count": 1
+      },
+      {
+        "name": "IRCAM",
+        "count": 1
+      },
+      {
+        "name": "Slagelse Kommune",
+        "count": 1
+      },
+      {
+        "name": "Inria",
+        "count": 1
+      },
+      {
+        "name": "Cardiology Stem Cell Center ",
+        "count": 1
+      },
+      {
+        "name": "Konsulenthuset Helhjertet",
+        "count": 1
+      },
+      {
+        "name": "Dansk Center for Undervisningsmiljø",
+        "count": 1
+      },
+      {
+        "name": "Roima Intelligence",
+        "count": 1
+      },
+      {
+        "name": "Min Hjernerystelse ApS",
+        "count": 1
+      },
+      {
+        "name": "Onkologisk Afdeling, Aalborg Universistetshospital",
+        "count": 1
+      },
+      {
+        "name": "Handelsgymnasiet Aalborg, Saxogade",
+        "count": 1
+      },
+      {
+        "name": "Siemens Healthcare A/S, dARE. Ballerup, DNK",
+        "count": 1
+      },
+      {
+        "name": "Dagrofa",
+        "count": 1
+      },
+      {
+        "name": "Seminarieskolen",
+        "count": 1
+      },
+      {
+        "name": "Pluralisterne",
+        "count": 1
+      },
+      {
+        "name": "Beumer Group",
+        "count": 1
+      },
+      {
+        "name": "Dolle A/S",
+        "count": 1
+      },
+      {
+        "name": "Social- og Sundhedsskolen Fyn",
+        "count": 1
+      },
+      {
+        "name": "Centrica Energy Trading A/S",
+        "count": 1
+      },
+      {
+        "name": "Playful Learning DK",
+        "count": 1
+      },
+      {
+        "name": "Center for Udvikling af Borgerinddragende Beskæftigelsesindsatser",
+        "count": 1
+      },
+      {
+        "name": "Kraft guitars",
+        "count": 1
+      },
+      {
+        "name": "Cacta",
+        "count": 1
+      },
+      {
+        "name": "Skrive Kommune",
+        "count": 1
+      },
+      {
+        "name": "Beritech ",
+        "count": 1
+      },
+      {
+        "name": "Viegand & Maagøe A/S",
+        "count": 1
+      },
+      {
+        "name": "Gamma A/S",
+        "count": 1
+      },
+      {
+        "name": "Center for Sundhedsfremme, Aalborg Kommune ",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Universitetshospital Syd",
+        "count": 1
+      },
+      {
+        "name": "Sundhedsplejen, Thisted Kommune",
+        "count": 1
+      },
+      {
+        "name": "Hyme",
+        "count": 1
+      },
+      {
+        "name": "LTIMindtree",
+        "count": 1
+      },
+      {
+        "name": "Deakin University",
+        "count": 1
+      },
+      {
+        "name": "Akademiker Pension",
+        "count": 1
+      },
+      {
+        "name": "Fædregruppe i Gladsaxe Kommune",
+        "count": 1
+      },
+      {
+        "name": "PostNord Logistics",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Pirates",
+        "count": 1
+      },
+      {
+        "name": "Aalborghus Apotek",
+        "count": 1
+      },
+      {
+        "name": "SIND Rådgivning",
+        "count": 1
+      },
+      {
+        "name": "DIS/CREADIS",
+        "count": 1
+      },
+      {
+        "name": "Shaping New Tomorrow",
+        "count": 1
+      },
+      {
+        "name": "KU Leuven",
+        "count": 1
+      },
+      {
+        "name": "Marel",
+        "count": 1
+      },
+      {
+        "name": "Dansk fodboldakademi",
+        "count": 1
+      },
+      {
+        "name": "Trinity College Dublin",
+        "count": 1
+      },
+      {
+        "name": "Pecunia",
+        "count": 1
+      },
+      {
+        "name": "TREFOR Water",
+        "count": 1
+      },
+      {
+        "name": "Asisst",
+        "count": 1
+      },
+      {
+        "name": "Forskningscenter for Handicap og beskæftigelse",
+        "count": 1
+      },
+      {
+        "name": "Vikingemuseet Lindholm Høje",
+        "count": 1
+      },
+      {
+        "name": "Alpha Aqua",
+        "count": 1
+      },
+      {
+        "name": "Danrevi",
+        "count": 1
+      },
+      {
+        "name": "NOAH",
+        "count": 1
+      },
+      {
+        "name": "Trekanten ",
+        "count": 1
+      },
+      {
+        "name": "Novadan",
+        "count": 1
+      },
+      {
+        "name": "Klima-, Energi- og Forsyningsministeriet",
+        "count": 1
+      },
+      {
+        "name": "SomethingNew I/S",
+        "count": 1
+      },
+      {
+        "name": "Conaltura S.A.",
+        "count": 1
+      },
+      {
+        "name": "Carnegie Robotics",
+        "count": 1
+      },
+      {
+        "name": "Movia",
+        "count": 1
+      },
+      {
+        "name": "Banenor",
+        "count": 1
+      },
+      {
+        "name": "Sjællands Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "Capture One",
+        "count": 1
+      },
+      {
+        "name": "Planday",
+        "count": 1
+      },
+      {
+        "name": "BBH Consulting",
+        "count": 1
+      },
+      {
+        "name": "CITE-ID",
+        "count": 1
+      },
+      {
+        "name": "Space Inventor A/S",
+        "count": 1
+      },
+      {
+        "name": "Helsingør Skole",
+        "count": 1
+      },
+      {
+        "name": "Sydbank",
+        "count": 1
+      },
+      {
+        "name": "ZinTouch",
+        "count": 1
+      },
+      {
+        "name": "Fanø Kran-Service A/S",
+        "count": 1
+      },
+      {
+        "name": "Lundby Fisk v/Peter Holm",
+        "count": 1
+      },
+      {
+        "name": "TechRas Nano",
+        "count": 1
+      },
+      {
+        "name": "Ulykkes Analyse Gruppen, Odense Universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "COWIfonden",
+        "count": 1
+      },
+      {
+        "name": "BG Byggros A/S",
+        "count": 1
+      },
+      {
+        "name": "WOODSENSE",
+        "count": 1
+      },
+      {
+        "name": "PTV GmbH",
+        "count": 1
+      },
+      {
+        "name": "Xingzhi Social Work Agency",
+        "count": 1
+      },
+      {
+        "name": "Institut for syn, hørelse og døvblindhed",
+        "count": 1
+      },
+      {
+        "name": "NRGi",
+        "count": 1
+      },
+      {
+        "name": "University of Bergen",
+        "count": 1
+      },
+      {
+        "name": "Arctic Street Lab",
+        "count": 1
+      },
+      {
+        "name": "Bandhu Social Welfare Society",
+        "count": 1
+      },
+      {
+        "name": "Ungecentret Skanderborgvej",
+        "count": 1
+      },
+      {
+        "name": "Tampah Hills development ",
+        "count": 1
+      },
+      {
+        "name": "WindowMaster A/S",
+        "count": 1
+      },
+      {
+        "name": "Himmerland Boligforening",
+        "count": 1
+      },
+      {
+        "name": "Otis Danmark",
+        "count": 1
+      },
+      {
+        "name": "HJ-Energi ApS",
+        "count": 1
+      },
+      {
+        "name": "Projekt RESPONSIVE",
+        "count": 1
+      },
+      {
+        "name": "Ringsted Ny Friskole",
+        "count": 1
+      },
+      {
+        "name": "Vibeke og West",
+        "count": 1
+      },
+      {
+        "name": "Linucare",
+        "count": 1
+      },
+      {
+        "name": "Ticketbutler",
+        "count": 1
+      },
+      {
+        "name": "Vertigo",
+        "count": 1
+      },
+      {
+        "name": "ReDI School of Digital Integration",
+        "count": 1
+      },
+      {
+        "name": "Copenhagen Visitor Service",
+        "count": 1
+      },
+      {
+        "name": "Navigraff A/S",
+        "count": 1
+      },
+      {
+        "name": "JAR Cuba",
+        "count": 1
+      },
+      {
+        "name": "Solita A/S",
+        "count": 1
+      },
+      {
+        "name": "Arbejds- og Miljømedicinsk Afdeling, Aalborg",
+        "count": 1
+      },
+      {
+        "name": "Robotto Aps",
+        "count": 1
+      },
+      {
+        "name": "Fraunhofer Institute for Reliability and Microintegration",
+        "count": 1
+      },
+      {
+        "name": "Frivilligcenter Rebild",
+        "count": 1
+      },
+      {
+        "name": "Nuno De Sá Teixeira",
+        "count": 1
+      },
+      {
+        "name": "Vânia Costa",
+        "count": 1
+      },
+      {
+        "name": "Det Hem'lige Teater",
+        "count": 1
+      },
+      {
+        "name": "Treat Systems Aps",
+        "count": 1
+      },
+      {
+        "name": "Team Business",
+        "count": 1
+      },
+      {
+        "name": "Center for Sundhedsfremme",
+        "count": 1
+      },
+      {
+        "name": "Ny Carlsberg Glyptotek",
+        "count": 1
+      },
+      {
+        "name": "AIDS-Fondet",
+        "count": 1
+      },
+      {
+        "name": "SimCorp A/S",
+        "count": 1
+      },
+      {
+        "name": "Aalborg Universitetet IT Services (ITS)",
+        "count": 1
+      },
+      {
+        "name": "Føringsstøtteregimentet - Forsvaret",
+        "count": 1
+      },
+      {
+        "name": "Hjemmepleje Øst sektion Ørkild",
+        "count": 1
+      },
+      {
+        "name": "VisitNordvestkysten",
+        "count": 1
+      },
+      {
+        "name": "VisitVesterhavet",
+        "count": 1
+      },
+      {
+        "name": "Destination Vadehavskysten",
+        "count": 1
+      },
+      {
+        "name": "Suðuroyar Sjúkrahús",
+        "count": 1
+      },
+      {
+        "name": "Nimb  Hotel",
+        "count": 1
+      },
+      {
+        "name": "Kreafunk ApS",
+        "count": 1
+      },
+      {
+        "name": "Universe",
+        "count": 1
+      },
+      {
+        "name": "Neuropsykologisk Praksis",
+        "count": 1
+      },
+      {
+        "name": "VirPed",
+        "count": 1
+      },
+      {
+        "name": "Hardi International A/S",
+        "count": 1
+      },
+      {
+        "name": "Integrationshuset Kringlebakken",
+        "count": 1
+      },
+      {
+        "name": "Human Rights Observers",
+        "count": 1
+      },
+      {
+        "name": "Børne- og Ungeafdelingen, Aalborg universitetshospital",
+        "count": 1
+      },
+      {
+        "name": "Raunstrup A/S",
+        "count": 1
+      },
+      {
+        "name": "TUBA",
+        "count": 1
+      },
+      {
+        "name": "MidwifeVR",
+        "count": 1
+      },
+      {
+        "name": "Maastricht University",
+        "count": 1
+      },
+      {
+        "name": "Workz",
+        "count": 1
+      },
+      {
+        "name": "Multi-Wing",
+        "count": 1
+      },
+      {
+        "name": "Chromaviso A/S",
+        "count": 1
+      },
+      {
+        "name": "Resource Denmark ",
+        "count": 1
+      },
+      {
+        "name": "Alfa Laval ",
+        "count": 1
+      },
+      {
+        "name": "Blue Denmark",
+        "count": 1
+      },
+      {
+        "name": "Fængselskoret",
+        "count": 1
+      },
+      {
+        "name": "Fælles Service Center",
+        "count": 1
+      },
+      {
+        "name": "Vejen Kommune",
+        "count": 1
+      },
+      {
+        "name": "Universite des Sciences et Technologies de Lille",
+        "count": 1
+      },
+      {
+        "name": "Université du Littoral Côte-d'Opale",
+        "count": 1
+      },
+      {
+        "name": "Inèdit ",
+        "count": 1
+      },
+      {
+        "name": "Alabu Bolig",
+        "count": 1
+      },
+      {
+        "name": "Udviklings- og Forenklingsstyrelsen",
+        "count": 1
+      },
+      {
+        "name": "SigmaNet ApS",
+        "count": 1
+      },
+      {
+        "name": "ATP Ejendomme A/S",
+        "count": 1
+      },
+      {
+        "name": "Odder Kommune",
+        "count": 1
+      },
+      {
+        "name": "Microsoft",
+        "count": 1
+      },
+      {
+        "name": "Klimatorium",
+        "count": 1
+      },
+      {
+        "name": "Tasklet Factory",
+        "count": 1
+      },
+      {
+        "name": "Østerbro Local Committee",
+        "count": 1
+      },
+      {
+        "name": "AstraZeneca AB R&D",
+        "count": 1
+      },
+      {
+        "name": "Kvalitets-, Innovations- og Forskningsenheden, Regionshospitalet Silkeborg",
+        "count": 1
+      },
+      {
+        "name": "Kvadrat Really",
+        "count": 1
+      },
+      {
+        "name": "CAMES",
+        "count": 1
+      },
+      {
+        "name": "Grundtvigs Højskole",
+        "count": 1
+      },
+      {
+        "name": "SLA",
+        "count": 1
+      },
+      {
+        "name": "Genjord",
+        "count": 1
+      },
+      {
+        "name": "Norecco",
+        "count": 1
+      },
+      {
+        "name": "Handicaptalsmandsinstitutionen Tilioq",
+        "count": 1
+      },
+      {
+        "name": "OP",
+        "count": 1
+      },
+      {
+        "name": "Blendit Learning",
+        "count": 1
+      },
+      {
+        "name": "Anthesis Netherlands",
+        "count": 1
+      },
+      {
+        "name": "Korean Language Saem",
+        "count": 1
+      },
+      {
+        "name": "Historie Lab",
+        "count": 1
+      },
+      {
+        "name": "WISSLER",
+        "count": 1
+      },
+      {
+        "name": "Mariagerfjord Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Nordic Wing",
+        "count": 1
+      },
+      {
+        "name": "Norwegian University of Life Sciences",
+        "count": 1
+      },
+      {
+        "name": "Oslo Metropolitan University",
+        "count": 1
+      },
+      {
+        "name": "Vishuddha Yoga",
+        "count": 1
+      },
+      {
+        "name": "Museum for Forsyning og Bæredygtighed",
+        "count": 1
+      },
+      {
+        "name": "Hospice Djursland",
+        "count": 1
+      },
+      {
+        "name": "Ringsted Kommune",
+        "count": 1
+      },
+      {
+        "name": "Pfizer",
+        "count": 1
+      },
+      {
+        "name": "Multihuset Brøndby",
+        "count": 1
+      },
+      {
+        "name": "Helhedstilbuddet Skovmoseskolen",
+        "count": 1
+      },
+      {
+        "name": "Østre Gasværk Bofællesskab",
+        "count": 1
+      },
+      {
+        "name": "Thing Brandt Landskab",
+        "count": 1
+      },
+      {
+        "name": "Borgerservice Udvikling, Københavns Kommune",
+        "count": 1
+      },
+      {
+        "name": "Too Good To Go ApS",
+        "count": 1
+      },
+      {
+        "name": "Crossing Borders",
+        "count": 1
+      },
+      {
+        "name": "Muuto",
+        "count": 1
+      },
+      {
+        "name": "Virsabi",
+        "count": 1
+      },
+      {
+        "name": "Naturkraft Museet",
+        "count": 1
+      },
+      {
+        "name": "Sykora IT",
+        "count": 1
+      },
+      {
+        "name": "Museum Kolding",
+        "count": 1
+      },
+      {
+        "name": "Nordic Wood Industries",
+        "count": 1
+      },
+      {
+        "name": "Udviklingshæmmedes Landsforbund",
+        "count": 1
+      },
+      {
+        "name": "Landsbyggefonden",
+        "count": 1
+      },
+      {
+        "name": "EatWasted",
+        "count": 1
+      },
+      {
+        "name": "Contour Design",
+        "count": 1
+      },
+      {
+        "name": "Foreningen Grønlandske Børn",
+        "count": 1
+      },
+      {
+        "name": "Brødrene A&O Johansen A/S",
+        "count": 1
+      },
+      {
+        "name": "North Media A/S",
+        "count": 1
+      },
+      {
+        "name": "Kemp & Lauritzen",
+        "count": 1
+      },
+      {
+        "name": "Danish Energy Agency",
+        "count": 1
+      },
+      {
+        "name": "Termonet Danmark",
+        "count": 1
+      },
+      {
+        "name": "Hydrema ApS",
+        "count": 1
+      },
+      {
+        "name": "Marc Zein Dahl",
+        "count": 1
+      },
+      {
+        "name": "Mølbak Landinspektører A/S",
+        "count": 1
+      },
+      {
+        "name": "SWECO",
+        "count": 1
+      },
+      {
+        "name": "Randers Tegl",
+        "count": 1
+      },
+      {
+        "name": "Jysk Energi",
+        "count": 1
+      },
+      {
+        "name": "Con Alura",
+        "count": 1
+      },
+      {
+        "name": "Sportsfiskerforbund",
+        "count": 1
+      },
+      {
+        "name": "DALGAS",
+        "count": 1
+      },
+      {
+        "name": "NAUTICO",
+        "count": 1
+      },
+      {
+        "name": "By & Havn",
+        "count": 1
+      },
+      {
+        "name": "Assens Dykkerklub",
+        "count": 1
+      },
+      {
+        "name": "BioDyk ",
+        "count": 1
+      },
+      {
+        "name": "MED Smedie & Maskinværksted",
+        "count": 1
+      },
+      {
+        "name": "Danske Patienter",
+        "count": 1
+      },
+      {
+        "name": "FDB Møbler",
+        "count": 1
+      },
+      {
+        "name": " Center for Voldsforebyggelse",
+        "count": 1
+      },
+      {
+        "name": "Københavns åbne Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Food & Bio Cluster Denmark",
+        "count": 1
+      },
+      {
+        "name": " Ai Health Highway",
+        "count": 1
+      },
+      {
+        "name": "Turf Tank ApS",
+        "count": 1
+      },
+      {
+        "name": "Center for Sundhedsfremme Aalborg Kommune",
+        "count": 1
+      },
+      {
+        "name": "Royal Greenland A/S",
+        "count": 1
+      },
+      {
+        "name": "Beredskabsstyrelsen, Center for Uddannelse",
+        "count": 1
+      },
+      {
+        "name": "Odense University Hospital",
+        "count": 1
+      },
+      {
+        "name": "Woodstock Robotics",
+        "count": 1
+      },
+      {
+        "name": "Floral",
+        "count": 1
+      },
+      {
+        "name": "re:lead",
+        "count": 1
+      },
+      {
+        "name": "Apropos Bureau ApS",
+        "count": 1
+      },
+      {
+        "name": "EPFL University",
+        "count": 1
+      },
+      {
+        "name": "DepressionsForeningen",
+        "count": 1
+      },
+      {
+        "name": "Warner Music Denmark",
+        "count": 1
+      },
+      {
+        "name": "ByLink ApS",
+        "count": 1
+      },
+      {
+        "name": "Højene skole",
+        "count": 1
+      },
+      {
+        "name": "IWI Technology",
+        "count": 1
+      },
+      {
+        "name": "Occultish Games",
+        "count": 1
+      },
+      {
+        "name": "Nationalt Center for Overvægt",
+        "count": 1
+      },
+      {
+        "name": "Visit Greenland",
+        "count": 1
+      },
+      {
+        "name": "1000Fryd",
+        "count": 1
+      },
+      {
+        "name": "Egolibris",
+        "count": 1
+      },
+      {
+        "name": "Greenland National Museum & Archives",
+        "count": 1
+      },
+      {
+        "name": "PricingSaaS",
+        "count": 1
+      },
+      {
+        "name": "Brønderslev Gymnasium",
+        "count": 1
+      },
+      {
+        "name": "Egnssamlingen Saltum",
+        "count": 1
+      },
+      {
+        "name": "Saltum Skole",
+        "count": 1
+      },
+      {
+        "name": "DBL Group ",
+        "count": 1
+      },
+      {
+        "name": "Fibertex Personal Care A/S",
+        "count": 1
+      },
+      {
+        "name": "Meneta Holding A/S",
+        "count": 1
+      },
+      {
+        "name": "Blue Water Shipping A/S",
+        "count": 1
+      },
+      {
+        "name": "Kiss the Frog",
+        "count": 1
+      },
+      {
+        "name": "Vandmiljø Randers A/S",
+        "count": 1
+      },
+      {
+        "name": "Loligo Systems",
+        "count": 1
+      },
+      {
+        "name": "SSP Vejle",
+        "count": 1
+      },
+      {
+        "name": "Miljøministeriet",
+        "count": 1
+      },
+      {
+        "name": "NTT DATA Business Solutions",
+        "count": 1
+      },
+      {
+        "name": "Renseanlæg Vest",
+        "count": 1
+      },
+      {
+        "name": "Campfire Security ApS",
+        "count": 1
+      },
+      {
+        "name": "GateHouse",
+        "count": 1
+      },
+      {
+        "name": "Dataproces Group A/S",
+        "count": 1
+      },
+      {
+        "name": "XCI A/S",
+        "count": 1
+      },
+      {
+        "name": "Daimler AG",
+        "count": 1
+      },
+      {
+        "name": "CEDAR",
+        "count": 1
+      },
+      {
+        "name": "Hele Landet ApS",
+        "count": 1
+      },
+      {
+        "name": "Rambøll, Water Ressources West",
+        "count": 1
+      },
+      {
+        "name": "NGI A/S",
+        "count": 1
+      },
+      {
+        "name": "Lappeenranta-Lahti University of Technology",
+        "count": 1
+      },
+      {
+        "name": "historielab nationalt videnscenter for for historie og kulturarvsformidling",
+        "count": 1
+      },
+      {
+        "name": "Laus Gro-Nielsen",
+        "count": 1
+      },
+      {
+        "name": "Change of Scandinavia A/S",
+        "count": 1
+      },
+      {
+        "name": "Energinet (TJE)",
+        "count": 1
+      }
+    ]
+  },
+  "statistics": {
+    "totalProjects": 2447,
+    "totalCollaborations": 2781,
+    "uniquePartners": 1727,
+    "uniqueCountries": 54
+  }
+}
